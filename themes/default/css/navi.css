@@ -1,0 +1,224 @@
+.navigation {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 1;
+  }
+  
+  .navigation ul:hover ul {
+      display: block!important;
+  }
+  
+  .navigation i{
+      padding-right: 8px;
+  }
+  
+  .hien-menu{
+    display:block
+  }
+  
+  .an-menu{
+    display:none
+  }
+  
+  
+  
+  .navigation ul,
+  .navigation ul li,
+  .navigation ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation ul ul {
+    
+    z-index: 5;
+    float: left;
+    width: 100%;
+  }
+  
+  .navigation ul li {
+    float: left;
+    min-height: 0.05em;
+    line-height: 1em;
+    vertical-align: middle;
+  
+  }
+  
+  .navigation ul li.hover,
+  .navigation ul li:hover {
+  
+    z-index: 6;
+    cursor: default;
+  }
+  
+  .navigation ul ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 520;
+    width: 100%;
+  }
+  
+  .navigation ul ul li { float: none;position: relative; }
+  
+  .navigation ul ul ul {
+    top: 0;
+    right: 0;
+  }
+  
+  .navigation ul li:hover > ul { visibility: visible; }
+  
+  .navigation ul ul ul {
+    top: 0;
+    left: 99%;
+  }
+  
+  .navigation ul li { float: none; }
+  
+  .navigation ul ul { margin-top: 0.05em; }
+  
+  .navigation {
+    background: #fff;
+  }
+  
+  .navigation:before {
+    content: '';
+    display: block;
+  }
+  
+  .navigation:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 10px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  
+  
+  .navigation ul ul ul { 
+      width: 320px ;
+      position: absolute;
+      top: 0px;
+      }
+  
+  .navigation > ul > li > a {
+    color: #111;
+    text-transform: uppercase;
+    
+  }
+  
+  .navigation > ul > li > a:hover ,.navigation > ul > li a:active { color: #fff; }
+  
+  .navigation > ul > li a:hover,
+  .navigation > ul > li:hover a { background: #fff; }
+  
+  .navigation li {  }
+  
+  .navigation > ul > li.has-sub > a:after {
+    content: '\f107';
+    position: absolute;
+    font-weight: 300;
+     font-family: FontAwesome;
+    right: 1em;
+  }
+  
+  .navigation ul ul li.first {
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+  }
+  
+  .navigation ul ul li.last {
+    -webkit-border-radius: 0 0 3px 0;
+    -moz-border-radius: 0 0 3px 0;
+    border-radius: 0 0 3px 0;
+    border-bottom: 0;
+  }
+  
+  .navigation ul ul {
+   
+  }
+  
+  .navigation ul ul ul {
+     border:1px solid #ececec 
+  }
+  
+  
+  .navigation>ul>li>a:hover{
+      color:#fff
+  }
+  
+  .navigation ul ul {  }
+  
+  .navigation ul ul a { color: #333!important; background: #fff!important;font-size: 14px; }
+  
+  .navigation ul a:hover { color: #fff; }
+  
+  .navigation ul li { border-bottom: 1px solid #ececec; }
+  
+  .navigation > ul > li a:hover,
+  .navigation  ul  li:hover a { background: #E9363E;color:#fff }
+  
+  .navigation ul  ul > li a:hover{ 
+      background: #E9363E!important;color:#fff!important 
+  }
+  
+  
+  .navigation.align-right > ul > li > a {
+    border-left: 0.3em solid #34A65F;
+    border-right: none;
+   
+  }
+  
+  .navigation.align-right { float: right; }
+  
+  .navigation.align-right li { text-align: right; }
+  
+  .navigation.align-right ul li.has-sub > a:before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -6px;
+  }
+  
+  .navigation.align-right ul li.has-sub > a:after { content: none; } 
+  
+  
+  .navigation.align-right ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 7;
+    width: 100%;
+  }
+  
+  
+  .navigation.align-right ul ul li.first {
+    -webkit-border-radius: 3px 0 0 0;
+    -moz-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0;
+  }
+  
+  .navigation.align-right ul ul li.last {
+    -webkit-border-radius: 0 0 0 3px;
+    -moz-border-radius: 0 0 0 3px;
+    border-radius: 0 0 0 3px;
+  }
+  
+  .navigation.align-right ul ul {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+  }
