@@ -170,7 +170,7 @@ span.has-subnav {
   }
 
   .menu li li a:hover {
-    //background: #a30d03;
+    /* background: #a30d03; */
     color: #000;
   }
 
