@@ -22,6 +22,10 @@ body {
     margin: 0
 }
 
+.bg-light {
+    background-color: #333!important;
+}
+
 
 .can-giua-flex{
     justify-content: center

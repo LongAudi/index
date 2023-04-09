@@ -60,7 +60,7 @@ nav li {
 .menu li a {
   color: #fff;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0.05em;
   line-height: 2.5em;
   text-decoration: none;
@@ -133,10 +133,10 @@ span.has-subnav {
 }
 
 @media screen and (min-width: 801px) {
-  nav {
+  /* nav {
     border-top: 3px solid #00578b;
     border-bottom: 1px solid #a4d05e;
-  }
+  } */
 
   a.menu-link {
     display: none;

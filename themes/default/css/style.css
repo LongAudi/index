@@ -311,6 +311,8 @@
 
 .bg-menu{
     background: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .icon-lg {
@@ -1249,6 +1251,10 @@ body {
     font-weight: 400;
     line-height: 1.6;
 
+}
+
+a,p{
+    font-size: 16px;
 }
 
 a,

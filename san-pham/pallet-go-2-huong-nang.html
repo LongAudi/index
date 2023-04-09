@@ -34,6 +34,7 @@
 <link rel="preload" as="script" href="/themes/default/js/custom.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/owl.carousel.js?t=1638773501">
 <link rel="preload" as="script" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<link rel="preload" as="script" href="/themes/default/js/toggle-nav.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/jquery.colorbox.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/comment.js?t=1638773501">
 <link rel="preload" as="script" href="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
@@ -50,13 +51,12 @@
 <link rel="stylesheet" href="/themes/default/css/custom.css?t=1638773501">
 <link rel="stylesheet" href="/assets/css/default.vi.0.css?t=1638773501">
 <link rel="stylesheet" type="text/css" media="screen" href="/themes/default/css/navi.css?t=1638773501" />
-<link rel="stylesheet" href="/themes/default/css/meanmenu.css?t=1638773501" media="all" />
+<link href="/themes/default/css/toggle-nav.css?t=1638773501" rel="stylesheet"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/themes/default/css/colorbox.css?t=1638773501" />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css' />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css' />
 <link rel="StyleSheet" href="/themes/default/css/comment.css?t=1638773501" type="text/css" />
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <style>
     .f-nav{  
         /* To fix main menu container */
@@ -143,49 +143,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript>
     <div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a>vào đây</a>!</div>
 </noscript>
-<header>
-    <div class="site-banner" style="background-image: url('/themes/default/images/none.png');"></div>
-    <div class="section-header an-mobi">
-        <div class="container pd-tb-10">
-            <div id="header">
-                <div class="logo col-md-3 text-center">
-                    <a title="Đông Phú Tiên" href="/"><img src="/uploads/logo.png" alt="Đông Phú Tiên" /></a>
-                </div>
-                <div class="col-md-8 an-mobi">
-                    <div class="headerSearch ">
-                        <div class="input-group">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-9 an-mobi">
-<div class="clear">
-    <div class="hotline"><span style="color:rgb(236, 31, 37);"><strong><a href="http://tel:0968.428.883">0968.428.883</a> – <a href="http://tel:0977.148.885">0977.148.885</a></strong></span><br />Hotline tư vấn miễn phí 24/7</div>
-</div>
-                    </div>
-                <div class="col-md-4 an-mobi">
-                     <div id="google_translate_element"></div>
-            <div id="google_translate_element"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div class="bg-menu" id="menutop">   
     <div class="container no-bg">
                     <div >  
 <a href="#menu" class="menu-link active"><span></span> </a> 
-<div class="logo-mb text-center  show_mobi"> <a href="/"><img src="/uploads/logo.png" title="" alt="" style="max-height:60px" /> </a></div>
-<nav id="cssmenu">
+<div class="logo-mb text-center  show_mobi"></div>
+<nav id="menu" class="menu">
 <ul >
-    <li>
-        <a title="Trang chủ" href="/"> <span class="hidden-sm"> <i class="fa fa-home"></i> </span></a>
-    </li>
-            <li >
-        <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+  <li>
+    <a title="Trang chủ" href="/" class="logo"> <span class="hidden-sm"><img src="/uploads/logo.png" title="" alt="" style="max-height:40px" /> </span></a>
+  </li>
+        <li >
+    <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ đóng gói hàng hóa xuất khẩu" href="/dich-vu-dong-goi-hang-hoa/" >Dịch vụ đóng gói hàng hóa xuất khẩu</a>
 </li>
@@ -202,35 +175,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ đóng gói hút chân không giá rẻ" href="/dong-goi-hut-chan-khong/" >Dịch vụ đóng gói hút chân không giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
+  </li>
+  <li >
+    <a title="Pallet" href="/pallet/" >Pallet</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
         <li >
-            <a title="Pallet" href="/pallet/" >Pallet</a>
-                        <span class="has-subnav an-des show-mobi">▼</span>
-                <ul class="has-sub">
-                    <li >
 
-    <a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
-    </li>
-    <li >
+<a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
+</li>
+<li >
 
-    <a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
-    </li>
+<a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
+</li>
 
-                </ul>
-        </li>
-    <li  class="current">
-        <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Pallet gỗ 4 hướng nâng" href="/san-pham/pallet-go-4-huong-nang.html" >Pallet gỗ 4 hướng nâng</a>
 </li>
-<li  class="current">
+<li >
 
 <a title="Pallet gỗ 2 hướng nâng" href="/san-pham/pallet-go-2-huong-nang.html" >Pallet gỗ 2 hướng nâng</a>
 </li>
@@ -248,16 +221,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li >
 
-<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/bao-gia-pallet-go.html" >Pallet Gỗ Giá Rẻ</a>
+<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/thung-go-pallet.html" >Pallet Gỗ Giá Rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ vận chuyển hàng hóa" href="/dich-vu-van-chuyen-hang-hoa/" >Dịch vụ vận chuyển hàng hóa</a>
 </li>
@@ -278,14 +251,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ bốc xếp hàng hóa giá rẻ" href="/boc-xep-hang-hoa/" >Dịch vụ bốc xếp hàng hóa giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
-    </li>
-    <li >
-        <a title="Liên hệ" href="/contact/" >Liên hệ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
+  </li>
+  <li >
+    <a title="Liên hệ" href="/contact/" >Liên hệ</a>
+  </li>
+  <li >
+    <img src="../338395163_765981688264731_7742076387611735740_n.png" style="width: 200px;" alt="">
+
+  </li>
     <div class="clear"> </div>
 </ul>
 </nav>
@@ -343,19 +320,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-10 text-center">
         <div id="sync1" class="owl-carousel owl-theme">
                     <div class="item ">	
-                                 <a class="group3" href="/uploads/shops/2021_05/pallet-2-huong-nang.jpg" title="Pallet Gỗ 2 Hướng Nâng" > <img  src="/uploads/shops/2021_05/pallet-2-huong-nang.jpg" title="Pallet Gỗ 2 Hướng Nâng" alt="Pallet Gỗ 2 Hướng Nâng" class=" max-width:100%"/> </a> 
+                                 <a class="group2" href="/uploads/shops/2021_05/pallet-2-huong-nang.jpg" title="Pallet Gỗ 2 Hướng Nâng" > <img  src="/uploads/shops/2021_05/pallet-2-huong-nang.jpg" title="Pallet Gỗ 2 Hướng Nâng" alt="Pallet Gỗ 2 Hướng Nâng" class=" max-width:100%"/> </a> 
                     </div>
                                           <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/pallet-2-huong-nang_1.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-2-huong-nang_1.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/pallet-2-huong-nang_1.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-2-huong-nang_1.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/pallet-go-2-huong-nang_2.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-huong-nang_2.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/pallet-go-2-huong-nang_2.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-huong-nang_2.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/pallet-go-2-chieu.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-chieu.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/pallet-go-2-chieu.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-chieu.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/pallet-go-2-huong-nang-gia-re.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-huong-nang-gia-re.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/pallet-go-2-huong-nang-gia-re.jpg" title="Pallet Gỗ 2 Hướng Nâng" ><img title="Pallet Gỗ 2 Hướng Nâng"  src="/uploads/shops/2021_05/pallet-go-2-huong-nang-gia-re.jpg" /></a>
                     </div>
                 </div>
                 <div id="sync2" class="owl-carousel owl-theme">
@@ -378,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-14">
                 <ul class="product_info">
                         <h1><span class="title">Pallet Gỗ 2 Hướng Nâng</span></h1>
-                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  3424  </div>
+                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  3427  </div>
                       <div>
                         Mã sản phẩm: <strong>PL2HN</strong>
                       </div>
@@ -444,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="content_detail-1">
-                <p><em>Lựa chọn loại pallet phù hợp đóng vai trò rất quan trọng đối với việc nâng hàng hóa, sản phẩm của bạn. Không ít người nghĩ rằng pallet 2 hướng và 4 hướng nâng là giống nhau. Tuy nhiên, 2 loại pallet này là khác nhau và chúng có những điểm riêng. Bài viết này,</em>&nbsp;Đông Phú Tiên&nbsp;<em>sẽ cung cấp cho bạn kiến thức cần thiết về&nbsp;<a href="https://thunggopalletgo.com.vn/san-pham/pallet-go-2-huong-nang.html"><strong>pallet gỗ 2 hướng nâng</strong></a>.</em></p><p>Dịch vụ Đóng pallet gỗ tại Hà Nội của Đông Phú Tiên có 2 loại</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover" >	<tbody>		<tr>			<td><strong>Pallet gỗ 2 hướng nâng</strong><br />			<img alt="pallet gỗ 2 hướng nâng" height="225" sizes="(max-width: 300px) 100vw, 300px" src="/uploads/shops/2021_05/cung-cap-pallet-theo-yeu-cau-tai-bac-ninh-pallet-2-huong-nang-300x225.jpg" width="300" /></td>			<td><a href="https://thunggopalletgo.com.vn/san-pham/pallet-go-4-huong-nang.html#gi%C3%A1_r%E1%BA%BB" rel="noopener noreferrer" target="_blank"><strong>Pallet gỗ 4 hướng nâng</strong><br />			<img alt="pallet go 4 huong nang chat luong" height="225" sizes="(max-width: 300px) 100vw, 300px" src="/uploads/shops/2021_05/pallet-go-4-huong-nang-chat-luong-300x225.jpg" width="300" /></a></td>		</tr>	</tbody></table> </div><br /><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;cũng như 4 hướng đã xuất hiện ở các nhà máy tại Mỹ cùng với chiếc xe nâng thấp. Cùng với sự phát triển của xe nâng máy, các pallet 2 hướng ngày càng đựa ưa chuộng và cải tiến để phù hợp. Ngày nay, có rất nhiều định nghĩa về pallet gỗ 2 hướng nâng cũng như 4 hướng.<p>Bạn có thể bắt gặp loại vật dụng này tại khắp các kho hàng và những đơn vị cung cấp dịch vụ vận chuyển. Dù chỉ là một vật dụng đơn giản nhưng nó đóng vai trò rất quan trọng trong cách lưu trữ và chuyển giao hàng hóa.</p><ul></ul><h2 id="giá_rẻ"><strong>1. Thông số của Pallet gỗ 2 hướng nâng:</strong></h2><p><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;có rất nhiều loại. Nó được phân theo khối lượng của hàng hóa, dưới đây là những mẫu pallet 2 hướng nâng phổ biến.</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  style="border:none;border-collapse:collapse;">	<tbody>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">MÃ SẢN PHẨM</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">PL2HN</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Đơn vị</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">mm</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Kích thước tổng thể</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 1100 x 130</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Nguyên liệu</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Gỗ keo(Acacia)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Tải trọng</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1500 KG</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Số hướng nâng</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;">2</p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Khe hở mặt trên</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">43</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh mặt trên</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 100 x 20 (7 thanh)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh liên kết</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 90 x 40 (3 thanh)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh mặt dưới</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 100 x 20 (3 thanh)</span></p>			</td>		</tr>	</tbody></table> </div><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Dịch vụ<strong> <a href="/dich-vu-dong-goi-hang-hoa/đóng_gói_hàng_hóa">đóng gói hàng hóa</a></strong><br /><a href="/dich-vu-van-chuyen-may-moc-thiet-bi/dịch_vụ_vận_chuyển_máy_móc"><strong>Dịch vụ vận chuyển máy móc</strong></a> thiết bị<br />Dịch vụ <strong><a href="/dong-thung-go-kien-go/đóng_kiện_gỗ_thưa">đóng kiện hàng</a></strong> GIÁ RẺ - đóng kiện gỗ chất lượng CAO</span></p></blockquote><h2><strong>2. Các loại pallet 2 hướng nâng tại Đông Phú Tiên:</strong></h2><h3><strong>2.1 Pallet hai hướng nâng tải trọng 2 tấn</strong></h3><p>Đây là loại pallet gỗ có khả năng chịu tải rất tốt, khi dùng để xếp hàng trong container chúng sẽ tiết kiệm được thể tích. Loại này thường dùng cho xe máy năn. Người dùng cần lưu ý rằng loại pallet nâng trọng 2 tấn này không thích hợp với kho hàng hẹp. Lý do là chúng chỉ nâng được 2 hướng và rất bất tiện khi dùng xe nâng tay.<br /><br />Cấu tạo:<br />- Giá: 215.000 VNĐ<br />- Kích thước: 1200x1000x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 4000kg<br />- Trọng tại động: 2000kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 50<br />- Thanh mặt trên: 1000x100x15(8)<br />- Thanh liên kết: 11200x35x90 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1000x100x15(4)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="" height="489" src="/uploads/shops/2021_10/san-xuat-pallet-go-2-huong-nang.jpg" width="600" /><figcaption>Các sản phẩm pallet gỗ 2 hướng của Đông Phú Tiên</figcaption></figure></div><h3 id="sản_xuất"><strong>&nbsp; 2.2 Pallet hai hướng nâng kiểu cánh</strong></h3><p><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;kiểu cánh vừa nhẹ vừa chắc. Với thiết kế 2 thanh gỗ ngoài đóng lùi giúp cho mẫu pallet này có thể chịu tải một cách tốt nhất. Hơn nữa, thanh gỗ cũng sẽ không bị nứt khi đóng đinh. Pallet kiểu cánh chịu tải tốt và bền hơn những mẫu thông thường.</p><p>Tuy nhiên, nhược điểm của nó là khó xếp hàng vào container và khi các đầu thanh gỗ va vào nhau thì chúng dễ bị vỡ. Tốt nhất là sử dụng&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;kiểu cánh cho xe nâng máy.<br /><br />Cấu tạo:<br />- Giá: 215.000 VNĐ<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 2000kg<br />- Trọng tại động: 4000kg<br />- Chiều nâng: 4 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 30<br />- Thanh mặt trên: 1200x80x15(8)<br />- Thanh liên kết: 1100x80x1.5 (3)<br />- Cục liên kết: 100x90x90 (9)<br />- Thanh mặt dưới: 1000x80x1.5(5)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="pallet gỗ 2 hướng nâng" height="450" src="/uploads/shops/2021_10/pallet-2-huong-nang.jpg" width="600" /><figcaption>Có nhiều mẫu pallet 2 hướng để bạn lựa chọn</figcaption></figure></div>&nbsp;<h3 id="giá_bán"><strong>2.3. Pallet hai hướng nâng tải trọng 500kg</strong></h3><p>Là loại <a href="/san-pham/bao-gia-pallet-go.html"><strong>pallet gỗ</strong></a> 2 hướng mỏng nhẹ, giá thành rẻ. Loại này chỉ dùng được cho xe nâng máy. Không hợp với những kho hẹp vì chúng chỉ có thể nâng được 2 hướng.</p><h3 id="uy_tín"><strong>2.4. Pallet hai hướng nâng tải trọng 1,5 tấn</strong></h3><p>Pallet 2 hướng nâng này rất phổ biến và thông dụng. Chúng dùng cho xe nâng máy, không dùng cho xe nâng tay. Tuy nhiên, mẫu pallet này lại có rất nhiều ưu điểm khi xếp hàng container. Một đặc điểm nữa của pallet 2 hướng nâng có trọng tải 1,5 tấn là chúng không phù hợp với kho hàng hẹp.<br /><br />Cấu tạo:<br />- Giá: 150.000<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 800kg<br />- Trọng tải tĩnh: 1600kg<br />- Trọng tại động: 800kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 70<br />- Thanh mặt trên: 1100x80x15(7)<br />- Thanh liên kết: 1200x90x35 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1100x80x15(4)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="pallet 2 hướng gỗ" height="387" src="/uploads/shops/2021_10/pallet-go-2-huong-nang.jpg" width="600" /><figcaption>Pallet gỗ xuất phát từ nhu cầu trong đời sống</figcaption></figure></div><h3 id="cung_cấp"><strong>2.5. Pallet hai hướng nâng khoét chân</strong></h3><p>Mẫu&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;thiết kế khoét chân có độ chịu tải cao, va đập tốt. Được khoét chân nên mẫu pallet này dùng được ở cả 4 hướng. Đây là loại được đánh giá là tốt nhất trong các kiểu pallet gỗ 2 hướng nâng. Bạn có dùng mẫu pallet này để lưu kho hoặc vận chuyển, hạ liên tục.</p><p>Pallet 2 hướng nâng khoét chân còn có thể xếp 2 chồng pallet lên nhau. Sở dĩ chúng có ưu điểm này vì thiết kế mặt đáy có nhiều thanh gỗ xếp thành. Mẫu này dùng được với cả xe nâng tay và nâng máy.</p><p>Hơn nữa, do kích thước các thanh gỗ được bố trí rất hợp lý và tối ưu nên tốt ít gỗ. Giá thành của&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;khoét chân rẻ hơn loại 4 hướng nâng nếu có cùng trọng tải.<br /><br />Cấu tạo:<br />- Giá: 295.000 VNĐ<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 4000kg<br />- Trọng tại động: 2000kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 50<br />- Thanh mặt trên: 1100x80x15(10)<br />- Thanh liên kết: 1200x35x90 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1100x80x1.5(5)</p><p><strong><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ_giá_rẻ">Thùng gỗ giá rẻ</a> Pallet 2 hướng nâng</strong> được ưa chuộng bởi nó có rất nhiều ưu điểm. Đó là có khả năng chịu trọng tải tốt, tiết kiệm diện tích. Có thể sử dụng được nhiều lần, dễ vận chuyển.<br /><br />Bên cạnh đó, vật dụng này còn tiết kiệm chi phí, hạn chế nấm mốc, độ bền rất cao. Loại pallet gỗ thường được nhiều công ty xuất nhập khẩu sử dụng. Chính vì vậy mà mọi doanh nghiệp đều muốn tìm được điểm sản xuất pallet gỗ 2 hướng nâng uy tín, rẻ.</p><p>Công ty Đông Phú Tiên là đơn vị chuyên cung cấp dịch vụ vận chuyển cũng như sản xuất, nhận sản xuất&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;rất uy tín. Lựa chọn Đông Phú Tiên, bạn chắc chắn sẽ hài lòng về chất lượng cũng như giá cả. Đông Phú Tiên nhiều năm liền là đối tác tin cậy của những doanh nghiệp lớn.</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="sản xuất pallet gỗ 2 hướng nâng" height="450" src="/uploads/shops/2021_10/pallet-go-2-huong.jpg" width="600" /><figcaption>Mua pallet gỗ cần xét tới đặc điểm</figcaption></figure></div><p>Hầu hết các “thượng đế” đều đánh giá Đông Phú Tiên rất cao về chất lượng, giá cả cũng như dịch vụ chăm sóc khách hàng. Để được tư vấn chi tiết, bạn có thể liên hệ tới đường dây nóng của Đông Phú Tiên: 0222.3907099 – 0888.363.000.</p><p>Qua bài viết này, chắc hẳn bạn đã hiểu hơn về&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>. Nếu muốn đặt làm hay mua vật dụng này, các bạn nhớ ghé thăm địa điểm uy tín mà chúng tôi đã giới thiệu ở trên nhé.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Chuyên đóng <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#d%E1%BB%8Bch_v%E1%BB%A5">tấm pallet gỗ giá rẻ hà nội</a></strong>&nbsp;uy tín, giá rẻ tại khu vực miền bắc<br />Dịch vụ đóng thùng gỗ GIÁ RẺ - <a href="/dong-thung-go-kien-go/dong_kien_go"><strong>đóng kiện hàng</strong></a> chất lượng CAO</span></p></blockquote><p><strong><em>Mời các bạn tham khảo video dưới đây để hiểu thêm về Pallet gỗ:</em></strong></p><p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Phgh2RIfyZU" title="YouTube video player" width="560"></iframe></p>
+                <p><em>Lựa chọn loại pallet phù hợp đóng vai trò rất quan trọng đối với việc nâng hàng hóa, sản phẩm của bạn. Không ít người nghĩ rằng pallet 2 hướng và 4 hướng nâng là giống nhau. Tuy nhiên, 2 loại pallet này là khác nhau và chúng có những điểm riêng. Bài viết này,</em>&nbsp;Đông Phú Tiên&nbsp;<em>sẽ cung cấp cho bạn kiến thức cần thiết về&nbsp;<a href="https://thunggopalletgo.com.vn/san-pham/pallet-go-2-huong-nang.html"><strong>pallet gỗ 2 hướng nâng</strong></a>.</em></p><p>Dịch vụ Đóng pallet gỗ tại Hà Nội của Đông Phú Tiên có 2 loại</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover" >	<tbody>		<tr>			<td><strong>Pallet gỗ 2 hướng nâng</strong><br />			<img alt="pallet gỗ 2 hướng nâng" height="225" sizes="(max-width: 300px) 100vw, 300px" src="/uploads/shops/2021_05/cung-cap-pallet-theo-yeu-cau-tai-bac-ninh-pallet-2-huong-nang-300x225.jpg" width="300" /></td>			<td><a href="https://thunggopalletgo.com.vn/san-pham/pallet-go-4-huong-nang.html#gi%C3%A1_r%E1%BA%BB" rel="noopener noreferrer" target="_blank"><strong>Pallet gỗ 4 hướng nâng</strong><br />			<img alt="pallet go 4 huong nang chat luong" height="225" sizes="(max-width: 300px) 100vw, 300px" src="/uploads/shops/2021_05/pallet-go-4-huong-nang-chat-luong-300x225.jpg" width="300" /></a></td>		</tr>	</tbody></table> </div><br /><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;cũng như 4 hướng đã xuất hiện ở các nhà máy tại Mỹ cùng với chiếc xe nâng thấp. Cùng với sự phát triển của xe nâng máy, các pallet 2 hướng ngày càng đựa ưa chuộng và cải tiến để phù hợp. Ngày nay, có rất nhiều định nghĩa về pallet gỗ 2 hướng nâng cũng như 4 hướng.<p>Bạn có thể bắt gặp loại vật dụng này tại khắp các kho hàng và những đơn vị cung cấp dịch vụ vận chuyển. Dù chỉ là một vật dụng đơn giản nhưng nó đóng vai trò rất quan trọng trong cách lưu trữ và chuyển giao hàng hóa.</p><ul></ul><h2 id="giá_rẻ"><strong>1. Thông số của Pallet gỗ 2 hướng nâng:</strong></h2><p><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;có rất nhiều loại. Nó được phân theo khối lượng của hàng hóa, dưới đây là những mẫu pallet 2 hướng nâng phổ biến.</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  style="border:none;border-collapse:collapse;">	<tbody>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">MÃ SẢN PHẨM</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">PL2HN</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Đơn vị</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">mm</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Kích thước tổng thể</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 1100 x 130</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Nguyên liệu</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Gỗ keo(Acacia)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Tải trọng</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1500 KG</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Số hướng nâng</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;">2</p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Khe hở mặt trên</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">43</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh mặt trên</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 100 x 20 (7 thanh)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh liên kết</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 90 x 40 (3 thanh)</span></p>			</td>		</tr>		<tr style="height:18.75pt">			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Thanh mặt dưới</span></p>			</td>			<td style="border-left:solid rgb(237, 237, 237); 0.9999975pt;border-right:solid rgb(237, 237, 237); 0.9999975pt;border-bottom:solid rgb(237, 237, 237); 0.9999975pt;border-top:solid rgb(237, 237, 237); 0.9999975pt;vertical-align:top;padding:2pt 6pt 2pt 6pt;overflow:hidden;overflow-wrap:break-word;">			<p dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:16pt;"><span style="font-size:11pt;font-family:&#039;Be Vietnam&#039;,sans-serif;color:rgb(34, 34, 34);background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1100 x 100 x 20 (3 thanh)</span></p>			</td>		</tr>	</tbody></table> </div><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Dịch vụ<strong> <a href="/dich-vu-dong-goi-hang-hoa/đóng_gói_hàng_hóa">đóng gói hàng hóa</a></strong><br /><a href="/dich-vu-van-chuyen-may-moc-thiet-bi/dịch_vụ_vận_chuyển_máy_móc"><strong>Dịch vụ vận chuyển máy móc</strong></a> thiết bị<br />Dịch vụ <strong><a href="/dong-thung-go-kien-go/đóng_kiện_gỗ_thưa">đóng kiện hàng</a></strong> GIÁ RẺ - đóng kiện gỗ chất lượng CAO</span></p></blockquote><h2><strong>2. Các loại pallet 2 hướng nâng tại Đông Phú Tiên:</strong></h2><h3><strong>2.1 Pallet hai hướng nâng tải trọng 2 tấn</strong></h3><p>Đây là loại pallet gỗ có khả năng chịu tải rất tốt, khi dùng để xếp hàng trong container chúng sẽ tiết kiệm được thể tích. Loại này thường dùng cho xe máy năn. Người dùng cần lưu ý rằng loại pallet nâng trọng 2 tấn này không thích hợp với kho hàng hẹp. Lý do là chúng chỉ nâng được 2 hướng và rất bất tiện khi dùng xe nâng tay.<br /><br />Cấu tạo:<br />- Giá: 215.000 VNĐ<br />- Kích thước: 1200x1000x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 4000kg<br />- Trọng tại động: 2000kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 50<br />- Thanh mặt trên: 1000x100x15(8)<br />- Thanh liên kết: 11200x35x90 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1000x100x15(4)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="" height="489" src="/uploads/shops/2021_10/san-xuat-pallet-go-2-huong-nang.jpg" width="600" /><figcaption>Các sản phẩm pallet gỗ 2 hướng của Đông Phú Tiên</figcaption></figure></div><h3 id="sản_xuất"><strong>&nbsp; 2.2 Pallet hai hướng nâng kiểu cánh</strong></h3><p><strong>Pallet gỗ 2 hướng nâng</strong>&nbsp;kiểu cánh vừa nhẹ vừa chắc. Với thiết kế 2 thanh gỗ ngoài đóng lùi giúp cho mẫu pallet này có thể chịu tải một cách tốt nhất. Hơn nữa, thanh gỗ cũng sẽ không bị nứt khi đóng đinh. Pallet kiểu cánh chịu tải tốt và bền hơn những mẫu thông thường.</p><p>Tuy nhiên, nhược điểm của nó là khó xếp hàng vào container và khi các đầu thanh gỗ va vào nhau thì chúng dễ bị vỡ. Tốt nhất là sử dụng&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;kiểu cánh cho xe nâng máy.<br /><br />Cấu tạo:<br />- Giá: 215.000 VNĐ<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 2000kg<br />- Trọng tại động: 4000kg<br />- Chiều nâng: 4 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 30<br />- Thanh mặt trên: 1200x80x15(8)<br />- Thanh liên kết: 1100x80x1.5 (3)<br />- Cục liên kết: 100x90x90 (9)<br />- Thanh mặt dưới: 1000x80x1.5(5)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="pallet gỗ 2 hướng nâng" height="450" src="/uploads/shops/2021_10/pallet-2-huong-nang.jpg" width="600" /><figcaption>Có nhiều mẫu pallet 2 hướng để bạn lựa chọn</figcaption></figure></div>&nbsp;<h3 id="giá_bán"><strong>2.3. Pallet hai hướng nâng tải trọng 500kg</strong></h3><p>Là loại <a href="/san-pham/thung-go-pallet.html"><strong>pallet gỗ</strong></a> 2 hướng mỏng nhẹ, giá thành rẻ. Loại này chỉ dùng được cho xe nâng máy. Không hợp với những kho hẹp vì chúng chỉ có thể nâng được 2 hướng.</p><h3 id="uy_tín"><strong>2.4. Pallet hai hướng nâng tải trọng 1,5 tấn</strong></h3><p>Pallet 2 hướng nâng này rất phổ biến và thông dụng. Chúng dùng cho xe nâng máy, không dùng cho xe nâng tay. Tuy nhiên, mẫu pallet này lại có rất nhiều ưu điểm khi xếp hàng container. Một đặc điểm nữa của pallet 2 hướng nâng có trọng tải 1,5 tấn là chúng không phù hợp với kho hàng hẹp.<br /><br />Cấu tạo:<br />- Giá: 150.000<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 800kg<br />- Trọng tải tĩnh: 1600kg<br />- Trọng tại động: 800kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 70<br />- Thanh mặt trên: 1100x80x15(7)<br />- Thanh liên kết: 1200x90x35 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1100x80x15(4)</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="pallet 2 hướng gỗ" height="387" src="/uploads/shops/2021_10/pallet-go-2-huong-nang.jpg" width="600" /><figcaption>Pallet gỗ xuất phát từ nhu cầu trong đời sống</figcaption></figure></div><h3 id="cung_cấp"><strong>2.5. Pallet hai hướng nâng khoét chân</strong></h3><p>Mẫu&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;thiết kế khoét chân có độ chịu tải cao, va đập tốt. Được khoét chân nên mẫu pallet này dùng được ở cả 4 hướng. Đây là loại được đánh giá là tốt nhất trong các kiểu pallet gỗ 2 hướng nâng. Bạn có dùng mẫu pallet này để lưu kho hoặc vận chuyển, hạ liên tục.</p><p>Pallet 2 hướng nâng khoét chân còn có thể xếp 2 chồng pallet lên nhau. Sở dĩ chúng có ưu điểm này vì thiết kế mặt đáy có nhiều thanh gỗ xếp thành. Mẫu này dùng được với cả xe nâng tay và nâng máy.</p><p>Hơn nữa, do kích thước các thanh gỗ được bố trí rất hợp lý và tối ưu nên tốt ít gỗ. Giá thành của&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;khoét chân rẻ hơn loại 4 hướng nâng nếu có cùng trọng tải.<br /><br />Cấu tạo:<br />- Giá: 295.000 VNĐ<br />- Kích thước: 1200x1100x120<br />- Tải trọng: 2000kg<br />- Trọng tải tĩnh: 4000kg<br />- Trọng tại động: 2000kg<br />- Chiều nâng: 2 chiều<br />- Chất liệu: gỗ keo (Acacia)<br />- Khe hở mặt trên: 50<br />- Thanh mặt trên: 1100x80x15(10)<br />- Thanh liên kết: 1200x35x90 (3)<br />- Cục liên kết: 0<br />- Thanh mặt dưới: 1100x80x1.5(5)</p><p><strong><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ_giá_rẻ">Thùng gỗ giá rẻ</a> Pallet 2 hướng nâng</strong> được ưa chuộng bởi nó có rất nhiều ưu điểm. Đó là có khả năng chịu trọng tải tốt, tiết kiệm diện tích. Có thể sử dụng được nhiều lần, dễ vận chuyển.<br /><br />Bên cạnh đó, vật dụng này còn tiết kiệm chi phí, hạn chế nấm mốc, độ bền rất cao. Loại pallet gỗ thường được nhiều công ty xuất nhập khẩu sử dụng. Chính vì vậy mà mọi doanh nghiệp đều muốn tìm được điểm sản xuất pallet gỗ 2 hướng nâng uy tín, rẻ.</p><p>Công ty Đông Phú Tiên là đơn vị chuyên cung cấp dịch vụ vận chuyển cũng như sản xuất, nhận sản xuất&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>&nbsp;rất uy tín. Lựa chọn Đông Phú Tiên, bạn chắc chắn sẽ hài lòng về chất lượng cũng như giá cả. Đông Phú Tiên nhiều năm liền là đối tác tin cậy của những doanh nghiệp lớn.</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="sản xuất pallet gỗ 2 hướng nâng" height="450" src="/uploads/shops/2021_10/pallet-go-2-huong.jpg" width="600" /><figcaption>Mua pallet gỗ cần xét tới đặc điểm</figcaption></figure></div><p>Hầu hết các “thượng đế” đều đánh giá Đông Phú Tiên rất cao về chất lượng, giá cả cũng như dịch vụ chăm sóc khách hàng. Để được tư vấn chi tiết, bạn có thể liên hệ tới đường dây nóng của Đông Phú Tiên: 0222.3907099 – 0888.363.000.</p><p>Qua bài viết này, chắc hẳn bạn đã hiểu hơn về&nbsp;<strong>pallet gỗ 2 hướng nâng</strong>. Nếu muốn đặt làm hay mua vật dụng này, các bạn nhớ ghé thăm địa điểm uy tín mà chúng tôi đã giới thiệu ở trên nhé.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Chuyên đóng <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#d%E1%BB%8Bch_v%E1%BB%A5">tấm pallet gỗ giá rẻ hà nội</a></strong>&nbsp;uy tín, giá rẻ tại khu vực miền bắc<br />Dịch vụ đóng thùng gỗ GIÁ RẺ - <a href="/dong-thung-go-kien-go/dong_kien_go"><strong>đóng kiện hàng</strong></a> chất lượng CAO</span></p></blockquote><p><strong><em>Mời các bạn tham khảo video dưới đây để hiểu thêm về Pallet gỗ:</em></strong></p><p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Phgh2RIfyZU" title="YouTube video player" width="560"></iframe></p>
             </div>
             <div role="tabpanel" class="tab-pane fade " id="content_rate-2">
                 <div class="panel panel-default">
@@ -530,7 +507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
                 <label class="col-xs-24 hidden-xs">Mã an toàn</label>
                 <div class="col-xs-12 col-sm-8">
-                    <img class="captchaImg" alt="Mã bảo mật" src="/index.php?scaptcha=captcha&t=1680940578" width="50" height="40" />
+                    <img class="captchaImg" alt="Mã bảo mật" src="/index.php?scaptcha=captcha&t=1681054535" width="50" height="40" />
                     &nbsp;<em class="fa fa-pointer fa-refresh fa-lg" onclick="change_captcha('#commentseccode_iavim');">&nbsp;</em>
                 </div>
                 <div class="col-xs-12">
@@ -559,14 +536,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
         </div>
         <br />  
         <div class="info_pro">
         </div>
         <div class="caption text-center">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 51568</div>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
+            <div>Lượt xem : 51664</div>
             <div>Mã sp : S000043</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -588,7 +565,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 5005</div>
+            <div>Lượt xem : 5009</div>
             <div>Mã sp : PL4HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -610,7 +587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-dung-hoa-qua.html" title="Thùng Gỗ Đựng Trái Cây"><div class="den normal font-16 "><h3>Thùng Gỗ Đựng Trái Cây</h3> </div></a>
-            <div>Lượt xem : 4613</div>
+            <div>Lượt xem : 4619</div>
             <div>Mã sp : TGHH-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -632,7 +609,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-soi.html" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"><div class="den normal font-16 "><h3>Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L</h3> </div></a>
-            <div>Lượt xem : 3771</div>
+            <div>Lượt xem : 3778</div>
             <div>Mã sp : TGS – ĐPT</div>
             <div>Khối lượng : 30 Kg</div>
 
@@ -654,7 +631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-pallet.html" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"><div class="den normal font-16 "><h3>Thùng Gỗ Pallet Hở Mặt Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 7259</div>
+            <div>Lượt xem : 7269</div>
             <div>Mã sp : TGP-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -682,6 +659,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 </div>
+</div>
+<div class="msgshow" id="msgshow">&nbsp;</div>
+        </div>
+    </div>
+            <div class="panel panel-default">
+        <div class="title_cate1 ">
+            <a>Sản phẩm bạn vừa xem</a> 
+        </div>
+        <div class="panel-body">
+<div id="products" class="clearfix">
+<div class="can-flex ">
+    <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
+    <div class=" text-center mr-b-10 pd-10 ">
+        <div style="height: 250px ; padding-bottom:10px">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-4-huong-nang.jpg" alt="Pallet Gỗ 4 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
+        </div>
+        <br />  
+        <div class="info_pro">
+        </div>
+        <div class="caption text-center">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
+            <div>Lượt xem : </div>
+            <div>Mã sp : PL4HN</div>
+            <div>Khối lượng :  Kg</div>
+
+                            <p class="price">
+                                    <span class="money">120.000 đ</span>
+            </p>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 </div>
 <div class="msgshow" id="msgshow">&nbsp;</div>
         </div>
@@ -969,6 +981,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
         });
     });
  </script>
+<script src="/themes/default/js/toggle-nav.js?t=1638773501" type="text/javascript"></script>
 <script type="text/javascript" data-show="after">
 ( function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -1186,9 +1199,9 @@ function check_quantity( _this ){
             "https://thunggopalletgo.com.vn/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg"
                                 ],
                     "name": "Pallet Gỗ Giá Rẻ",
-                    "url": "https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
-                    "@id": "/san-pham/bao-gia-pallet-go.htmlproduct",
-                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
+                    "url": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
+                    "@id": "/san-pham/thung-go-pallet.htmlproduct",
+                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
                     "description": "Đông Phú Tiên cung cấp bảng báo giá pallet gỗ giá sỉ, rẻ, chất lượng nhất giao động từ 120.000Đ với kích thước tiêu chuẩn 1200×800 mm / 1200×1000 mm / 1200×900 mm và những ưu đãi đặc biệt dành cho mọi khách hàng."
                     },
                      {

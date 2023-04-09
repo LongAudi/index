@@ -33,6 +33,7 @@
 <link rel="preload" as="script" href="/themes/default/js/custom.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/owl.carousel.js?t=1638773501">
 <link rel="preload" as="script" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<link rel="preload" as="script" href="/themes/default/js/toggle-nav.js?t=1638773501">
 <link rel="preload" as="script" href="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
 <link rel="preload" as="script" href="/themes/default/js/bootstrap.min.js?t=1638773501">
 <link rel="preload" as="script" href="https://uhchat.net/code.php?f=2f5f88">
@@ -47,8 +48,7 @@
 <link rel="stylesheet" href="/themes/default/css/custom.css?t=1638773501">
 <link rel="stylesheet" href="/assets/css/default.vi.0.css?t=1638773501">
 <link rel="stylesheet" type="text/css" media="screen" href="/themes/default/css/navi.css?t=1638773501" />
-<link rel="stylesheet" href="/themes/default/css/meanmenu.css?t=1638773501" media="all" />
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="/themes/default/css/toggle-nav.css?t=1638773501" rel="stylesheet"/>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <style>
     .f-nav{  
@@ -83,49 +83,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript>
     <div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a>vào đây</a>!</div>
 </noscript>
-<header>
-    <div class="site-banner" style="background-image: url('/themes/default/images/none.png');"></div>
-    <div class="section-header an-mobi">
-        <div class="container pd-tb-10">
-            <div id="header">
-                <div class="logo col-md-3 text-center">
-                    <a title="Đông Phú Tiên" href="/"><img src="/uploads/logo.png" alt="Đông Phú Tiên" /></a>
-                </div>
-                <div class="col-md-8 an-mobi">
-                    <div class="headerSearch ">
-                        <div class="input-group">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-9 an-mobi">
-<div class="clear">
-    <div class="hotline"><span style="color:rgb(236, 31, 37);"><strong><a href="http://tel:0968.428.883">0968.428.883</a> – <a href="http://tel:0977.148.885">0977.148.885</a></strong></span><br />Hotline tư vấn miễn phí 24/7</div>
-</div>
-                    </div>
-                <div class="col-md-4 an-mobi">
-                     <div id="google_translate_element"></div>
-            <div id="google_translate_element"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div class="bg-menu" id="menutop">   
     <div class="container no-bg">
                     <div >  
 <a href="#menu" class="menu-link active"><span></span> </a> 
-<div class="logo-mb text-center  show_mobi"> <a href="/"><img src="/uploads/logo.png" title="" alt="" style="max-height:60px" /> </a></div>
-<nav id="cssmenu">
+<div class="logo-mb text-center  show_mobi"></div>
+<nav id="menu" class="menu">
 <ul >
-    <li>
-        <a title="Trang chủ" href="/"> <span class="hidden-sm"> <i class="fa fa-home"></i> </span></a>
-    </li>
-            <li >
-        <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+  <li>
+    <a title="Trang chủ" href="/" class="logo"> <span class="hidden-sm"><img src="/uploads/logo.png" title="" alt="" style="max-height:40px" /> </span></a>
+  </li>
+        <li >
+    <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ đóng gói hàng hóa xuất khẩu" href="/dich-vu-dong-goi-hang-hoa/" >Dịch vụ đóng gói hàng hóa xuất khẩu</a>
 </li>
@@ -142,31 +115,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ đóng gói hút chân không giá rẻ" href="/dong-goi-hut-chan-khong/" >Dịch vụ đóng gói hút chân không giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
+  </li>
+  <li >
+    <a title="Pallet" href="/pallet/" >Pallet</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
         <li >
-            <a title="Pallet" href="/pallet/" >Pallet</a>
-                        <span class="has-subnav an-des show-mobi">▼</span>
-                <ul class="has-sub">
-                    <li >
 
-    <a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
-    </li>
-    <li >
+<a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
+</li>
+<li >
 
-    <a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
-    </li>
+<a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
+</li>
 
-                </ul>
-        </li>
-    <li >
-        <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Pallet gỗ 4 hướng nâng" href="/san-pham/pallet-go-4-huong-nang.html" >Pallet gỗ 4 hướng nâng</a>
 </li>
@@ -184,20 +157,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li >
 
-<a title="Thùng gỗ pallet trang trí" href="https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html#" >Thùng gỗ pallet trang trí</a>
+<a title="Thùng gỗ pallet trang trí" href="/san-pham/thung-go-pallet.html" >Thùng gỗ pallet trang trí</a>
 </li>
 <li >
 
-<a title="Pallet Gỗ Giá Rẻ" href="https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html#" >Pallet Gỗ Giá Rẻ</a>
+<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/thung-go-pallet.html" >Pallet Gỗ Giá Rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ vận chuyển hàng hóa" href="/dich-vu-van-chuyen-hang-hoa/" >Dịch vụ vận chuyển hàng hóa</a>
 </li>
@@ -218,14 +191,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ bốc xếp hàng hóa giá rẻ" href="/boc-xep-hang-hoa/" >Dịch vụ bốc xếp hàng hóa giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
-    </li>
-    <li >
-        <a title="Liên hệ" href="/contact/" >Liên hệ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
+  </li>
+  <li >
+    <a title="Liên hệ" href="/contact/" >Liên hệ</a>
+  </li>
+  <li >
+    <img src="../338395163_765981688264731_7742076387611735740_n.png" style="width: 200px;" alt="">
+
+  </li>
     <div class="clear"> </div>
 </ul>
 </nav>
@@ -267,15 +244,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="row">
 </div>
 <div class="row">
-    <div class="col-md-24">
-        <div id="detail">
+  <div class="col-md-24">
+    <div id="detail">
 <div class="clear">
     <h1 class=""><a>Dịch vụ đóng thùng gỗ GIÁ RẺ - đóng kiện gỗ chất lượng CAO</a></h1>
                 <div class="muc-luc">
           <div class="title-ml"><i  class="fa fa-th-list"></i> Mục lục &nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="showdiv()" class="font-14 fr bold" ><i class="fa  fa-sort"></i>Thu gọn</a> </div>
           <div id="dsml"> <div class="pad-l-10 pad-t-10 bold" ><a href="#Dich-vu-dong-thung-go-dong-kien-go-la-gi"><span class=" ">1. Dịch vụ đóng thùng gỗ, đóng kiện gỗ là gì?</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Cac-dich-vu-dong-kien-go-xuat-khau-tai-Dong-Phu-Tien"><span class="font-normal"> 1.1. Các dịch vụ đóng kiện gỗ xuất khẩu tại Đông Phú Tiên:</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Cau-tao-cua-kien-go-dong-hang-bao-gom"><span class=" ">2. Cấu tạo của kiện gỗ đóng hàng bao gồm</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Uu-diem-cua-dich-vu-dong-thung-go-chat-luong-cao"><span class=" ">3. Ưu điểm của dịch vụ đóng thùng gỗ chất lượng cao</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Uu-diem-cua-viec-su-dung-thung-go-dong-hang"><span class="font-normal"> 3.1. Ưu điểm của việc sử dụng thùng gỗ đóng hàng</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Rui-ro-khi-khong-dong-kien-go"><span class="font-normal"> 3.2. Rủi ro khi không đóng kiện gỗ</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-thung-go-vuot-troi-gi-so-voi-dong-thung-carton"><span class="font-normal"> 3.3. Đóng thùng gỗ vượt trội gì so với đóng thùng carton?</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Dong-thung-go-theo-yeu-cau-cua-ban"><span class=" ">4. Đóng thùng gỗ theo yêu cầu của bạn</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-kien-kin"><span class="font-normal"> 4.1. Đóng kiện kín</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-kien-kin-nbsp-hut-chan-khong"><span class="font-normal"> 4.2. Đóng kiện kín&nbsp;hút chân không </span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-kien-ho"><span class="font-normal"> 4.3. Đóng kiện hở</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-kien-ho-hut-chan-khong"><span class="font-normal"> 4.4. Đóng kiện hở hút chân không</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-kien-nan"><span class="font-normal"> 4.5. Đóng kiện nan</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Dong-hang-go-lap-ghep"><span class="font-normal"> 4.6. Đóng hàng gỗ lắp ghép</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Quy-trinh-lam-viec-tai-Dong-Phu-Tien"><span class=" ">5. Quy trình làm việc tại Đông Phú Tiên</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Tiep-nhan-thong-tin-khach-hang"><span class="font-normal"> 5.1. Tiếp nhận thông tin khách hàng</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Len-phuong-an-dong-goi"><span class="font-normal"> 5.2. Lên phương án đóng gói</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Bao-gia-va-ky-hop-dong-dich-vu"><span class="font-normal"> 5.3. Báo giá và ký hợp đồng dịch vụ</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Doi-ky-thuat-thuc-hien-don-hang"><span class="font-normal"> 5.4. Đội kỹ thuật thực hiện đơn hàng</span></a></div><div class="pad-l-20 pad-t-10 font-normal"><a href="#Nghiem-thu-va-thanh-toan"><span class="font-normal"> 5.5. Nghiệm thu và thanh toán</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Tai-sao-nen-su-dung-dich-vu-dong-kien-go-xuat-khau-cua-nbsp-Dong-Phu-Tien"><span class=" ">6. Tại sao nên sử dụng dịch vụ đóng kiện gỗ xuất khẩu của&nbsp;Đông Phú Tiên?</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Bang-gia-dich-vu-dong-kien-go"><span class=" ">7. Bảng giá dịch vụ đóng kiện gỗ</span></a></div><div class="pad-l-10 pad-t-10 bold" ><a href="#Cac-san-pham-mau-cua-dich-vu-dong-thung-go-dong-hang-gia-re"><span class=" ">8. Các sản phẩm mẫu của dịch vụ đóng thùng gỗ đóng hàng giá rẻ</span></a></div>   </div>
         </div>
-    <p><p>Vận chuyển hàng hóa là nhu cầu vô cùng cần thiết trong đời sống và hoạt động kinh doanh. Để trong quá trình vận chuyển này diễn ra thuận lợi, đảm bảo các mặt hàng được an toàn, nguyên vẹn thì kiện gỗ là không thể thiếu. Vậy bạn hiểu gì về&nbsp;<strong><a href="/dong-thung-go-kien-go/dong-thung-go">dịch vụ đóng thùng gỗ</a></strong>,&nbsp;<strong>đóng kiện gỗ</strong>? Hãy cùng tìm hiểu chi tiết qua bài viết dưới đây nhé.</p>    <p style="text-align:center"><img alt="đóng kiện gỗ xuất khẩu" height="399" src="/uploads/shops/2021_10/dich-vu-dong-thung-go-kien-go.jpg" width="600" /></p>    <p style="text-align: center;"><span style="font-size:28px;">An toàn, Thẩm mỹ, Nâng tầm giá trị với Dịch vụ đóng thùng gỗ chuyên nghiệp hàng đầu</span></p>    <div style="text-align: left;"><strong>Đóng thùng gỗ giá rẻ</strong> với số lượng lớn đáp ứng yêu cầu vận chuyển xuất khẩu của Việt Nam. Nhằm tiết kiệm chi phí, thời gian đảm bảo hàng hóa AN TOÀN tới tay khách hàng. Chúng tôi giúp 1000+ khách hàng <strong><a href="https://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/">vận chuyển máy móc</a></strong> an toàn đến với Quý khách hàng.</div>  &nbsp;    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đối tác đông phú tiên" height="156" src="/uploads/shops/2021_08/doi-tac-dong-phu-tien.jpg" width="800" />  <figcaption>Các đối tác sử dụng dịch vụ đóng thùng gỗ giá rẻ của Đông Phú Tiên</figcaption>  </figure>  </div>    <div id="Dich-vu-dong-thung-go-dong-kien-go-la-gi"><h2>1. Dịch vụ đóng thùng gỗ, đóng kiện gỗ là gì?</h2></div>    <p><strong>Đóng thùng gỗ</strong> và<strong> đóng kiện gỗ</strong> được xem là cácg bảo vệ mặt hàng tối ưu nhất trong quá trình vận chuyển.</p>    <p>Thùng gỗ là vật dụng giúp giảm thiểu nguy cơ rủi ro khi vận chuyển hàng hóa xuống mức thấp nhất. Nó được xem là lớp bảo vệ hàng hóa chắc chắn giúp hàng hóa tránh được những va đập và tác động từ bên ngoài.</p>    <p>Ngày nay, <strong>dịch vụ đóng thùng gỗ</strong> và <strong>kiện gỗ</strong> tại vô cùng phát triển. Nếu có nhu cầu, khách hàng có thể lựa chọn các đơn vị cung cấp theo yêu cầu uy tín nhất miền Bắc.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ" height="450" src="https://thunggopalletgo.com.vn/uploads/shops/2021_08/thung-go-xuat-khau.jpg" width="600" />  <figcaption><strong>Đóng kiện gỗ</strong> uy tín chất lương, chuyên nghiệp</figcaption>  </figure>  </div>    <div id="Cac-dich-vu-dong-kien-go-xuat-khau-tai-Dong-Phu-Tien"><h3><i class="fa  fa-hand-o-right"></i> Các dịch vụ đóng kiện gỗ xuất khẩu tại Đông Phú Tiên:</h3></div>    <p>1. Đóng gói hút chân không.</p>    <p>2. Đóng kiện gỗ kín, <strong>đóng kiện gỗ thưa</strong>.</p>    <p>3. <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#">Đóng pallet gỗ tại hà nội</a></strong>.</p>    <p>4. Đóng gói máy móc thiết bị.</p>    <p>5. Đóng hàng siêu trường, siêu trọng.</p>    <p>6. Đóng gói hàng dễ vỡ.</p>    <p>7. Đóng gói thiết bị văn phòng</p>    <p>8. Dịch vụ gia cố container</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện hàng" height="450" src="/uploads/shops/2021_08/dich-vu-dong-kien-go.jpg" width="600" />  <figcaption><strong>Đóng kiện hàng</strong> cho hàng hóa máy móc</figcaption>  </figure>  </div>    <p style="text-align: left;">Ngoài <strong>dịch vụ đóng thùng gỗ kiện gỗ </strong>đóng gói hàng hóa, Đông Phú Tiên còn là đơn vị chuyên cung cấp dịch vụ đóng thùng gỗ khác, chất lượng uy tín chuyên nghiệp đảm bảo an toàn cho hàng hóa máy móc khi vận chuyển, bạn có thể tham khảo:&nbsp;<strong><a href="/dich-vu-dong-goi-hang-hoa/dich_vu_dong_goi_hang-hoa">dịch vụ đóng gói hàng hóa</a></strong></p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="dịch vụ đóng kiện gỗ" height="450" src="/uploads/shops/2021_08/ky-thuat-dong-kien-go.jpg" width="600" />  <figcaption>Thực hiện nâng hạ máy móc lên đế</figcaption>  </figure>  </div>    <div id="Cau-tao-cua-kien-go-dong-hang-bao-gom"><h2>2. Cấu tạo của kiện gỗ đóng hàng bao gồm</h2></div>    <div>  <div style="text-align: left;">Thế nên để đáp ứng yêu cầu sử dụng <strong>kiện gỗ</strong> với mục đích phù hợp thì quý khách cần dự theo hoàn cảnh. Chúng tôi biết bạn đã kiên nhẫn chờ đợi, tại đây bạn sẽ nắm được chi tiết cấu tạo của kiện gỗ như sau:</div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ thưa" height="450" src="/uploads/shops/2021_08/dong-kien-go-may-moc.jpg" width="600" />  <figcaption>Cấu tạo đế, gỗ bao quanh và kê đệm đảm bảo an toàn cho máy móc</figcaption>  </figure>  </div>    <div style="text-align: left;">Nắp:<strong>&nbsp;</strong>Nắp đậy bên trên kết hợp với các tấm ván cạnh giúp cố định hàng hóa máy móc bên trong tạo độ bền cho sản phẩm. Đồng thời giúp tăng lượng hàng hóa xếp chồng các sản phẩm lên nhau. Vừa tối tiết kiệm không gian diện tích cho phương tiện vận chuyển.    <p>Đế pallet:<strong>&nbsp;</strong>Là vật dụng không thể thiếu, cần nắm được hàng hóa máy móc có tải trọng và kích thước bao nhiêu để thiết kế đế pallet phù hợp.</p>    <p>Ván gỗ bao quanh thùng:<strong>&nbsp;</strong>Giảm pháp bảo vệ, tránh tác động ngoại lực vào sản phẩm.</p>    <p>Kê đệm bên trên đế<strong>:</strong> Tùy thuộc vào tính chất hàng, cần kê đệm và chèn đế với mục đích giải quyết tình trạng lập máy, cố định chân máy giữ vững trong quá trình vận chuyển.</p>  </div>  </div>    <div id="Uu-diem-cua-dich-vu-dong-thung-go-chat-luong-cao"><h2>3. Ưu điểm của dịch vụ đóng thùng gỗ chất lượng cao</h2></div>    <p style="text-align: left;">Sở dĩ&nbsp;<strong>dịch vụ đóng thùng gỗ kiện gỗ</strong> hiện cho hàng hóa máy móc ngày càng phát triển là vì nhu cầu&nbsp;bảo vệ hàng hóa này rất cao trong quá trình vận chuyển hàng hóa máy móc nội địa và xuất khẩu, bảo quản của các doanh nghiệp. Dưới đây là một số lợi ích của dịch vụ&nbsp;<strong>đóng thùng gỗ</strong> bảo vệ hàng hóa này.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thùng gỗ đóng hàng giá rẻ" height="450" src="/uploads/shops/2021_08/dong-kien-go-xuat-khau_1.jpg" width="600" />  <figcaption><strong>Kiện gỗ đóng hàng</strong> là lớp bảo vệ an toàn nhất</figcaption>  </figure>  </div>    <p>Mời bạn xem video dưới đây để hiểu hơn về&nbsp;<strong>dịch vụ đóng thùng gỗ&nbsp;</strong>tại nhà máy công ty tnhh mtv chúng tôi:</p>    <p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/FHf3OAVgvFw" title="YouTube video player" width="560"></iframe></p>    <div id="Uu-diem-cua-viec-su-dung-thung-go-dong-hang"><h3><i class="fa  fa-hand-o-right"></i> Ưu điểm của việc sử dụng thùng gỗ đóng hàng</h3></div>    <p style="text-align: left;">Trước hết hãy nói về điểm mạnh của thùng gỗ.<strong> </strong>Thùng pallet giúp cho sản phẩm được đảm bảo an toàn trong quá trình vận chuyển hàng hóa máy móc thiết bị trong nội địa và xuất khẩu và xếp dỡ chuyên nghiệp. Đặc biệt là khi di chuyển với container tiêu chuẩn.</p>    <p style="text-align: left;">Thêm vào đó, vật dụng này còn tiết kiệm chi phí cho khách hàng đối với việc vận chuyển và lưu kho hàng bởi dùng&nbsp;<strong>thùng gỗ đóng hàng</strong>&nbsp;có thể xếp chồng các thùng lên nhau.</p>    <figcaption id="caption-attachment-11221">&nbsp;</figcaption>    <p>Các doanh nghiệp&nbsp; <strong>thùng gỗ đựng hàng&nbsp;</strong>làm việc chuyên nghiệp thường thi công rất nhanh và chất lượng, chuyên nghiệp. Chỉ trong thời gian ngắn là bạn có thể lựa chọn các loại thùng gỗ gồm cả thùng bằng pallet với kích thước đa dạng.</p>    <p><span style="font-size:18px;">Tìm hiểu thêm dịch vụ đóng pallet gỗ giá rẻ tại đây: </span></p>    <ul>  	<li><span style="font-size:18px;">Dịch vụ <strong><a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html#dong_thung_go_ha_noi">đóng thùng gỗ tại hà nội</a></strong></span></li>  	<li><span style="font-size:18px;">Dịch vụ <a href="https://thunggopalletgo.com.vn/dong-goi-may-moc/#"><strong>đóng gói máy móc thiết bị</strong></a></span></li>  	<li><span style="font-size:18px;"><a href="https://thunggopalletgo.com.vn/tin-tuc/tieu-chuan-dong-goi-hang-hoa-quoc-te-80.html#"><strong>Tiêu chuẩn đóng gói hàng hóa quốc tế</strong></a> chi tiết</span></li>  	<li><span style="font-size:18px;">Những <strong>tiêu chuẩn <a href="https://thunggopalletgo.com.vn/tin-tuc/quy-cach-dong-goi-hang-hoa-xuat-khau-dat-tieu-chuan-quoc-te-3.html#">đóng gói hàng hóa xuất khẩu</a></strong> 2021</span></li>  	<li><strong><span style="font-size:18px;"><a href="https://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/">Chi phí vận chuyển máy móc thiết bị</a></span></strong></li>  </ul>    <div id="Rui-ro-khi-khong-dong-kien-go"><h3><i class="fa  fa-hand-o-right"></i> Rủi ro khi không đóng kiện gỗ</h3></div>    <p>Trước đây các doanh nghiệp thường dùng thùng carton và những vật dụng đơn giản khác đế đóng hàng. Những phương pháp cũ này tồn tại rất nhiều điểm hạn chế. Đặc biệt là sự an toàn cho những sản phẩm cần vận chuyển xa, dài ngày thì khách hàng cần sử dụng <strong>đóng thùng gỗ kiện gỗ</strong> trong dịch vụ đóng thùng gỗ, hàng hóa máy móc thiết bị là an toàn nhất.</p>    <p>Một số rủi ro có thể xảy ra khi không <strong>mua thùng gỗ đựng hàng</strong> đó là: Hàng hóa máy móc thiết bị va đập vào nhau, chịu tác động từ môi trường,&nbsp;chịu ảnh hưởng từ nước biển khi vận chuyển bằng đường thủy,&nbsp;hàng hóa bị ăn mòn, hư hại, hỏng hóc, thất lạc,…</p>    <p>Đặc biệt là những hàng hóa nhỏ như linh kiện điện tử, máy móc, thiết bị. Sự an toàn cho hàng hóa là việc doanh nghiệp cần quan tâm hàng đầu. Vì vậy, sử sử dụng thùng gỗ, kiện gỗ đóng gói hàng hóa chính là tối ưu&nbsp; tốt nhất. Thêm vào đó, vật dụng này còn đảm bảo được tính thẩm mỹ, chuyên nghiệp, tránh hư hỏng, tạo điều kiện thuận lợi cho việc thông quan với giá rẻ.</p>    <p><span style="font-size:18px;">Tham khảo giá&nbsp;<strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html#" target="_blank">thùng gỗ pallet</a></strong>&nbsp;chất lượng, chuyên nghiệp tại Đông Phú Tiên</span></p>    <div id="Dong-thung-go-vuot-troi-gi-so-voi-dong-thung-carton"><h3><i class="fa  fa-hand-o-right"></i> Đóng thùng gỗ vượt trội gì so với đóng thùng carton?</h3></div>    <p><strong>Dịch vụ đóng thùng gỗ theo yêu cầu</strong>&nbsp;uy tín, chuyên nghiệp có rất nhiều ưu điểm vượt trội so với thùng carton. Có thể kể đến một số lợi ích khi sử dụng dịch vụ này đem lại như:</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thung go dong hang" height="322" src="/uploads/shops/2021_08/dong-kien-go-thua.jpg" width="600" />  <figcaption>Đóng kiện cho hàng dễ vỡ</figcaption>  </figure>  </div>    <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  align="center" border="1" cellpadding="1" cellspacing="1" style="width:800px;">  	<tbody>  		<tr>  			<td><strong>Loại hình</strong></td>  			<td><strong>Đóng kiện gỗ</strong></td>  			<td><strong>Đóng thùng carton</strong></td>  		</tr>  		<tr>  			<td><b id="docs-internal-guid-259be03d-7fff-1d3b-196f-c2998c77fa23">Chất liệu </b></td>  			<td>Gỗ thông, gỗ keo, ván ép</td>  			<td>Giấy tái chế</td>  		</tr>  		<tr>  			<td>Độ an toàn</td>  			<td>Cao. Chất liệu gỗ chắc chắn sử dụng phổ biến đóng gói được máy móc, vật dụng cơ khí, kim loại, hàng siêu trường siêu trọng.</td>  			<td>Thấp. Không đóng gói được máy móc, vật dụng cơ khí, kim loại. Sử dụng phổ biến trong đóng gói quần áo, linh kiện điện tử, đồ gia dụng.</td>  		</tr>  		<tr>  			<td>Chịu trọng tải</td>  			<td>Không giới hạn</td>  			<td>100kg</td>  		</tr>  		<tr>  			<td>Thẩm mỹ</td>  			<td>Đẹp. Bất tiện trong việc in thông số kỹ thuật cần sử dụng bút dạ hoặc in tài liệu dán vào bề mặt thùng</td>  			<td>Đẹp. Tiện in thông số kỹ thuật</td>  		</tr>  		<tr>  			<td>Địa điểm đóng thùng</td>  			<td>Tại nhà máy của khách hàng</td>  			<td>Tại nhà máy hoặc tại nhà</td>  		</tr>  	</tbody>  </table> </div>    <div>&nbsp;  <p>Ngoài ra <strong>đóng thùng gỗ</strong> còn mang lại những ưu thế như:</p>    <ul>  	<li>Chất liệu các loại gỗ gồm gỗ pallet hoặc các loại khác tốt, đóng đúng quy trình, hàng hóa được bảo vệ một cách tốt nhất</li>  	<li>Kỹ thuật hun trùng hiện đại giúp các thùng gỗ tránh được mối mọt và sự lây lan của những côn trùng có hại</li>  	<li>Tiết kiệm được chi phí cho doanh nghiệp, không mất nhãn bao bì sản phẩm với giá thấp</li>  </ul>  </div>    <div>  <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="kiện gỗ đóng hàng" height="800" src="/uploads/shops/2021_08/dong-thung-go-hang-hoa.jpg" width="600" />  <figcaption>Hàng hóa được nâng cao tính thẩm mỹ với chi phí thấp</figcaption>  </figure>  </div>  </div>    <div id="Dong-thung-go-theo-yeu-cau-cua-ban"><h2>4. Đóng thùng gỗ theo yêu cầu của bạn</h2></div>    <p>Chúng tôi cung cấp các giải pháp <strong>đóng kiện gỗ đóng gói hàng hóa</strong> cho tất cả các loại sản phẩm và máy móc.Mọi giải pháp của chúng tôi đều được ưu hóa tổng thể chi phí dịch vụ đóng thùng gỗ. Bạn có thể tham khảo các phương án sử dụng kiện gỗ khác nhau.</p>    <div style="text-align: center;"><span style="font-size:28px;">Chuyên nghiệp từng kỹ thuật - Tập trung vào chất lượng an toàn</span></div>    <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" height="757" width="728">  	<tbody>  		<tr>  			<td>  			<div id="Dong-kien-kin"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện kín</h3></div>    			<div style="text-align:center"><img alt="mua thùng gỗ đóng hàng" height="200" src="/uploads/shops/2021_07/dong-kien-hang.jpg" width="200" /></div>  			<br />  			<strong>Đóng kiện gỗ máy móc</strong> hạn chế tối đa tác động va đập với lớp gỗ bảo vệ chắc chắn được sử dụng phổ biến nhất.</td>  			<td>  			<div id="Dong-kien-kin-nbsp-hut-chan-khong"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện kín&nbsp;hút chân không </h3></div>    			<div style="text-align:center"><img alt="thung go dung hang" height="200" src="/uploads/shops/2021_07/thung-go-dung-hang.jpg" width="200" /></div>  			<br />  			Nếu bạn vận chuyển đường biển thì đây chính là sự lựa chọn tốt nhất. Với lớp hút chân không bên trong thùng gỗ sẽ giúp nước biển không xâm nhập được vào máy móc, hàng hóa.</td>  			<td>  			<div id="Dong-kien-ho"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện hở</h3></div>    			<div style="text-align:center"><img alt="đóng kiện hàng" height="200" src="/uploads/shops/2021_07/thung-go-dong-hang.jpg" width="200" /></div>  			<br />  			Vận chuyển gần, không xếp kiện được nên không thể ghép hàng.</td>  		</tr>  		<tr>  			<td>  			<div id="Dong-kien-ho-hut-chan-khong"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện hở hút chân không</h3></div>    			<div style="text-align:center"><img alt="thùng gỗ đóng hàng" height="200" src="/uploads/shops/2021_07/kien-go-dong-hang.jpg" width="200" /></div>  			<br />  			Với chân đế pallet và chằng buộc chắc chắn sử dụng phổ biến cho hàng quá khổ quá tải, hạn chế tình trạng oxy hóa sản phẩm.</td>  			<td>  			<div id="Dong-kien-nan"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện nan</h3></div>    			<div style="text-align:center"><img alt="dong kien nan" height="200" src="/uploads/shops/2021_07/dong-kien-nan.jpg" width="200" /></div>  			<br />  			Đóng kiện nan thưa là giải pháp ít chi phí, chống va đập và xếp chồng lên nhau được sử dụng trong nước</td>  			<td>  			<div id="Dong-hang-go-lap-ghep"><h3><i class="fa  fa-hand-o-right"></i> Đóng hàng gỗ lắp ghép</h3></div>    			<div style="text-align:center"><img alt="thùng gỗ lắp ghép" height="200" src="/uploads/shops/2021_07/mua-thung-go-dong-hang.jpg" width="200" /></div>  			<br />  			Là giải pháp thùng gỗ lắp ghép không cần sử dụng đinh, có thể gập lại và chiếm không gian lưu chữ nhất định, sử dụng phổ biến cho đóng kiện xuất khẩu</td>  		</tr>  	</tbody>  </table> </div>    <div id="Quy-trinh-lam-viec-tai-Dong-Phu-Tien"><h2>5. Quy trình làm việc tại Đông Phú Tiên</h2></div>    <p><strong>Đóng kiện gỗ</strong>&nbsp;chính là cách đóng gói tốt và an toàn nhất đối với hàng hóa công nghiệp muốn vận chuyển hàng hóa trong nội địa và xuất khẩu. Hiện nay có rất nhiều doanh nghiệp lựa chọn phương pháp này. Với những đơn vị cung cấp&nbsp;<strong>dịch vụ đóng thùng gỗ</strong>&nbsp;hay các tỉnh thành khác hoạt động chuyên nghiệp, quy trình&nbsp;<strong>dịch vụ đóng thùng gỗ</strong>&nbsp;làm việc cơ bản:</p>    <div>  <div id="Tiep-nhan-thong-tin-khach-hang"><h3><i class="fa  fa-hand-o-right"></i> Tiếp nhận thông tin khách hàng</h3></div>  Để nhận thông tin báo giá, Quý khách cần cung cấp cho Nv các thông tin như sau:    <ul>  	<li>Tên, kích thước và trọng tải hàng</li>  	<li>Chủng loại sản phẩm, hàng hóa thuộc nhóm hàng nào (máy móc, linh kiện điện tử, phụ kiện cơ khí, hàng dễ vỡ, hàng siêu trường siêu trọng,...)</li>  	<li>Và những yêu cầu đóng gói theo cách gì</li>  </ul>  </div>    <div>  <div id="Len-phuong-an-dong-goi"><h3><i class="fa  fa-hand-o-right"></i> Lên phương án đóng gói</h3></div>    <ul>  	<li>Nhân viên đã tiếp nhận được đầy đủ thông tin yêu cầu.</li>  	<li>Chúng tôi sẽ lên phương án cung cấp thùng gỗ cụ thể như:</li>  	<li>Phương án đóng thùng phù hợp</li>  	<li>Nguyên liệu đóng gói</li>  	<li>Số lượng lớn nhân công thực hiện</li>  	<li>Thời gian hoàn&nbsp;thành đơn hàng</li>  </ul>  </div>    <div>  <div id="Bao-gia-va-ky-hop-dong-dich-vu"><h3><i class="fa  fa-hand-o-right"></i> Báo giá và ký hợp đồng dịch vụ</h3></div>    <ul>  	<li>Đông Phú Tiên sẽ gửi đến khách hàng bảng giá dịch vụ đóng thùng gỗ</li>  	<li>Theo cách đã được thống nhất. Nếu Quý khách đồng ý với chi phí nêu trên thì hai bên bắt đầu tiến hành ký hợp đồng đóng gói cho các loại máy móc, hàng hóa.</li>  	<li><strong>PHÍ ĐÓNG KIỆN GỖ = 20 tệ /kg đầu + 0.8 tệ/kg tiếp theo. </strong></li>  </ul>  </div>    <div>  <div id="Doi-ky-thuat-thuc-hien-don-hang"><h3><i class="fa  fa-hand-o-right"></i> Đội kỹ thuật thực hiện đơn hàng</h3></div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng hàng" height="451" src="/uploads/shops/2021_08/kien-go-may-moc.jpg" width="600" />  <figcaption>Kỹ thuật chuyên môn cao thực hiện đóng kiện</figcaption>  </figure>  </div>    <ul>  	<li>Nhân viên sẽ phân loại và tiến hành đóng kiện.</li>  	<li>Hàng hóa sẽ được đóng theo chuẩn cách mà nhân viên sale gửi đơn hàng.</li>  	<li>Quy trình <strong>đóng kiện gỗ giá rẻ</strong> của Đông Phú Tiên:</li>  </ul>  - Nâng hạ máy lên đế pallet Quấn màng PE quanh sản phẩm.<br />  - Bọc đệm khí (xốp nổ) hàng hóa.<br />  - Bọc giấy bạc hút chân không bên ngoài lớp xốp hơi.<br />  - Quấn thêm lớp màng PE bên ngoài để bảo đảm an toàn.<br />  - Xiết đai sản phẩm giữ cố định dưới chân đế pallet.<br />  - Đóng vách tạo thành kiện kín bao quanh sản phẩm.<br />  - Cuối cùng là niêm phong và đánh mã hàng.  <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ máy móc" height="450" src="/uploads/shops/2021_08/thung-go-hut-chan-khong.jpg" width="600" />  <figcaption>Tiến hành bọc giấy bạc hút chân không</figcaption>  </figure>  </div>  </div>    <div id="Nghiem-thu-va-thanh-toan"><h3><i class="fa  fa-hand-o-right"></i> Nghiệm thu và thanh toán</h3></div>    <p>Nhân viên quản lý sản xuất của Đông Phú Tiên sẽ kiểm tra lại toàn bộ hàng hóa đã thực hiện đóng kiện và gửi khách hàng giấy xác nhận nghiệm thu đơn hàng. Và tiến hàng thanh toán cho <strong>dịch vụ thùng gỗ đựng hàng giá rẻ</strong>.<br />  Xem Quy trình đóng thùng gỗ - đóng kiện gỗ - thùng gỗ đóng hàng tại Đông Phú Tiên</p>    <p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/l-ts-4JHNwk" title="YouTube video player" width="560"></iframe></p>    <div id="Tai-sao-nen-su-dung-dich-vu-dong-kien-go-xuat-khau-cua-nbsp-Dong-Phu-Tien"><h2>6. Tại sao nên sử dụng dịch vụ đóng kiện gỗ xuất khẩu của&nbsp;Đông Phú Tiên?</h2></div>    <p>Là đơn vị cung cấp dịch vụ <strong>đóng thùng gỗ</strong> uy tín chất lượng hàng đầu miền Bắc, đây cũng là lý do hàng nghìn khách hàng lựa chọn Đông Phú Tiên cam kết mang đến dịch vụ&nbsp;chất lượng&nbsp;nhất thị trường. Và bạn cũng sẽ yêu thích chúng tôi.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng gỗ" height="450" src="/uploads/shops/2021_08/kien-go-dong-hang_1.jpg" width="600" />  <figcaption>Cam kết chất lượng dịch vụ đóng thùng gỗ tốt nhất</figcaption>  </figure>  </div>    <ul>  	<li>Thời gian sản xuất nhanh chóng</li>  	<li>Kỹ thuật viên tay nghề cao, mang đến cho khách hàng sản phẩm chất lượng, an toàn tốt nhất.</li>  	<li>Với kinh nghiệm gần 10 năm trong lĩnh vực&nbsp;<strong>đóng kiện gỗ xuất khẩu</strong>&nbsp;vận chuyển, nắm rất rõ quy cách đóng hàng và vận chuyển như nào để đảm bảo hàng hóa máy móc luôn an toàn.</li>  	<li><strong>Dịch vụ đóng thùng gỗ</strong> cho hàng hóa cung cấp dịch vụ từ khâu nâng hạ, đóng gói, gia cố container vận chuyển tận nơi.</li>  	<li>Khách hàng có thể yên tâm về dịch vụ khép kín, tiện lợi, linh hoạt và toàn diện nhất.</li>  	<li>Sản phẩm đạt chuẩn về tính thẩm mỹ và chất lượng</li>  	<li>Hợp đồng ký kết rõ ràng, minh bạch.</li>  	<li>Giá thành tốt nhất trong khu vực miền Bắc nói chung và cả nước nói riêng</li>  	<li>Hỗ trợ tư vấn 24/7.</li>  	<li>Nv có trình độ chuyên môn cao</li>  	<li>Đa dạng loại hình đóng gói bất kể mọi hàng hóa đặc biệt, khó đóng như: tượng phật, hàng quá khổ, đá, máy móc, ... chúng tôi tự tin là lựa chọn số 1 cho <strong>thùng gỗ đựng hàng giá rẻ</strong>, an toàn.</li>  </ul>    <div id="Bang-gia-dich-vu-dong-kien-go"><h2>7. Bảng giá dịch vụ đóng kiện gỗ</h2></div>    <div>  <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">  	<tbody>  		<tr>  			<td>STT</td>  			<td>DỊCH VỤ ĐÓNG GÓI</td>  			<td>GIÁ TỪ(VNĐ)</td>  			<td>GIÁ ĐẾN(VNĐ)</td>  			<td>ĐƠN VỊ</td>  		</tr>  		<tr>  			<td>1</td>  			<td>Đóng pallet hở</td>  			<td>550.000</td>  			<td>900.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>2</td>  			<td>Đóng pallet hở + Hút chân không</td>  			<td>580.000</td>  			<td>1.000.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>3</td>  			<td>Đóng thùng gỗ</td>  			<td>590.000</td>  			<td>1.050.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>4</td>  			<td>Đóng thùng gỗ + Hút chân không</td>  			<td>595.000</td>  			<td>1.300.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>5</td>  			<td>Đóng kiện gỗ nan</td>  			<td>500.000</td>  			<td>1.000.000</td>  			<td>m3</td>  		</tr>  	</tbody>  </table> </div>  <br />  Lưu ý: Bảng giá <strong>dịch vụ đóng thùng gỗ</strong> trên:    <ul>  	<li>Chưa bao gồm thuế GTGT 10%</li>  	<li>Đã bao gồm nguyên vật liệu và nhân công kỹ thuật.</li>  </ul>  </div>    <div id="Cac-san-pham-mau-cua-dich-vu-dong-thung-go-dong-hang-gia-re"><h2>8. Các sản phẩm mẫu của dịch vụ đóng thùng gỗ đóng hàng giá rẻ</h2></div>  Đông Phú Tiên hiện đang là đơn vị đứng đầu trong ngành <strong>dịch vụ đóng thùng gỗ giá rẻ</strong> xuất khẩu an toàn nhất miền Bắc. Chúng tôi rất tự hào vì được Khách hàng ưu ái dịch vụ đóng thùng gỗ chất lượng hàng đầu hiện nay.    <figure class="image"><img alt="kiện gỗ" height="450" src="https://thunggopalletgo.com.vn/uploads/shops/2021_08/dong-thung-go-xuat-khau.jpg" width="600" />  <figcaption>Dự án<strong> đóng kiện gỗ giá rẻ </strong>tại KCN Bắc Ninh</figcaption>  </figure>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng thùng gỗ giá rẻ" height="450" src="/uploads/shops/2021_08/thung-go-pallet-dong-hang-xuat-khau.jpg" width="600" />  <figcaption>Dự án <strong>đóng kiện gỗ&nbsp;máy móc</strong> hút chân không tại KCN Vĩnh Phúc</figcaption>  </figure>  </div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="mua thùng gỗ đóng hàng" height="762" src="/uploads/shops/2021_08/thung-go-dung-hang.jpg" width="600" />  <figcaption><strong>Thùng gỗ đóng hàng</strong> được đóng gói bảo vệ an toàn</figcaption>  </figure>  </div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="dong kien go" height="451" src="/uploads/shops/2021_08/thung-go-dong-may-moc.jpg" width="600" />  <figcaption>Dự án đóng pallet gỗ cho máy móc tại KCN Yên Phong, Bắc Ninh</figcaption>  </figure>  </div>    <p>Trên đây là những thông tin hữu ích về <strong>dịch vụ đóng thùng gỗ</strong> giá rẻ của <a href="https://www.google.com/maps?cid=6650996335368037463">Đông Phú Tiên</a>&nbsp;mà chúng tôi muốn chia sẻ tới quý khách. Nếu bạn có nhu cầu vận chuyển hàng hóa xuất khẩu&nbsp;thì hãy sử dụng thùng gỗ, kiện gỗ như một giải pháp hoàn hảo nhất nhé.</p>    <p>Liên hệ Công ty TNHH MTV ĐÔNG PHÚ TIÊN</p>    <p>Trụ Sở:&nbsp;Phú Lâm, Tiên Du, Bắc Ninh</p>    <p>Văn Phòng:&nbsp;<a><span style="color:rgb(44, 62, 80);">Khu Công Nghiệp Đại Đồng, Tiên Du, Bắc Ninh</span></a></p>    <p>Email:&nbsp;dongphutien@gmail.com</p>    <p>Hotline:&nbsp;0968.428.883 – 0977.148.885&nbsp;-&nbsp;0979.863.069</p>    <p style="text-align: center;"><iframe height="480" src="https://www.google.com/maps/d/embed?mid=1SLzH2YmR9fqViTZKeIOHRtKJXLraAaU6" width="640"></iframe></p></p>
+<p><p>Vận chuyển hàng hóa là nhu cầu vô cùng cần thiết trong đời sống và hoạt động kinh doanh. Để trong quá trình vận chuyển này diễn ra thuận lợi, đảm bảo các mặt hàng được an toàn, nguyên vẹn thì kiện gỗ là không thể thiếu. Vậy bạn hiểu gì về&nbsp;<strong><a href="/dong-thung-go-kien-go/dong-thung-go">dịch vụ đóng thùng gỗ</a></strong>,&nbsp;<strong>đóng kiện gỗ</strong>? Hãy cùng tìm hiểu chi tiết qua bài viết dưới đây nhé.</p>    <p style="text-align:center"><img alt="đóng kiện gỗ xuất khẩu" height="399" src="/uploads/shops/2021_10/dich-vu-dong-thung-go-kien-go.jpg" width="600" /></p>    <p style="text-align: center;"><span style="font-size:28px;">An toàn, Thẩm mỹ, Nâng tầm giá trị với Dịch vụ đóng thùng gỗ chuyên nghiệp hàng đầu</span></p>    <div style="text-align: left;"><strong>Đóng thùng gỗ giá rẻ</strong> với số lượng lớn đáp ứng yêu cầu vận chuyển xuất khẩu của Việt Nam. Nhằm tiết kiệm chi phí, thời gian đảm bảo hàng hóa AN TOÀN tới tay khách hàng. Chúng tôi giúp 1000+ khách hàng <strong><a href="https://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/">vận chuyển máy móc</a></strong> an toàn đến với Quý khách hàng.</div>  &nbsp;    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đối tác đông phú tiên" height="156" src="/uploads/shops/2021_08/doi-tac-dong-phu-tien.jpg" width="800" />  <figcaption>Các đối tác sử dụng dịch vụ đóng thùng gỗ giá rẻ của Đông Phú Tiên</figcaption>  </figure>  </div>    <div id="Dich-vu-dong-thung-go-dong-kien-go-la-gi"><h2>1. Dịch vụ đóng thùng gỗ, đóng kiện gỗ là gì?</h2></div>    <p><strong>Đóng thùng gỗ</strong> và<strong> đóng kiện gỗ</strong> được xem là cácg bảo vệ mặt hàng tối ưu nhất trong quá trình vận chuyển.</p>    <p>Thùng gỗ là vật dụng giúp giảm thiểu nguy cơ rủi ro khi vận chuyển hàng hóa xuống mức thấp nhất. Nó được xem là lớp bảo vệ hàng hóa chắc chắn giúp hàng hóa tránh được những va đập và tác động từ bên ngoài.</p>    <p>Ngày nay, <strong>dịch vụ đóng thùng gỗ</strong> và <strong>kiện gỗ</strong> tại vô cùng phát triển. Nếu có nhu cầu, khách hàng có thể lựa chọn các đơn vị cung cấp theo yêu cầu uy tín nhất miền Bắc.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ" height="450" src="https://thunggopalletgo.com.vn/uploads/shops/2021_08/thung-go-xuat-khau.jpg" width="600" />  <figcaption><strong>Đóng kiện gỗ</strong> uy tín chất lương, chuyên nghiệp</figcaption>  </figure>  </div>    <div id="Cac-dich-vu-dong-kien-go-xuat-khau-tai-Dong-Phu-Tien"><h3><i class="fa  fa-hand-o-right"></i> Các dịch vụ đóng kiện gỗ xuất khẩu tại Đông Phú Tiên:</h3></div>    <p>1. Đóng gói hút chân không.</p>    <p>2. Đóng kiện gỗ kín, <strong>đóng kiện gỗ thưa</strong>.</p>    <p>3. <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#">Đóng pallet gỗ tại hà nội</a></strong>.</p>    <p>4. Đóng gói máy móc thiết bị.</p>    <p>5. Đóng hàng siêu trường, siêu trọng.</p>    <p>6. Đóng gói hàng dễ vỡ.</p>    <p>7. Đóng gói thiết bị văn phòng</p>    <p>8. Dịch vụ gia cố container</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện hàng" height="450" src="/uploads/shops/2021_08/dich-vu-dong-kien-go.jpg" width="600" />  <figcaption><strong>Đóng kiện hàng</strong> cho hàng hóa máy móc</figcaption>  </figure>  </div>    <p style="text-align: left;">Ngoài <strong>dịch vụ đóng thùng gỗ kiện gỗ </strong>đóng gói hàng hóa, Đông Phú Tiên còn là đơn vị chuyên cung cấp dịch vụ đóng thùng gỗ khác, chất lượng uy tín chuyên nghiệp đảm bảo an toàn cho hàng hóa máy móc khi vận chuyển, bạn có thể tham khảo:&nbsp;<strong><a href="/dich-vu-dong-goi-hang-hoa/dich_vu_dong_goi_hang-hoa">dịch vụ đóng gói hàng hóa</a></strong></p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="dịch vụ đóng kiện gỗ" height="450" src="/uploads/shops/2021_08/ky-thuat-dong-kien-go.jpg" width="600" />  <figcaption>Thực hiện nâng hạ máy móc lên đế</figcaption>  </figure>  </div>    <div id="Cau-tao-cua-kien-go-dong-hang-bao-gom"><h2>2. Cấu tạo của kiện gỗ đóng hàng bao gồm</h2></div>    <div>  <div style="text-align: left;">Thế nên để đáp ứng yêu cầu sử dụng <strong>kiện gỗ</strong> với mục đích phù hợp thì quý khách cần dự theo hoàn cảnh. Chúng tôi biết bạn đã kiên nhẫn chờ đợi, tại đây bạn sẽ nắm được chi tiết cấu tạo của kiện gỗ như sau:</div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ thưa" height="450" src="/uploads/shops/2021_08/dong-kien-go-may-moc.jpg" width="600" />  <figcaption>Cấu tạo đế, gỗ bao quanh và kê đệm đảm bảo an toàn cho máy móc</figcaption>  </figure>  </div>    <div style="text-align: left;">Nắp:<strong>&nbsp;</strong>Nắp đậy bên trên kết hợp với các tấm ván cạnh giúp cố định hàng hóa máy móc bên trong tạo độ bền cho sản phẩm. Đồng thời giúp tăng lượng hàng hóa xếp chồng các sản phẩm lên nhau. Vừa tối tiết kiệm không gian diện tích cho phương tiện vận chuyển.    <p>Đế pallet:<strong>&nbsp;</strong>Là vật dụng không thể thiếu, cần nắm được hàng hóa máy móc có tải trọng và kích thước bao nhiêu để thiết kế đế pallet phù hợp.</p>    <p>Ván gỗ bao quanh thùng:<strong>&nbsp;</strong>Giảm pháp bảo vệ, tránh tác động ngoại lực vào sản phẩm.</p>    <p>Kê đệm bên trên đế<strong>:</strong> Tùy thuộc vào tính chất hàng, cần kê đệm và chèn đế với mục đích giải quyết tình trạng lập máy, cố định chân máy giữ vững trong quá trình vận chuyển.</p>  </div>  </div>    <div id="Uu-diem-cua-dich-vu-dong-thung-go-chat-luong-cao"><h2>3. Ưu điểm của dịch vụ đóng thùng gỗ chất lượng cao</h2></div>    <p style="text-align: left;">Sở dĩ&nbsp;<strong>dịch vụ đóng thùng gỗ kiện gỗ</strong> hiện cho hàng hóa máy móc ngày càng phát triển là vì nhu cầu&nbsp;bảo vệ hàng hóa này rất cao trong quá trình vận chuyển hàng hóa máy móc nội địa và xuất khẩu, bảo quản của các doanh nghiệp. Dưới đây là một số lợi ích của dịch vụ&nbsp;<strong>đóng thùng gỗ</strong> bảo vệ hàng hóa này.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thùng gỗ đóng hàng giá rẻ" height="450" src="/uploads/shops/2021_08/dong-kien-go-xuat-khau_1.jpg" width="600" />  <figcaption><strong>Kiện gỗ đóng hàng</strong> là lớp bảo vệ an toàn nhất</figcaption>  </figure>  </div>    <p>Mời bạn xem video dưới đây để hiểu hơn về&nbsp;<strong>dịch vụ đóng thùng gỗ&nbsp;</strong>tại nhà máy công ty tnhh mtv chúng tôi:</p>    <p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/FHf3OAVgvFw" title="YouTube video player" width="560"></iframe></p>    <div id="Uu-diem-cua-viec-su-dung-thung-go-dong-hang"><h3><i class="fa  fa-hand-o-right"></i> Ưu điểm của việc sử dụng thùng gỗ đóng hàng</h3></div>    <p style="text-align: left;">Trước hết hãy nói về điểm mạnh của thùng gỗ.<strong> </strong>Thùng pallet giúp cho sản phẩm được đảm bảo an toàn trong quá trình vận chuyển hàng hóa máy móc thiết bị trong nội địa và xuất khẩu và xếp dỡ chuyên nghiệp. Đặc biệt là khi di chuyển với container tiêu chuẩn.</p>    <p style="text-align: left;">Thêm vào đó, vật dụng này còn tiết kiệm chi phí cho khách hàng đối với việc vận chuyển và lưu kho hàng bởi dùng&nbsp;<strong>thùng gỗ đóng hàng</strong>&nbsp;có thể xếp chồng các thùng lên nhau.</p>    <figcaption id="caption-attachment-11221">&nbsp;</figcaption>    <p>Các doanh nghiệp&nbsp; <strong>thùng gỗ đựng hàng&nbsp;</strong>làm việc chuyên nghiệp thường thi công rất nhanh và chất lượng, chuyên nghiệp. Chỉ trong thời gian ngắn là bạn có thể lựa chọn các loại thùng gỗ gồm cả thùng bằng pallet với kích thước đa dạng.</p>    <p><span style="font-size:18px;">Tìm hiểu thêm dịch vụ đóng pallet gỗ giá rẻ tại đây: </span></p>    <ul>  	<li><span style="font-size:18px;">Dịch vụ <strong><a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html#dong_thung_go_ha_noi">đóng thùng gỗ tại hà nội</a></strong></span></li>  	<li><span style="font-size:18px;">Dịch vụ <a href="https://thunggopalletgo.com.vn/dong-goi-may-moc/#"><strong>đóng gói máy móc thiết bị</strong></a></span></li>  	<li><span style="font-size:18px;"><a href="https://thunggopalletgo.com.vn/tin-tuc/tieu-chuan-dong-goi-hang-hoa-quoc-te-80.html#"><strong>Tiêu chuẩn đóng gói hàng hóa quốc tế</strong></a> chi tiết</span></li>  	<li><span style="font-size:18px;">Những <strong>tiêu chuẩn <a href="https://thunggopalletgo.com.vn/tin-tuc/quy-cach-dong-goi-hang-hoa-xuat-khau-dat-tieu-chuan-quoc-te-3.html#">đóng gói hàng hóa xuất khẩu</a></strong> 2021</span></li>  	<li><strong><span style="font-size:18px;"><a href="https://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/">Chi phí vận chuyển máy móc thiết bị</a></span></strong></li>  </ul>    <div id="Rui-ro-khi-khong-dong-kien-go"><h3><i class="fa  fa-hand-o-right"></i> Rủi ro khi không đóng kiện gỗ</h3></div>    <p>Trước đây các doanh nghiệp thường dùng thùng carton và những vật dụng đơn giản khác đế đóng hàng. Những phương pháp cũ này tồn tại rất nhiều điểm hạn chế. Đặc biệt là sự an toàn cho những sản phẩm cần vận chuyển xa, dài ngày thì khách hàng cần sử dụng <strong>đóng thùng gỗ kiện gỗ</strong> trong dịch vụ đóng thùng gỗ, hàng hóa máy móc thiết bị là an toàn nhất.</p>    <p>Một số rủi ro có thể xảy ra khi không <strong>mua thùng gỗ đựng hàng</strong> đó là: Hàng hóa máy móc thiết bị va đập vào nhau, chịu tác động từ môi trường,&nbsp;chịu ảnh hưởng từ nước biển khi vận chuyển bằng đường thủy,&nbsp;hàng hóa bị ăn mòn, hư hại, hỏng hóc, thất lạc,…</p>    <p>Đặc biệt là những hàng hóa nhỏ như linh kiện điện tử, máy móc, thiết bị. Sự an toàn cho hàng hóa là việc doanh nghiệp cần quan tâm hàng đầu. Vì vậy, sử sử dụng thùng gỗ, kiện gỗ đóng gói hàng hóa chính là tối ưu&nbsp; tốt nhất. Thêm vào đó, vật dụng này còn đảm bảo được tính thẩm mỹ, chuyên nghiệp, tránh hư hỏng, tạo điều kiện thuận lợi cho việc thông quan với giá rẻ.</p>    <p><span style="font-size:18px;">Tham khảo giá&nbsp;<strong><a href="/san-pham/thung-go-pallet.html" target="_blank">thùng gỗ pallet</a></strong>&nbsp;chất lượng, chuyên nghiệp tại Đông Phú Tiên</span></p>    <div id="Dong-thung-go-vuot-troi-gi-so-voi-dong-thung-carton"><h3><i class="fa  fa-hand-o-right"></i> Đóng thùng gỗ vượt trội gì so với đóng thùng carton?</h3></div>    <p><strong>Dịch vụ đóng thùng gỗ theo yêu cầu</strong>&nbsp;uy tín, chuyên nghiệp có rất nhiều ưu điểm vượt trội so với thùng carton. Có thể kể đến một số lợi ích khi sử dụng dịch vụ này đem lại như:</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thung go dong hang" height="322" src="/uploads/shops/2021_08/dong-kien-go-thua.jpg" width="600" />  <figcaption>Đóng kiện cho hàng dễ vỡ</figcaption>  </figure>  </div>    <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  align="center" border="1" cellpadding="1" cellspacing="1" style="width:800px;">  	<tbody>  		<tr>  			<td><strong>Loại hình</strong></td>  			<td><strong>Đóng kiện gỗ</strong></td>  			<td><strong>Đóng thùng carton</strong></td>  		</tr>  		<tr>  			<td><b id="docs-internal-guid-259be03d-7fff-1d3b-196f-c2998c77fa23">Chất liệu </b></td>  			<td>Gỗ thông, gỗ keo, ván ép</td>  			<td>Giấy tái chế</td>  		</tr>  		<tr>  			<td>Độ an toàn</td>  			<td>Cao. Chất liệu gỗ chắc chắn sử dụng phổ biến đóng gói được máy móc, vật dụng cơ khí, kim loại, hàng siêu trường siêu trọng.</td>  			<td>Thấp. Không đóng gói được máy móc, vật dụng cơ khí, kim loại. Sử dụng phổ biến trong đóng gói quần áo, linh kiện điện tử, đồ gia dụng.</td>  		</tr>  		<tr>  			<td>Chịu trọng tải</td>  			<td>Không giới hạn</td>  			<td>100kg</td>  		</tr>  		<tr>  			<td>Thẩm mỹ</td>  			<td>Đẹp. Bất tiện trong việc in thông số kỹ thuật cần sử dụng bút dạ hoặc in tài liệu dán vào bề mặt thùng</td>  			<td>Đẹp. Tiện in thông số kỹ thuật</td>  		</tr>  		<tr>  			<td>Địa điểm đóng thùng</td>  			<td>Tại nhà máy của khách hàng</td>  			<td>Tại nhà máy hoặc tại nhà</td>  		</tr>  	</tbody>  </table> </div>    <div>&nbsp;  <p>Ngoài ra <strong>đóng thùng gỗ</strong> còn mang lại những ưu thế như:</p>    <ul>  	<li>Chất liệu các loại gỗ gồm gỗ pallet hoặc các loại khác tốt, đóng đúng quy trình, hàng hóa được bảo vệ một cách tốt nhất</li>  	<li>Kỹ thuật hun trùng hiện đại giúp các thùng gỗ tránh được mối mọt và sự lây lan của những côn trùng có hại</li>  	<li>Tiết kiệm được chi phí cho doanh nghiệp, không mất nhãn bao bì sản phẩm với giá thấp</li>  </ul>  </div>    <div>  <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="kiện gỗ đóng hàng" height="800" src="/uploads/shops/2021_08/dong-thung-go-hang-hoa.jpg" width="600" />  <figcaption>Hàng hóa được nâng cao tính thẩm mỹ với chi phí thấp</figcaption>  </figure>  </div>  </div>    <div id="Dong-thung-go-theo-yeu-cau-cua-ban"><h2>4. Đóng thùng gỗ theo yêu cầu của bạn</h2></div>    <p>Chúng tôi cung cấp các giải pháp <strong>đóng kiện gỗ đóng gói hàng hóa</strong> cho tất cả các loại sản phẩm và máy móc.Mọi giải pháp của chúng tôi đều được ưu hóa tổng thể chi phí dịch vụ đóng thùng gỗ. Bạn có thể tham khảo các phương án sử dụng kiện gỗ khác nhau.</p>    <div style="text-align: center;"><span style="font-size:28px;">Chuyên nghiệp từng kỹ thuật - Tập trung vào chất lượng an toàn</span></div>    <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" height="757" width="728">  	<tbody>  		<tr>  			<td>  			<div id="Dong-kien-kin"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện kín</h3></div>    			<div style="text-align:center"><img alt="mua thùng gỗ đóng hàng" height="200" src="/uploads/shops/2021_07/dong-kien-hang.jpg" width="200" /></div>  			<br />  			<strong>Đóng kiện gỗ máy móc</strong> hạn chế tối đa tác động va đập với lớp gỗ bảo vệ chắc chắn được sử dụng phổ biến nhất.</td>  			<td>  			<div id="Dong-kien-kin-nbsp-hut-chan-khong"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện kín&nbsp;hút chân không </h3></div>    			<div style="text-align:center"><img alt="thung go dung hang" height="200" src="/uploads/shops/2021_07/thung-go-dung-hang.jpg" width="200" /></div>  			<br />  			Nếu bạn vận chuyển đường biển thì đây chính là sự lựa chọn tốt nhất. Với lớp hút chân không bên trong thùng gỗ sẽ giúp nước biển không xâm nhập được vào máy móc, hàng hóa.</td>  			<td>  			<div id="Dong-kien-ho"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện hở</h3></div>    			<div style="text-align:center"><img alt="đóng kiện hàng" height="200" src="/uploads/shops/2021_07/thung-go-dong-hang.jpg" width="200" /></div>  			<br />  			Vận chuyển gần, không xếp kiện được nên không thể ghép hàng.</td>  		</tr>  		<tr>  			<td>  			<div id="Dong-kien-ho-hut-chan-khong"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện hở hút chân không</h3></div>    			<div style="text-align:center"><img alt="thùng gỗ đóng hàng" height="200" src="/uploads/shops/2021_07/kien-go-dong-hang.jpg" width="200" /></div>  			<br />  			Với chân đế pallet và chằng buộc chắc chắn sử dụng phổ biến cho hàng quá khổ quá tải, hạn chế tình trạng oxy hóa sản phẩm.</td>  			<td>  			<div id="Dong-kien-nan"><h3><i class="fa  fa-hand-o-right"></i> Đóng kiện nan</h3></div>    			<div style="text-align:center"><img alt="dong kien nan" height="200" src="/uploads/shops/2021_07/dong-kien-nan.jpg" width="200" /></div>  			<br />  			Đóng kiện nan thưa là giải pháp ít chi phí, chống va đập và xếp chồng lên nhau được sử dụng trong nước</td>  			<td>  			<div id="Dong-hang-go-lap-ghep"><h3><i class="fa  fa-hand-o-right"></i> Đóng hàng gỗ lắp ghép</h3></div>    			<div style="text-align:center"><img alt="thùng gỗ lắp ghép" height="200" src="/uploads/shops/2021_07/mua-thung-go-dong-hang.jpg" width="200" /></div>  			<br />  			Là giải pháp thùng gỗ lắp ghép không cần sử dụng đinh, có thể gập lại và chiếm không gian lưu chữ nhất định, sử dụng phổ biến cho đóng kiện xuất khẩu</td>  		</tr>  	</tbody>  </table> </div>    <div id="Quy-trinh-lam-viec-tai-Dong-Phu-Tien"><h2>5. Quy trình làm việc tại Đông Phú Tiên</h2></div>    <p><strong>Đóng kiện gỗ</strong>&nbsp;chính là cách đóng gói tốt và an toàn nhất đối với hàng hóa công nghiệp muốn vận chuyển hàng hóa trong nội địa và xuất khẩu. Hiện nay có rất nhiều doanh nghiệp lựa chọn phương pháp này. Với những đơn vị cung cấp&nbsp;<strong>dịch vụ đóng thùng gỗ</strong>&nbsp;hay các tỉnh thành khác hoạt động chuyên nghiệp, quy trình&nbsp;<strong>dịch vụ đóng thùng gỗ</strong>&nbsp;làm việc cơ bản:</p>    <div>  <div id="Tiep-nhan-thong-tin-khach-hang"><h3><i class="fa  fa-hand-o-right"></i> Tiếp nhận thông tin khách hàng</h3></div>  Để nhận thông tin báo giá, Quý khách cần cung cấp cho Nv các thông tin như sau:    <ul>  	<li>Tên, kích thước và trọng tải hàng</li>  	<li>Chủng loại sản phẩm, hàng hóa thuộc nhóm hàng nào (máy móc, linh kiện điện tử, phụ kiện cơ khí, hàng dễ vỡ, hàng siêu trường siêu trọng,...)</li>  	<li>Và những yêu cầu đóng gói theo cách gì</li>  </ul>  </div>    <div>  <div id="Len-phuong-an-dong-goi"><h3><i class="fa  fa-hand-o-right"></i> Lên phương án đóng gói</h3></div>    <ul>  	<li>Nhân viên đã tiếp nhận được đầy đủ thông tin yêu cầu.</li>  	<li>Chúng tôi sẽ lên phương án cung cấp thùng gỗ cụ thể như:</li>  	<li>Phương án đóng thùng phù hợp</li>  	<li>Nguyên liệu đóng gói</li>  	<li>Số lượng lớn nhân công thực hiện</li>  	<li>Thời gian hoàn&nbsp;thành đơn hàng</li>  </ul>  </div>    <div>  <div id="Bao-gia-va-ky-hop-dong-dich-vu"><h3><i class="fa  fa-hand-o-right"></i> Báo giá và ký hợp đồng dịch vụ</h3></div>    <ul>  	<li>Đông Phú Tiên sẽ gửi đến khách hàng bảng giá dịch vụ đóng thùng gỗ</li>  	<li>Theo cách đã được thống nhất. Nếu Quý khách đồng ý với chi phí nêu trên thì hai bên bắt đầu tiến hành ký hợp đồng đóng gói cho các loại máy móc, hàng hóa.</li>  	<li><strong>PHÍ ĐÓNG KIỆN GỖ = 20 tệ /kg đầu + 0.8 tệ/kg tiếp theo. </strong></li>  </ul>  </div>    <div>  <div id="Doi-ky-thuat-thuc-hien-don-hang"><h3><i class="fa  fa-hand-o-right"></i> Đội kỹ thuật thực hiện đơn hàng</h3></div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng hàng" height="451" src="/uploads/shops/2021_08/kien-go-may-moc.jpg" width="600" />  <figcaption>Kỹ thuật chuyên môn cao thực hiện đóng kiện</figcaption>  </figure>  </div>    <ul>  	<li>Nhân viên sẽ phân loại và tiến hành đóng kiện.</li>  	<li>Hàng hóa sẽ được đóng theo chuẩn cách mà nhân viên sale gửi đơn hàng.</li>  	<li>Quy trình <strong>đóng kiện gỗ giá rẻ</strong> của Đông Phú Tiên:</li>  </ul>  - Nâng hạ máy lên đế pallet Quấn màng PE quanh sản phẩm.<br />  - Bọc đệm khí (xốp nổ) hàng hóa.<br />  - Bọc giấy bạc hút chân không bên ngoài lớp xốp hơi.<br />  - Quấn thêm lớp màng PE bên ngoài để bảo đảm an toàn.<br />  - Xiết đai sản phẩm giữ cố định dưới chân đế pallet.<br />  - Đóng vách tạo thành kiện kín bao quanh sản phẩm.<br />  - Cuối cùng là niêm phong và đánh mã hàng.  <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng kiện gỗ máy móc" height="450" src="/uploads/shops/2021_08/thung-go-hut-chan-khong.jpg" width="600" />  <figcaption>Tiến hành bọc giấy bạc hút chân không</figcaption>  </figure>  </div>  </div>    <div id="Nghiem-thu-va-thanh-toan"><h3><i class="fa  fa-hand-o-right"></i> Nghiệm thu và thanh toán</h3></div>    <p>Nhân viên quản lý sản xuất của Đông Phú Tiên sẽ kiểm tra lại toàn bộ hàng hóa đã thực hiện đóng kiện và gửi khách hàng giấy xác nhận nghiệm thu đơn hàng. Và tiến hàng thanh toán cho <strong>dịch vụ thùng gỗ đựng hàng giá rẻ</strong>.<br />  Xem Quy trình đóng thùng gỗ - đóng kiện gỗ - thùng gỗ đóng hàng tại Đông Phú Tiên</p>    <p style="text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/l-ts-4JHNwk" title="YouTube video player" width="560"></iframe></p>    <div id="Tai-sao-nen-su-dung-dich-vu-dong-kien-go-xuat-khau-cua-nbsp-Dong-Phu-Tien"><h2>6. Tại sao nên sử dụng dịch vụ đóng kiện gỗ xuất khẩu của&nbsp;Đông Phú Tiên?</h2></div>    <p>Là đơn vị cung cấp dịch vụ <strong>đóng thùng gỗ</strong> uy tín chất lượng hàng đầu miền Bắc, đây cũng là lý do hàng nghìn khách hàng lựa chọn Đông Phú Tiên cam kết mang đến dịch vụ&nbsp;chất lượng&nbsp;nhất thị trường. Và bạn cũng sẽ yêu thích chúng tôi.</p>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng gỗ" height="450" src="/uploads/shops/2021_08/kien-go-dong-hang_1.jpg" width="600" />  <figcaption>Cam kết chất lượng dịch vụ đóng thùng gỗ tốt nhất</figcaption>  </figure>  </div>    <ul>  	<li>Thời gian sản xuất nhanh chóng</li>  	<li>Kỹ thuật viên tay nghề cao, mang đến cho khách hàng sản phẩm chất lượng, an toàn tốt nhất.</li>  	<li>Với kinh nghiệm gần 10 năm trong lĩnh vực&nbsp;<strong>đóng kiện gỗ xuất khẩu</strong>&nbsp;vận chuyển, nắm rất rõ quy cách đóng hàng và vận chuyển như nào để đảm bảo hàng hóa máy móc luôn an toàn.</li>  	<li><strong>Dịch vụ đóng thùng gỗ</strong> cho hàng hóa cung cấp dịch vụ từ khâu nâng hạ, đóng gói, gia cố container vận chuyển tận nơi.</li>  	<li>Khách hàng có thể yên tâm về dịch vụ khép kín, tiện lợi, linh hoạt và toàn diện nhất.</li>  	<li>Sản phẩm đạt chuẩn về tính thẩm mỹ và chất lượng</li>  	<li>Hợp đồng ký kết rõ ràng, minh bạch.</li>  	<li>Giá thành tốt nhất trong khu vực miền Bắc nói chung và cả nước nói riêng</li>  	<li>Hỗ trợ tư vấn 24/7.</li>  	<li>Nv có trình độ chuyên môn cao</li>  	<li>Đa dạng loại hình đóng gói bất kể mọi hàng hóa đặc biệt, khó đóng như: tượng phật, hàng quá khổ, đá, máy móc, ... chúng tôi tự tin là lựa chọn số 1 cho <strong>thùng gỗ đựng hàng giá rẻ</strong>, an toàn.</li>  </ul>    <div id="Bang-gia-dich-vu-dong-kien-go"><h2>7. Bảng giá dịch vụ đóng kiện gỗ</h2></div>    <div>  <div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">  	<tbody>  		<tr>  			<td>STT</td>  			<td>DỊCH VỤ ĐÓNG GÓI</td>  			<td>GIÁ TỪ(VNĐ)</td>  			<td>GIÁ ĐẾN(VNĐ)</td>  			<td>ĐƠN VỊ</td>  		</tr>  		<tr>  			<td>1</td>  			<td>Đóng pallet hở</td>  			<td>550.000</td>  			<td>900.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>2</td>  			<td>Đóng pallet hở + Hút chân không</td>  			<td>580.000</td>  			<td>1.000.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>3</td>  			<td>Đóng thùng gỗ</td>  			<td>590.000</td>  			<td>1.050.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>4</td>  			<td>Đóng thùng gỗ + Hút chân không</td>  			<td>595.000</td>  			<td>1.300.000</td>  			<td>m3</td>  		</tr>  		<tr>  			<td>5</td>  			<td>Đóng kiện gỗ nan</td>  			<td>500.000</td>  			<td>1.000.000</td>  			<td>m3</td>  		</tr>  	</tbody>  </table> </div>  <br />  Lưu ý: Bảng giá <strong>dịch vụ đóng thùng gỗ</strong> trên:    <ul>  	<li>Chưa bao gồm thuế GTGT 10%</li>  	<li>Đã bao gồm nguyên vật liệu và nhân công kỹ thuật.</li>  </ul>  </div>    <div id="Cac-san-pham-mau-cua-dich-vu-dong-thung-go-dong-hang-gia-re"><h2>8. Các sản phẩm mẫu của dịch vụ đóng thùng gỗ đóng hàng giá rẻ</h2></div>  Đông Phú Tiên hiện đang là đơn vị đứng đầu trong ngành <strong>dịch vụ đóng thùng gỗ giá rẻ</strong> xuất khẩu an toàn nhất miền Bắc. Chúng tôi rất tự hào vì được Khách hàng ưu ái dịch vụ đóng thùng gỗ chất lượng hàng đầu hiện nay.    <figure class="image"><img alt="kiện gỗ" height="450" src="https://thunggopalletgo.com.vn/uploads/shops/2021_08/dong-thung-go-xuat-khau.jpg" width="600" />  <figcaption>Dự án<strong> đóng kiện gỗ giá rẻ </strong>tại KCN Bắc Ninh</figcaption>  </figure>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="đóng thùng gỗ giá rẻ" height="450" src="/uploads/shops/2021_08/thung-go-pallet-dong-hang-xuat-khau.jpg" width="600" />  <figcaption>Dự án <strong>đóng kiện gỗ&nbsp;máy móc</strong> hút chân không tại KCN Vĩnh Phúc</figcaption>  </figure>  </div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="mua thùng gỗ đóng hàng" height="762" src="/uploads/shops/2021_08/thung-go-dung-hang.jpg" width="600" />  <figcaption><strong>Thùng gỗ đóng hàng</strong> được đóng gói bảo vệ an toàn</figcaption>  </figure>  </div>    <div style="text-align:center">  <figure class="image" style="display:inline-block"><img alt="dong kien go" height="451" src="/uploads/shops/2021_08/thung-go-dong-may-moc.jpg" width="600" />  <figcaption>Dự án đóng pallet gỗ cho máy móc tại KCN Yên Phong, Bắc Ninh</figcaption>  </figure>  </div>    <p>Trên đây là những thông tin hữu ích về <strong>dịch vụ đóng thùng gỗ</strong> giá rẻ của <a href="https://www.google.com/maps?cid=6650996335368037463">Đông Phú Tiên</a>&nbsp;mà chúng tôi muốn chia sẻ tới quý khách. Nếu bạn có nhu cầu vận chuyển hàng hóa xuất khẩu&nbsp;thì hãy sử dụng thùng gỗ, kiện gỗ như một giải pháp hoàn hảo nhất nhé.</p>    <p>Liên hệ Công ty TNHH MTV ĐÔNG PHÚ TIÊN</p>    <p>Trụ Sở:&nbsp;Phú Lâm, Tiên Du, Bắc Ninh</p>    <p>Văn Phòng:&nbsp;<a><span style="color:rgb(44, 62, 80);">Khu Công Nghiệp Đại Đồng, Tiên Du, Bắc Ninh</span></a></p>    <p>Email:&nbsp;dongphutien@gmail.com</p>    <p>Hotline:&nbsp;0968.428.883 – 0977.148.885&nbsp;-&nbsp;0979.863.069</p>    <p style="text-align: center;"><iframe height="480" src="https://www.google.com/maps/d/embed?mid=1SLzH2YmR9fqViTZKeIOHRtKJXLraAaU6" width="640"></iframe></p></p>
 </div>
 <div class="clearfix">
 </div>
@@ -285,21 +262,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="modal fade" id="idmodals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Đặt hàng</h4>
-        </div>
-        <div class="modal-body">
-            <em class="fa fa-spinner fa-spin">&nbsp;</em>
-        </div>
-    </div>
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">Đặt hàng</h4>
+  </div>
+  <div class="modal-body">
+    <em class="fa fa-spinner fa-spin">&nbsp;</em>
+  </div>
+</div>
 </div>
 </div>
 
 <div class="msgshow" id="msgshow">
 </div>
-    </div>
+  </div>
 </div>
 <div class="row">
 </div>
@@ -309,11 +286,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-24 col-sm-24 col-md-6">
             <div class="panel box1">
 <p><div class="header1">
-    Châm ngôn sống
+Châm ngôn sống
 </div>
 </p>
 <div class="panel-body32">
-    <p style="text-align: justify;">“Chữ tín Quý hơn Vàng”. Đông Phú Tiên vô cùng trân trọng sự tín nhiệm của Quý Khách hàng. Chúng tôi đánh cược sự nghiệp của mình trong tay Quý vị bằng cách mang đến&nbsp;<strong>CHẤT LƯỢNG, UY TÍN</strong>&nbsp;và <strong>GIÁ CẠNH TRANH TỐT NHẤT</strong>.<br /><em>Rất mong&nbsp; nhận được hợp tác cùng Quý Khách Hàng!</em></p>
+<p style="text-align: justify;">“Chữ tín Quý hơn Vàng”. Đông Phú Tiên vô cùng trân trọng sự tín nhiệm của Quý Khách hàng. Chúng tôi đánh cược sự nghiệp của mình trong tay Quý vị bằng cách mang đến&nbsp;<strong>CHẤT LƯỢNG, UY TÍN</strong>&nbsp;và <strong>GIÁ CẠNH TRANH TỐT NHẤT</strong>.<br /><em>Rất mong&nbsp; nhận được hợp tác cùng Quý Khách Hàng!</em></p>
 </div>
 </div>
 
@@ -321,11 +298,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-24 col-sm-24 col-md-6 list">
 <div class="panel-body box1">
 
-            <p class="header1"  class="current">
-        <a title="Dịch vụ" class="sf-with-ul" href="#">Dịch vụ</a>
-            </p>
-                    <ul class="no-pd">
-            <li>
+    <p class="header1"  class="current">
+  <a title="Dịch vụ" class="sf-with-ul" href="#">Dịch vụ</a>
+          </p>
+        <ul class="no-pd">
+    <li>
 <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" class="sf-with-ul"> <i class="fa  fa-angle-right"></i> Dịch vụ đóng gói</a>
 
 </li>
@@ -354,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </li>
 
-        </ul>
+  </ul>
 </div>
 <div class="clear"></div>
 
@@ -362,14 +339,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <div class="col-xs-24 col-sm-24 col-md-6">
             <div class="panel box1">
 <p><div class="header1">
-    Liên hệ
+Liên hệ
 </div>
 </p>
 <div class="panel-body32">
 <div class="khoi-1">
 
     <div class=" clear col-md-5 col-xs-5">
-    <img src="/uploads/contact/icon-lichhen.png"  alt="Tư vấn viên" />
+  <img src="/uploads/contact/icon-lichhen.png"  alt="Tư vấn viên" />
 </div>
 <div class="col-md-19 col-xs-19">
     <div class="m-bottom"><strong>Tư vấn viên</strong></div>
@@ -383,7 +360,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="khoi-1">
 
     <div class=" clear col-md-5 col-xs-5">
-    <img src="/uploads/contact/icon-lichhen.png"  alt="Kỹ thuật" />
+  <img src="/uploads/contact/icon-lichhen.png"  alt="Kỹ thuật" />
 </div>
 <div class="col-md-19 col-xs-19">
     <div class="m-bottom"><strong>Kỹ thuật</strong></div>
@@ -408,11 +385,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-24 col-sm-24 col-md-6">
              <div class="panel box1">
 <p><div class="header1">
-    Fanpage Facebook
+Fanpage Facebook
 </div>
 </p>
 <div class="panel-body32">
-    <img alt="screenshot 1628652718" src="/uploads/screenshot_1628652718.png" />
+<img alt="screenshot 1628652718" src="/uploads/screenshot_1628652718.png" />
 </div>
 </div>
 
@@ -438,9 +415,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </ul>
 <div class="khoi-chat" >
 
-                <div > <a title="Zalo" class="sf-with-ul" href="http://zalo.me/0968.428.883" onclick="this.target='_blank'"><img src="/uploads/menu/zalo_1.png" alt="Zalo" /></a></div>
-        <div > <a title="Meseger" class="sf-with-ul" href="https://www.messenger.com/t/1882709555137736" onclick="this.target='_blank'"><img src="/uploads/menu/mes.png" alt="Meseger" /></a></div>
-        <div > <a title="Hotline" class="sf-with-ul" href="tel:0968.428.883"><img src="/uploads/menu/goi.png" alt="Hotline" /></a></div>
+        <div > <a title="Zalo" class="sf-with-ul" href="http://zalo.me/0968.428.883" onclick="this.target='_blank'"><img src="/uploads/menu/zalo_1.png" alt="Zalo" /></a></div>
+    <div > <a title="Meseger" class="sf-with-ul" href="https://www.messenger.com/t/1882709555137736" onclick="this.target='_blank'"><img src="/uploads/menu/mes.png" alt="Meseger" /></a></div>
+    <div > <a title="Hotline" class="sf-with-ul" href="tel:0968.428.883"><img src="/uploads/menu/goi.png" alt="Hotline" /></a></div>
 </div>
 <div class="clear"></div>
 
@@ -449,11 +426,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-xs-24 col-sm-24 col-md-8">
 <div class="panel-body box1">
 
-            <p class="header1" >
-        <a title="nofollow" class="sf-with-ul" href="/chinh-sach/">Chính sách quy định</a>
-            </p>
-                    <ul class="no-pd">
-            <li>
+    <p class="header1" >
+  <a title="nofollow" class="sf-with-ul" href="/chinh-sach/">Chính sách quy định</a>
+          </p>
+        <ul class="no-pd">
+    <li>
 <a title="Hướng dẫn mua hàng" href="/huong-dan-mua-hang/" class="sf-with-ul"> <i class="fa  fa-angle-right"></i> Hướng dẫn mua hàng</a>
 
 </li>
@@ -486,7 +463,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </li>
 
-        </ul>
+  </ul>
 </div>
 <div class="clear"></div>
 
@@ -565,6 +542,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
         });
     });
  </script>
+<script src="/themes/default/js/toggle-nav.js?t=1638773501" type="text/javascript"></script>
 <script type="text/javascript">
             function showdiv() {
                   var x = document.getElementById("dsml");
@@ -689,7 +667,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
 "url":"https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html"
 },
   "name": "Thùng Gỗ Pallet Hở Mặt Giá Rẻ",
-  "@id": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html#product",
+  "@id": "/san-pham/thung-go-pallet.htmlproduct",
   "mainEntityOfPage": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
                     "description": "Tên sản phẩm: Thùng gỗ palletKích thước: Theo yêu cầu Khách Hàng Quy cách: + Chiều cao: 40 cm + Chiều rộng: 40 cm + Chiều dài: 60 cmMàu sắc: Theo yêu cầu Khách Hàng (màu tự nhiên, màu gỗ thông,…)Chất liệu gỗ: Gỗ thông, Gỗ Sồi,… khử trùng ISPM 15 Dùng để làm: pallet thùng gỗ đựng trái cây, thùng pallet trang trí, bàn gỗ pallet trang trí, kệ tủ pallet.Đơn vị Sản Xuất: Đông Phú TiênGiao Hàng: Miễn Phí Toàn Quốc*Chế độ Bảo Hành: 1 Năm"    }
 ],
@@ -1030,20 +1008,20 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
 <script type="text/javascript">
         $(document).ready(function(){
               if($(".btn-top").length > 0){
-                $(window).scroll(function () {
-                    var e = $(window).scrollTop();
-                    if (e > 300) {
-                        $(".btn-top").show()
-                    } else {
-                        $(".btn-top").hide()
-                    }
-                });
-                $(".btn-top").click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    })
-                })
-            }	
+            $(window).scroll(function () {
+              var e = $(window).scrollTop();
+              if (e > 300) {
+                $(".btn-top").show()
+              } else {
+                $(".btn-top").hide()
+              }
+            });
+            $(".btn-top").click(function () {
+              $('body,html').animate({
+                scrollTop: 0
+              })
+            })
+          }	
         });
     </script>
 <script type="text/javascript">

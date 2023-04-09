@@ -1,3 +1,39 @@
+#menu ul{
+    justify-content: left !important;
+}
+
+#menu ul li{
+    margin-right: 20px !important;
+}
+
+#menu ul ul{
+    top: 55px;
+}
+
+#menu ul ul.has-sub{
+    width: 350px;
+}
+
+#menu ul ul.has-sub li a{
+    color: black !important;
+}
+
+#menu ul ul.has-sub li a:hover{
+    color: red !important;
+}
+
+@media screen and (max-width: 767px) {
+    a.navbar-brand{
+        margin-right: 30rem !important;
+    }
+    #menu ul ul.has-sub li a{
+        color: gray !important;
+    }
+    .menu li a.logo{
+        text-align: center;
+    }
+}
+
 .wraper {
     width:100%;
 }

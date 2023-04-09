@@ -34,6 +34,7 @@
 <link rel="preload" as="script" href="/themes/default/js/custom.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/owl.carousel.js?t=1638773501">
 <link rel="preload" as="script" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<link rel="preload" as="script" href="/themes/default/js/toggle-nav.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/jquery.colorbox.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/comment.js?t=1638773501">
 <link rel="preload" as="script" href="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
@@ -50,13 +51,12 @@
 <link rel="stylesheet" href="/themes/default/css/custom.css?t=1638773501">
 <link rel="stylesheet" href="/assets/css/default.vi.0.css?t=1638773501">
 <link rel="stylesheet" type="text/css" media="screen" href="/themes/default/css/navi.css?t=1638773501" />
-<link rel="stylesheet" href="/themes/default/css/meanmenu.css?t=1638773501" media="all" />
+<link href="/themes/default/css/toggle-nav.css?t=1638773501" rel="stylesheet"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/themes/default/css/colorbox.css?t=1638773501" />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css' />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css' />
 <link rel="StyleSheet" href="/themes/default/css/comment.css?t=1638773501" type="text/css" />
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <style>
     .f-nav{  
         /* To fix main menu container */
@@ -143,49 +143,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript>
     <div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a>vào đây</a>!</div>
 </noscript>
-<header>
-    <div class="site-banner" style="background-image: url('/themes/default/images/none.png');"></div>
-    <div class="section-header an-mobi">
-        <div class="container pd-tb-10">
-            <div id="header">
-                <div class="logo col-md-3 text-center">
-                    <a title="Đông Phú Tiên" href="/"><img src="/uploads/logo.png" alt="Đông Phú Tiên" /></a>
-                </div>
-                <div class="col-md-8 an-mobi">
-                    <div class="headerSearch ">
-                        <div class="input-group">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-9 an-mobi">
-<div class="clear">
-    <div class="hotline"><span style="color:rgb(236, 31, 37);"><strong><a href="http://tel:0968.428.883">0968.428.883</a> – <a href="http://tel:0977.148.885">0977.148.885</a></strong></span><br />Hotline tư vấn miễn phí 24/7</div>
-</div>
-                    </div>
-                <div class="col-md-4 an-mobi">
-                     <div id="google_translate_element"></div>
-            <div id="google_translate_element"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div class="bg-menu" id="menutop">   
     <div class="container no-bg">
                     <div >  
 <a href="#menu" class="menu-link active"><span></span> </a> 
-<div class="logo-mb text-center  show_mobi"> <a href="/"><img src="/uploads/logo.png" title="" alt="" style="max-height:60px" /> </a></div>
-<nav id="cssmenu">
+<div class="logo-mb text-center  show_mobi"></div>
+<nav id="menu" class="menu">
 <ul >
-    <li>
-        <a title="Trang chủ" href="/"> <span class="hidden-sm"> <i class="fa fa-home"></i> </span></a>
-    </li>
-            <li >
-        <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+  <li>
+    <a title="Trang chủ" href="/" class="logo"> <span class="hidden-sm"><img src="/uploads/logo.png" title="" alt="" style="max-height:40px" /> </span></a>
+  </li>
+        <li >
+    <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ đóng gói hàng hóa xuất khẩu" href="/dich-vu-dong-goi-hang-hoa/" >Dịch vụ đóng gói hàng hóa xuất khẩu</a>
 </li>
@@ -202,16 +175,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ đóng gói hút chân không giá rẻ" href="/dong-goi-hut-chan-khong/" >Dịch vụ đóng gói hút chân không giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
-    </li>
-    <li >
-        <a title="Pallet" href="/pallet/" >Pallet</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
+  </li>
+  <li >
+    <a title="Pallet" href="/pallet/" >Pallet</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
 </li>
@@ -220,13 +193,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Pallet gỗ 4 hướng nâng" href="/san-pham/pallet-go-4-huong-nang.html" >Pallet gỗ 4 hướng nâng</a>
 </li>
@@ -248,16 +221,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li >
 
-<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/bao-gia-pallet-go.html" >Pallet Gỗ Giá Rẻ</a>
+<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/thung-go-pallet.html" >Pallet Gỗ Giá Rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ vận chuyển hàng hóa" href="/dich-vu-van-chuyen-hang-hoa/" >Dịch vụ vận chuyển hàng hóa</a>
 </li>
@@ -278,14 +251,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ bốc xếp hàng hóa giá rẻ" href="/boc-xep-hang-hoa/" >Dịch vụ bốc xếp hàng hóa giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
-    </li>
-    <li >
-        <a title="Liên hệ" href="/contact/" >Liên hệ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
+  </li>
+  <li >
+    <a title="Liên hệ" href="/contact/" >Liên hệ</a>
+  </li>
+  <li >
+    <img src="../338395163_765981688264731_7742076387611735740_n.png" style="width: 200px;" alt="">
+
+  </li>
     <div class="clear"> </div>
 </ul>
 </nav>
@@ -343,19 +320,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-10 text-center">
         <div id="sync1" class="owl-carousel owl-theme">
                     <div class="item ">	
-                                 <a class="group3" href="/uploads/shops/2021_05/thung-go-pallet-2.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" > <img  src="/uploads/shops/2021_05/thung-go-pallet-2.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" alt="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" class=" max-width:100%"/> </a> 
+                                 <a class="group2" href="/uploads/shops/2021_05/thung-go-pallet-2.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" > <img  src="/uploads/shops/2021_05/thung-go-pallet-2.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" alt="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" class=" max-width:100%"/> </a> 
                     </div>
                                           <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/thung-go-pallet-gia-re.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet-gia-re.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/thung-go-pallet-gia-re.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet-gia-re.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/thung-go-gia-re.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-gia-re.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/thung-go-gia-re.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-gia-re.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/thung-go-pallet_1.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet_1.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/thung-go-pallet_1.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet_1.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/thung-go-pallet-trang-tri.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet-trang-tri.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/thung-go-pallet-trang-tri.jpg" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ" ><img title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"  src="/uploads/shops/2021_05/thung-go-pallet-trang-tri.jpg" /></a>
                     </div>
                 </div>
                 <div id="sync2" class="owl-carousel owl-theme">
@@ -378,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-14">
                 <ul class="product_info">
                         <h1><span class="title">Thùng Gỗ Pallet Hở Mặt Giá Rẻ</span></h1>
-                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  7259  </div>
+                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  7270  </div>
                       <div>
                         Mã sản phẩm: <strong>TGP-DPT</strong>
                       </div>
@@ -524,14 +501,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
         </div>
         <br />  
         <div class="info_pro">
         </div>
         <div class="caption text-center">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 51569</div>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
+            <div>Lượt xem : 51664</div>
             <div>Mã sp : S000043</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -553,7 +530,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 5005</div>
+            <div>Lượt xem : 5009</div>
             <div>Mã sp : PL4HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -575,7 +552,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 2 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 3424</div>
+            <div>Lượt xem : 3428</div>
             <div>Mã sp : PL2HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -597,7 +574,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-dung-hoa-qua.html" title="Thùng Gỗ Đựng Trái Cây"><div class="den normal font-16 "><h3>Thùng Gỗ Đựng Trái Cây</h3> </div></a>
-            <div>Lượt xem : 4614</div>
+            <div>Lượt xem : 4620</div>
             <div>Mã sp : TGHH-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -619,7 +596,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-soi.html" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"><div class="den normal font-16 "><h3>Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L</h3> </div></a>
-            <div>Lượt xem : 3772</div>
+            <div>Lượt xem : 3779</div>
             <div>Mã sp : TGS – ĐPT</div>
             <div>Khối lượng : 30 Kg</div>
 
@@ -659,6 +636,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="products" class="clearfix">
 <div class="can-flex ">
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
+    <div class=" text-center mr-b-10 pd-10 ">
+        <div style="height: 250px ; padding-bottom:10px">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-4-huong-nang.jpg" alt="Pallet Gỗ 4 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
+        </div>
+        <br />  
+        <div class="info_pro">
+        </div>
+        <div class="caption text-center">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
+            <div>Lượt xem : </div>
+            <div>Mã sp : PL4HN</div>
+            <div>Khối lượng :  Kg</div>
+
+                            <p class="price">
+                                    <span class="money">120.000 đ</span>
+            </p>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-2-huong-nang.jpg" alt="Pallet Gỗ 2 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
@@ -1013,6 +1012,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
         });
     });
  </script>
+<script src="/themes/default/js/toggle-nav.js?t=1638773501" type="text/javascript"></script>
 <script type="text/javascript" data-show="after">
 ( function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -1228,9 +1228,9 @@ function check_quantity( _this ){
             "https://thunggopalletgo.com.vn/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg"
                                 ],
                     "name": "Pallet Gỗ Giá Rẻ",
-                    "url": "https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
-                    "@id": "/san-pham/bao-gia-pallet-go.htmlproduct",
-                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
+                    "url": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
+                    "@id": "/san-pham/thung-go-pallet.htmlproduct",
+                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
                     "description": "Đông Phú Tiên cung cấp bảng báo giá pallet gỗ giá sỉ, rẻ, chất lượng nhất giao động từ 120.000Đ với kích thước tiêu chuẩn 1200×800 mm / 1200×1000 mm / 1200×900 mm và những ưu đãi đặc biệt dành cho mọi khách hàng."
                     },
                      {

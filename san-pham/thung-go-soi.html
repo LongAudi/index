@@ -34,6 +34,7 @@
 <link rel="preload" as="script" href="/themes/default/js/custom.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/owl.carousel.js?t=1638773501">
 <link rel="preload" as="script" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<link rel="preload" as="script" href="/themes/default/js/toggle-nav.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/jquery.colorbox.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/comment.js?t=1638773501">
 <link rel="preload" as="script" href="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
@@ -50,13 +51,12 @@
 <link rel="stylesheet" href="/themes/default/css/custom.css?t=1638773501">
 <link rel="stylesheet" href="/assets/css/default.vi.0.css?t=1638773501">
 <link rel="stylesheet" type="text/css" media="screen" href="/themes/default/css/navi.css?t=1638773501" />
-<link rel="stylesheet" href="/themes/default/css/meanmenu.css?t=1638773501" media="all" />
+<link href="/themes/default/css/toggle-nav.css?t=1638773501" rel="stylesheet"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/themes/default/css/colorbox.css?t=1638773501" />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css' />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css' />
 <link rel="StyleSheet" href="/themes/default/css/comment.css?t=1638773501" type="text/css" />
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <style>
     .f-nav{  
         /* To fix main menu container */
@@ -143,49 +143,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript>
     <div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a>vào đây</a>!</div>
 </noscript>
-<header>
-    <div class="site-banner" style="background-image: url('/themes/default/images/none.png');"></div>
-    <div class="section-header an-mobi">
-        <div class="container pd-tb-10">
-            <div id="header">
-                <div class="logo col-md-3 text-center">
-                    <a title="Đông Phú Tiên" href="/"><img src="/uploads/logo.png" alt="Đông Phú Tiên" /></a>
-                </div>
-                <div class="col-md-8 an-mobi">
-                    <div class="headerSearch ">
-                        <div class="input-group">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-9 an-mobi">
-<div class="clear">
-    <div class="hotline"><span style="color:rgb(236, 31, 37);"><strong><a href="http://tel:0968.428.883">0968.428.883</a> – <a href="http://tel:0977.148.885">0977.148.885</a></strong></span><br />Hotline tư vấn miễn phí 24/7</div>
-</div>
-                    </div>
-                <div class="col-md-4 an-mobi">
-                     <div id="google_translate_element"></div>
-            <div id="google_translate_element"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div class="bg-menu" id="menutop">   
     <div class="container no-bg">
                     <div >  
 <a href="#menu" class="menu-link active"><span></span> </a> 
-<div class="logo-mb text-center  show_mobi"> <a href="/"><img src="/uploads/logo.png" title="" alt="" style="max-height:60px" /> </a></div>
-<nav id="cssmenu">
+<div class="logo-mb text-center  show_mobi"></div>
+<nav id="menu" class="menu">
 <ul >
-    <li>
-        <a title="Trang chủ" href="/"> <span class="hidden-sm"> <i class="fa fa-home"></i> </span></a>
-    </li>
-            <li >
-        <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+  <li>
+    <a title="Trang chủ" href="/" class="logo"> <span class="hidden-sm"><img src="/uploads/logo.png" title="" alt="" style="max-height:40px" /> </span></a>
+  </li>
+        <li >
+    <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ đóng gói hàng hóa xuất khẩu" href="/dich-vu-dong-goi-hang-hoa/" >Dịch vụ đóng gói hàng hóa xuất khẩu</a>
 </li>
@@ -202,16 +175,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ đóng gói hút chân không giá rẻ" href="/dong-goi-hut-chan-khong/" >Dịch vụ đóng gói hút chân không giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
-    </li>
-    <li >
-        <a title="Pallet" href="/pallet/" >Pallet</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
+  </li>
+  <li >
+    <a title="Pallet" href="/pallet/" >Pallet</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
 </li>
@@ -220,13 +193,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
 </li>
 
-            </ul>
-    </li>
-    <li  class="current">
-        <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Pallet gỗ 4 hướng nâng" href="/san-pham/pallet-go-4-huong-nang.html" >Pallet gỗ 4 hướng nâng</a>
 </li>
@@ -238,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <a title="Thùng đựng hoa quả, trái cây" href="/san-pham/thung-go-dung-hoa-qua.html" >Thùng đựng hoa quả, trái cây</a>
 </li>
-<li  class="current">
+<li >
 
 <a title="Bán thùng gỗ sồi nhập khẩu" href="/san-pham/thung-go-soi.html" >Bán thùng gỗ sồi nhập khẩu</a>
 </li>
@@ -248,16 +221,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li >
 
-<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/bao-gia-pallet-go.html" >Pallet Gỗ Giá Rẻ</a>
+<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/thung-go-pallet.html" >Pallet Gỗ Giá Rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ vận chuyển hàng hóa" href="/dich-vu-van-chuyen-hang-hoa/" >Dịch vụ vận chuyển hàng hóa</a>
 </li>
@@ -278,14 +251,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ bốc xếp hàng hóa giá rẻ" href="/boc-xep-hang-hoa/" >Dịch vụ bốc xếp hàng hóa giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
-    </li>
-    <li >
-        <a title="Liên hệ" href="/contact/" >Liên hệ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
+  </li>
+  <li >
+    <a title="Liên hệ" href="/contact/" >Liên hệ</a>
+  </li>
+  <li >
+    <img src="../338395163_765981688264731_7742076387611735740_n.png" style="width: 200px;" alt="">
+
+  </li>
     <div class="clear"> </div>
 </ul>
 </nav>
@@ -343,16 +320,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-10 text-center">
         <div id="sync1" class="owl-carousel owl-theme">
                     <div class="item ">	
-                                 <a class="group3" href="/uploads/shops/2021_05/ban-thung-go-soi-cu-3.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" > <img  src="/uploads/shops/2021_05/ban-thung-go-soi-cu-3.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" alt="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" class=" max-width:100%"/> </a> 
+                                 <a class="group2" href="/uploads/shops/2021_05/ban-thung-go-soi-cu-3.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" > <img  src="/uploads/shops/2021_05/ban-thung-go-soi-cu-3.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" alt="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" class=" max-width:100%"/> </a> 
                     </div>
                                           <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau-1.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau-1.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau-1.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau-1.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/ban-thung-soi-nhap-khau-1.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-soi-nhap-khau-1.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/ban-thung-soi-nhap-khau-1.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-soi-nhap-khau-1.jpg" /></a>
                     </div>
                     <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/ban-thung-go-soi-gia-re.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-go-soi-gia-re.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/ban-thung-go-soi-gia-re.jpg" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L" ><img title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"  src="/uploads/shops/2021_05/ban-thung-go-soi-gia-re.jpg" /></a>
                     </div>
                 </div>
                 <div id="sync2" class="owl-carousel owl-theme">
@@ -372,7 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-14">
                 <ul class="product_info">
                         <h1><span class="title">Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L</span></h1>
-                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  3771  </div>
+                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  3778  </div>
                       <div>
                         Mã sản phẩm: <strong>TGS – ĐPT</strong>
                       </div>
@@ -438,7 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="content_detail-1">
-                <p>Bạn có thể xem nhanh bài viết&nbsp;<strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-soi.html">thùng rượu gỗ sồi</a>&nbsp;sồi đựng rượu</strong> tại đây:</p><h2><strong>1. Thông số của Thùng rượu gỗ sồi</strong></h2><div><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">	<tbody>		<tr>			<td>Tên sản phẩm</td>			<td>Thùng gỗ sồi nhập khẩu</td>		</tr>		<tr>			<td>Mã sản phẩm</td>			<td>TGS – ĐPT</td>		</tr>		<tr>			<td>Công Dụng</td>			<td>Ngâm ủ rượu vang, rượu trắng.</td>		</tr>		<tr>			<td>Chất Liệu</td>			<td>Gỗ Sồi Đỏ Nhập Khẩu Mỹ</td>		</tr>		<tr>			<td>Dung Tích</td>			<td>20L-30L-50L-100L-200L</td>		</tr>		<tr>			<td>Đặt Hàng</td>			<td>0977.148.885 – 0968.428.883</td>		</tr>		<tr>			<td>Bảo hành</td>			<td>06 tháng</td>		</tr>	</tbody></table> </div><h2><strong>2. Báo giá Thùng rượu gỗ sồi chi tiết tại Xưởng sản xuất</strong></h2><p>Bình gỗ sồi có kích thước phong phú nên giá sản phẩm cũng tương ứng với sự đa dạng đó. Để biết chi tiết hơn hãy cùng chúng tôi tham khảo báo giá thùng gỗ sồi mới nhất 2021 nhé.</p><h3><strong>2.1 Thùng rượu gỗ sồi 10 Lit </strong></h3><p>- Giá: <strong>&gt;1.000.000đ</strong>. liên hệ</p><p>Các thùng gỗ sồi 10 lít đều nét đẹp sang trọng và tinh tế. Thùng rượu gỗ nhập khẩu được thiết kế với chiều dài 3</p><h3><strong>2.2 Thùng rượu gỗ sồi 20 Lit</strong></h3><p>0977.148.885 – 0968.428.883</p><p>Loại này được gia công đánh bóng mặt ngoài và khắc hoa văn. Không chỉ mang lại cảm giác chắc chắn và còn thể hiện nét đẹp sang trọng và tinh tế. Kích thước thùng rượu gỗ nhập khẩu với chiều dài</p><h3><strong>2.3 Thùng rượu gỗ sồi 30 Lit </strong></h3><p>- Giá: <strong>&gt;2.000.000đ</strong>. liên hệ: 0977.148.885 – 0968.428.883</p><p>Thùng này có kích thước: Chiều dài 48cm - đường kính mặt 33cm. Nó to hơn Thùng ngâm rượu gỗ sồi 20 lít một chút và là một trong những sản phẩm có kích thước vừa đủ và nét sang trọng, tinh tế cùng với tính ứng dụng cao nên được nhiều khách hàng tin chọn</p><h3><strong>2.4 Thùng rượu gỗ sồi 50 Lit </strong></h3><p>- Giá: <strong>&gt;3.000.000đ</strong>. liên hệ</p><p>Tương tự như các loại Bình gỗ sồi ngâm rượu khác,&nbsp; Thùng rượu gỗ sồi 50Lit với chiều dài 55cm - Đường kính mặt 38cm sẽ đảm bảo khi ngâm rượu cho hương vị thơm ngon bằng chất liệu thép không rỉ&nbsp; và an toàn trong quá trình sử dụng.</p><h3><strong>2.5 Thùng rượu gỗ sồi 100 Lit </strong></h3><p>0977.148.885 – 0968.428.883</p><p>Chất lượng Thùng gỗ sồi 100Lit rất được nhiều khách hàng đánh giá cao. Chiều dài 70cm - Đường kính mặt 48cm, phục vụ đối tượng có nhu cầu ngâm nhiều rượu. Chất lượng đã được kiểm chứng rất rõ ràng và cụ thể.</p><h3><strong>2.6 Thùng rượu gỗ sồi 200 Lit </strong></h3><p>- Giá: <strong>&gt;5.000.000đ</strong>. liên hệ</p><p>Thùng gỗ sồi 200 lít được sơn màu nâu rất sang trọng và cổ kính tạo nét riêng biệt cho sản phẩm. Sử dụng để làm quà tặng, quà biếu thì quá là tuyệt vời.</p><figure aria-describedby="caption-attachment-10713" id="attachment_10713"><img alt="mua thùng rượu gỗ sồi" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-soi-ngam-ruou.jpg" width="600" /><figcaption id="caption-attachment-10713">Thùng gỗ sồi chất lượng cao</figcaption></figure>&nbsp;<figure aria-describedby="caption-attachment-9624" id="attachment_9624"><img alt="thùng đựng rượu bằng gỗ sồi" height="410" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-ruou-go-soi.jpg" width="600" /><figcaption id="caption-attachment-9624">Quy cách sản xuất thùng gỗ đạt chất lượng</figcaption></figure>&nbsp;<blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:<br /><a href="/dong-thung-go-kien-go/d%E1%BB%8Bch_v%E1%BB%A5_th%C3%B9ng_%C4%91%C3%B3ng_g%E1%BB%97">Thùng gỗ đựng hàng</a> </strong>xuất khẩu tại Đông Phú Tiên<br /><strong><a href="/san-pham/thung-go-pallet.htmlbán_thùng_gỗ_pallet">Bán thùng gỗ pallet</a> </strong>chất lượng cao<br />Sản phẩm <strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua.html">thùng gỗ đựng hoa quả</a></strong> ,trái cây<br /><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ"><strong>Bán thùng gỗ pallet</strong></a> chất lượng tại miền bắc</span></p></blockquote><h2><strong>3. Đông Phú Tiên bán thùng gỗ đựng rượu nào</strong></h2><p>Hiện nay chúng tôi phân phối các loại thùng gỗ sau:</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover" >	<tbody>		<tr>			<td>			<figure aria-describedby="caption-attachment-10440" id="attachment_10440"><img alt="thùng gỗ sồi nhập khẩu" height="480" sizes="(max-width: 480px) 100vw, 480px" src="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau.jpg" width="480" />			<figcaption id="caption-attachment-10440">Bán thùng gỗ sồi tại Hà Nội</figcaption>			</figure>			</td>			<td>			<ul>				<li>Thùng 10L – ĐK 26cm * Dài 36cm * Độ Dày 2,5cm</li>				<li>Thùng 20L – ĐK 30cm * Dài 42cm * Độ Dày 2,5cm</li>				<li>Thùng 30L – ĐK 33cm * Dài 48cm * Độ Dày 2.5cm</li>				<li>Thùng 50L – ĐK 38cm * Dài 55cm * Độ Dày 3cm</li>				<li>Thùng 100L – ĐK 48cm * Dài 70cm * Độ Dày 3cm</li>				<li>Thùng 200L – ĐK 55cm * Dài 85cm * Độ Dày 3cm</li>			</ul>			</td>		</tr>	</tbody></table> </div><blockquote><p>Gỗ sồi được sử dụng trong sản xuất rượu vang để thay đổi màu sắc, hương vị và kết cấu của rượu vang. Trong gỗ sồi có những hợp chất rất đặc biệt. Khi được ngâm rượu, chất này sẽ được ngấm dần vào rượu giúp hương rượu nồng thơm hơn và màu sắc đẹp mắt hơn</p></blockquote><h2><strong>4. Những rủi ro khi mua Thùng gỗ sồi chất lượng kém</strong></h2>Hiện nay, vấn nạn hàng nhái, hàng kém chất lượng luôn là một trong những vấn đề nhức nhối của xã hội. Hệ lụy của nó đem lại những tác động tiêu cực đến tài chính, sức khỏe và niềm tin của người tiêu dùng tới các nhà sản xuất thùng gỗ sồi chân chính. Vì vậy hãy tìm hiểu cụ thể để tránh nguy cơ mua phải hàng không tốt đang trôi nổi trên thị trường.<br /><br />4.1 Sấy khô Thùng gỗ sồi bằng máy:<br />Khi gỗ được sấy, lượng nhựa của gỗ sồi gần như được tiêu tán trong quá trình làm nóng nên ngâm ủ Rượu sồi không còn đạt chuẩn, rượu sẽ không chuyển màu, hương vị không như mong muốn. Điều này rất ít người dùng hiện nay không biết được.<br /><br />Tại Đông Phú Tiên, chúng tôi dùng gỗ hong khô bằng gió tự nhiên trong 12 tháng đến 15 tháng mới được sử dụng. Đây là yếu tố đã làm cho&nbsp; sản phẩm của chúng tôi chuẩn chất lượng, tuổi thọ cao và bền mãi với thời gian.<br /><br />4.2 Sử dụng keo gắn vào Thùng gỗ sồi:<br />Khi sản phẩm dùng keo gắn chứng tỏ năng lực của nhà sản xuất, tay nghề và lương tâm người thợ đều không có. Đây chỉ là biện pháp thay thể để chờ đợi gỗ giãn nở.&nbsp; Keo là hóa chất độc hại với sức khỏe người tiêu dùng, bạn nên dùng đèn pin để rọi qua lỗ đổ rượu để quan sát các mối ghép nối có&nbsp; ép chặt lại với nhau không.<figure aria-describedby="caption-attachment-9622" id="attachment_9622"><img alt="thùng đựng rượu bằng gỗ sồi" height="409" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-soi-2.jpg" width="600" /><figcaption id="caption-attachment-9622">Thùng gỗ sồi được sản xuất tại Đông Phú Tiên</figcaption></figure>&nbsp;<h2><strong>5. Hướng dẫn cách sử dụng Thùng gỗ sồi</strong></h2><p>Khi đã lựa chọn được Thùng gỗ sồi để đựng rượu chuẩn, biết cách sử dụng chúng đúng cách. Khi sử dụng bạn nên lưu ý các vấn đề sau:<br />- Trước khi ngâm, đừng quên đổ đầy nước vào thùng và ngâm trong khoảng thời gian 5-7 ngày để gỗ được giãn nở ra và cũng kiểm tra được tình trạng Thùng có bị rò rỉ không.<br />- Nên đổ khoảng 3/4 thể tích của Thùng rượu để đảm bảo đủ không khí cho quá trình lên men. Phải thường xuyên đổ thêm rượu vì rượu bốc hơi làm giảm lượng rượu trong Thùng.</p><h2><strong>6. Phương pháp bảo quản Thùng ngâm rượu gỗ sồi</strong></h2><p>Việc bảo quản Thùng rượu gỗ sồi giá rẻ sau một thời gian sử dụng là điều quan trọng để không ảnh hưởng đến chất lượng của rượu và kéo dài tuổi thọ của sản phẩm.<br />- Tránh ánh nắng trực tiếp từ mặt trời, bảo quản ở những nơi thoáng mát,<br />- Để ở những vị trí mà trẻ em không thể với tới để mở ra xem khiến cho quá trình ngâm bị rượu gián đoạn và ảnh hưởng không tốt đến chất lượng rượu như mong muốn.<br />- Nhiệt độ bảo quản nên trong khoảng 10-14 độ C đối với rượu Nho và nên trong khoảng từ 15-20 độ C đối với các loại rượu mạnh.<br />- Độ ẩm giao động trong khoảng&nbsp; 70-80% -mức độ lý tưởng cho những Thùng gỗ sồi ủ rượu để lâu ngày.<br />Mời bạn xem thêm video về cách đóng <strong>thùng gỗ sồi đựng rượu</strong>:</p><div class="youtube-embed-wrapper" style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden"><iframe allow="autoplay;" allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/e_GxHtenhms?rel=0&amp;autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%" width="640"></iframe></div><h2 id="sell_wooden_crates"><strong>7. Địa chỉ bán thùng gỗ sồi uy tín</strong></h2><figure aria-describedby="caption-attachment-9620" id="attachment_9620"><img alt="thùng rượu gỗ sồi hà nội" height="337" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-2.jpg" width="600" /><figcaption id="caption-attachment-9620">Địa chỉ bán thùng gỗ sồi uy tín ở Hà Nội và Bắc Ninh</figcaption></figure><p>Đông Phú Tiên không cam kết giá thành sản phẩm rẻ nhất thị trường, nhưng chúng tôi chắc chắn rằng giá cả của mỗi chiếc&nbsp;<strong>thùng rượu gỗ sồi</strong>&nbsp;cao cấp do chúng tôi sản xuất luôn là hợp lý nhất so với chất lượng của thùng gỗ.</p><p>Mỗi ly rượu vang thơm ngon luôn khởi đầu từ một chiếc thùng gỗ chất lượng. Để đặt mua sản phẩm<strong>&nbsp;thùng gỗ sồi</strong>&nbsp;cao cấp tại <a href="https://cong-ty-tnhh-mtv-dong-phu-tien.business.site/">Đông Phú Tiên</a>, quý khách vui lòng liên hệ các thông tin sau:</p><ul>	<li>Hotline: 0977.148.885 – 0968.428.883</li>	<li>Địa chỉ: Khu Công Nghiệp Đại Đồng, Tiên Du, Bắc Ninh 16409</li>	<li>Email: dongphutien@gmail.com</li></ul><p>Chúng tôi miễn phí vận chuyển trên toàn quốc.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong></span><br /><span style="font-size:16px;">Dịch vụ <strong><a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html#">đóng thùng gỗ tại Hà Nội</a></strong><br />Báo Giá <a href="/san-pham/bao-gia-pallet-go.html"><strong>Pallet Gỗ</strong></a> Giá Rẻ<br /><strong><a href="/dich-vu-dong-goi-hang-hoa/dong_goi_hang_hoa">Dịch vụ đóng gói hàng hóa</a> </strong>xuất khẩu, hàng dễ vỡ tại Đông Phú Tiên<br />Dịch vụ đóng <strong><a href="/dong-thung-go-kien-go/dong_thung_go_gia_re">thùng gỗ pallet đóng hàng xuất khẩu</a></strong> - đóng kiện gỗ chất lượng CAO<br />Dịch vụ <a href="http://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/#vận_chuyển_máy_móc_thiết_bị"><strong>vận chuyển máy móc thiết bị</strong></a></span></p></blockquote></div>
+                <p>Bạn có thể xem nhanh bài viết&nbsp;<strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-soi.html">thùng rượu gỗ sồi</a>&nbsp;sồi đựng rượu</strong> tại đây:</p><h2><strong>1. Thông số của Thùng rượu gỗ sồi</strong></h2><div><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">	<tbody>		<tr>			<td>Tên sản phẩm</td>			<td>Thùng gỗ sồi nhập khẩu</td>		</tr>		<tr>			<td>Mã sản phẩm</td>			<td>TGS – ĐPT</td>		</tr>		<tr>			<td>Công Dụng</td>			<td>Ngâm ủ rượu vang, rượu trắng.</td>		</tr>		<tr>			<td>Chất Liệu</td>			<td>Gỗ Sồi Đỏ Nhập Khẩu Mỹ</td>		</tr>		<tr>			<td>Dung Tích</td>			<td>20L-30L-50L-100L-200L</td>		</tr>		<tr>			<td>Đặt Hàng</td>			<td>0977.148.885 – 0968.428.883</td>		</tr>		<tr>			<td>Bảo hành</td>			<td>06 tháng</td>		</tr>	</tbody></table> </div><h2><strong>2. Báo giá Thùng rượu gỗ sồi chi tiết tại Xưởng sản xuất</strong></h2><p>Bình gỗ sồi có kích thước phong phú nên giá sản phẩm cũng tương ứng với sự đa dạng đó. Để biết chi tiết hơn hãy cùng chúng tôi tham khảo báo giá thùng gỗ sồi mới nhất 2021 nhé.</p><h3><strong>2.1 Thùng rượu gỗ sồi 10 Lit </strong></h3><p>- Giá: <strong>&gt;1.000.000đ</strong>. liên hệ</p><p>Các thùng gỗ sồi 10 lít đều nét đẹp sang trọng và tinh tế. Thùng rượu gỗ nhập khẩu được thiết kế với chiều dài 3</p><h3><strong>2.2 Thùng rượu gỗ sồi 20 Lit</strong></h3><p>0977.148.885 – 0968.428.883</p><p>Loại này được gia công đánh bóng mặt ngoài và khắc hoa văn. Không chỉ mang lại cảm giác chắc chắn và còn thể hiện nét đẹp sang trọng và tinh tế. Kích thước thùng rượu gỗ nhập khẩu với chiều dài</p><h3><strong>2.3 Thùng rượu gỗ sồi 30 Lit </strong></h3><p>- Giá: <strong>&gt;2.000.000đ</strong>. liên hệ: 0977.148.885 – 0968.428.883</p><p>Thùng này có kích thước: Chiều dài 48cm - đường kính mặt 33cm. Nó to hơn Thùng ngâm rượu gỗ sồi 20 lít một chút và là một trong những sản phẩm có kích thước vừa đủ và nét sang trọng, tinh tế cùng với tính ứng dụng cao nên được nhiều khách hàng tin chọn</p><h3><strong>2.4 Thùng rượu gỗ sồi 50 Lit </strong></h3><p>- Giá: <strong>&gt;3.000.000đ</strong>. liên hệ</p><p>Tương tự như các loại Bình gỗ sồi ngâm rượu khác,&nbsp; Thùng rượu gỗ sồi 50Lit với chiều dài 55cm - Đường kính mặt 38cm sẽ đảm bảo khi ngâm rượu cho hương vị thơm ngon bằng chất liệu thép không rỉ&nbsp; và an toàn trong quá trình sử dụng.</p><h3><strong>2.5 Thùng rượu gỗ sồi 100 Lit </strong></h3><p>0977.148.885 – 0968.428.883</p><p>Chất lượng Thùng gỗ sồi 100Lit rất được nhiều khách hàng đánh giá cao. Chiều dài 70cm - Đường kính mặt 48cm, phục vụ đối tượng có nhu cầu ngâm nhiều rượu. Chất lượng đã được kiểm chứng rất rõ ràng và cụ thể.</p><h3><strong>2.6 Thùng rượu gỗ sồi 200 Lit </strong></h3><p>- Giá: <strong>&gt;5.000.000đ</strong>. liên hệ</p><p>Thùng gỗ sồi 200 lít được sơn màu nâu rất sang trọng và cổ kính tạo nét riêng biệt cho sản phẩm. Sử dụng để làm quà tặng, quà biếu thì quá là tuyệt vời.</p><figure aria-describedby="caption-attachment-10713" id="attachment_10713"><img alt="mua thùng rượu gỗ sồi" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-soi-ngam-ruou.jpg" width="600" /><figcaption id="caption-attachment-10713">Thùng gỗ sồi chất lượng cao</figcaption></figure>&nbsp;<figure aria-describedby="caption-attachment-9624" id="attachment_9624"><img alt="thùng đựng rượu bằng gỗ sồi" height="410" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-ruou-go-soi.jpg" width="600" /><figcaption id="caption-attachment-9624">Quy cách sản xuất thùng gỗ đạt chất lượng</figcaption></figure>&nbsp;<blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:<br /><a href="/dong-thung-go-kien-go/d%E1%BB%8Bch_v%E1%BB%A5_th%C3%B9ng_%C4%91%C3%B3ng_g%E1%BB%97">Thùng gỗ đựng hàng</a> </strong>xuất khẩu tại Đông Phú Tiên<br /><strong><a href="/san-pham/thung-go-pallet.htmlbán_thùng_gỗ_pallet">Bán thùng gỗ pallet</a> </strong>chất lượng cao<br />Sản phẩm <strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua.html">thùng gỗ đựng hoa quả</a></strong> ,trái cây<br /><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ"><strong>Bán thùng gỗ pallet</strong></a> chất lượng tại miền bắc</span></p></blockquote><h2><strong>3. Đông Phú Tiên bán thùng gỗ đựng rượu nào</strong></h2><p>Hiện nay chúng tôi phân phối các loại thùng gỗ sau:</p><div class="table-responsive"><table class="table table-striped table-bordered table-hover" >	<tbody>		<tr>			<td>			<figure aria-describedby="caption-attachment-10440" id="attachment_10440"><img alt="thùng gỗ sồi nhập khẩu" height="480" sizes="(max-width: 480px) 100vw, 480px" src="/uploads/shops/2021_05/ban-thung-go-soi-xuat-khau.jpg" width="480" />			<figcaption id="caption-attachment-10440">Bán thùng gỗ sồi tại Hà Nội</figcaption>			</figure>			</td>			<td>			<ul>				<li>Thùng 10L – ĐK 26cm * Dài 36cm * Độ Dày 2,5cm</li>				<li>Thùng 20L – ĐK 30cm * Dài 42cm * Độ Dày 2,5cm</li>				<li>Thùng 30L – ĐK 33cm * Dài 48cm * Độ Dày 2.5cm</li>				<li>Thùng 50L – ĐK 38cm * Dài 55cm * Độ Dày 3cm</li>				<li>Thùng 100L – ĐK 48cm * Dài 70cm * Độ Dày 3cm</li>				<li>Thùng 200L – ĐK 55cm * Dài 85cm * Độ Dày 3cm</li>			</ul>			</td>		</tr>	</tbody></table> </div><blockquote><p>Gỗ sồi được sử dụng trong sản xuất rượu vang để thay đổi màu sắc, hương vị và kết cấu của rượu vang. Trong gỗ sồi có những hợp chất rất đặc biệt. Khi được ngâm rượu, chất này sẽ được ngấm dần vào rượu giúp hương rượu nồng thơm hơn và màu sắc đẹp mắt hơn</p></blockquote><h2><strong>4. Những rủi ro khi mua Thùng gỗ sồi chất lượng kém</strong></h2>Hiện nay, vấn nạn hàng nhái, hàng kém chất lượng luôn là một trong những vấn đề nhức nhối của xã hội. Hệ lụy của nó đem lại những tác động tiêu cực đến tài chính, sức khỏe và niềm tin của người tiêu dùng tới các nhà sản xuất thùng gỗ sồi chân chính. Vì vậy hãy tìm hiểu cụ thể để tránh nguy cơ mua phải hàng không tốt đang trôi nổi trên thị trường.<br /><br />4.1 Sấy khô Thùng gỗ sồi bằng máy:<br />Khi gỗ được sấy, lượng nhựa của gỗ sồi gần như được tiêu tán trong quá trình làm nóng nên ngâm ủ Rượu sồi không còn đạt chuẩn, rượu sẽ không chuyển màu, hương vị không như mong muốn. Điều này rất ít người dùng hiện nay không biết được.<br /><br />Tại Đông Phú Tiên, chúng tôi dùng gỗ hong khô bằng gió tự nhiên trong 12 tháng đến 15 tháng mới được sử dụng. Đây là yếu tố đã làm cho&nbsp; sản phẩm của chúng tôi chuẩn chất lượng, tuổi thọ cao và bền mãi với thời gian.<br /><br />4.2 Sử dụng keo gắn vào Thùng gỗ sồi:<br />Khi sản phẩm dùng keo gắn chứng tỏ năng lực của nhà sản xuất, tay nghề và lương tâm người thợ đều không có. Đây chỉ là biện pháp thay thể để chờ đợi gỗ giãn nở.&nbsp; Keo là hóa chất độc hại với sức khỏe người tiêu dùng, bạn nên dùng đèn pin để rọi qua lỗ đổ rượu để quan sát các mối ghép nối có&nbsp; ép chặt lại với nhau không.<figure aria-describedby="caption-attachment-9622" id="attachment_9622"><img alt="thùng đựng rượu bằng gỗ sồi" height="409" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-soi-2.jpg" width="600" /><figcaption id="caption-attachment-9622">Thùng gỗ sồi được sản xuất tại Đông Phú Tiên</figcaption></figure>&nbsp;<h2><strong>5. Hướng dẫn cách sử dụng Thùng gỗ sồi</strong></h2><p>Khi đã lựa chọn được Thùng gỗ sồi để đựng rượu chuẩn, biết cách sử dụng chúng đúng cách. Khi sử dụng bạn nên lưu ý các vấn đề sau:<br />- Trước khi ngâm, đừng quên đổ đầy nước vào thùng và ngâm trong khoảng thời gian 5-7 ngày để gỗ được giãn nở ra và cũng kiểm tra được tình trạng Thùng có bị rò rỉ không.<br />- Nên đổ khoảng 3/4 thể tích của Thùng rượu để đảm bảo đủ không khí cho quá trình lên men. Phải thường xuyên đổ thêm rượu vì rượu bốc hơi làm giảm lượng rượu trong Thùng.</p><h2><strong>6. Phương pháp bảo quản Thùng ngâm rượu gỗ sồi</strong></h2><p>Việc bảo quản Thùng rượu gỗ sồi giá rẻ sau một thời gian sử dụng là điều quan trọng để không ảnh hưởng đến chất lượng của rượu và kéo dài tuổi thọ của sản phẩm.<br />- Tránh ánh nắng trực tiếp từ mặt trời, bảo quản ở những nơi thoáng mát,<br />- Để ở những vị trí mà trẻ em không thể với tới để mở ra xem khiến cho quá trình ngâm bị rượu gián đoạn và ảnh hưởng không tốt đến chất lượng rượu như mong muốn.<br />- Nhiệt độ bảo quản nên trong khoảng 10-14 độ C đối với rượu Nho và nên trong khoảng từ 15-20 độ C đối với các loại rượu mạnh.<br />- Độ ẩm giao động trong khoảng&nbsp; 70-80% -mức độ lý tưởng cho những Thùng gỗ sồi ủ rượu để lâu ngày.<br />Mời bạn xem thêm video về cách đóng <strong>thùng gỗ sồi đựng rượu</strong>:</p><div class="youtube-embed-wrapper" style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden"><iframe allow="autoplay;" allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/e_GxHtenhms?rel=0&amp;autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%" width="640"></iframe></div><h2 id="sell_wooden_crates"><strong>7. Địa chỉ bán thùng gỗ sồi uy tín</strong></h2><figure aria-describedby="caption-attachment-9620" id="attachment_9620"><img alt="thùng rượu gỗ sồi hà nội" height="337" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-2.jpg" width="600" /><figcaption id="caption-attachment-9620">Địa chỉ bán thùng gỗ sồi uy tín ở Hà Nội và Bắc Ninh</figcaption></figure><p>Đông Phú Tiên không cam kết giá thành sản phẩm rẻ nhất thị trường, nhưng chúng tôi chắc chắn rằng giá cả của mỗi chiếc&nbsp;<strong>thùng rượu gỗ sồi</strong>&nbsp;cao cấp do chúng tôi sản xuất luôn là hợp lý nhất so với chất lượng của thùng gỗ.</p><p>Mỗi ly rượu vang thơm ngon luôn khởi đầu từ một chiếc thùng gỗ chất lượng. Để đặt mua sản phẩm<strong>&nbsp;thùng gỗ sồi</strong>&nbsp;cao cấp tại <a href="https://cong-ty-tnhh-mtv-dong-phu-tien.business.site/">Đông Phú Tiên</a>, quý khách vui lòng liên hệ các thông tin sau:</p><ul>	<li>Hotline: 0977.148.885 – 0968.428.883</li>	<li>Địa chỉ: Khu Công Nghiệp Đại Đồng, Tiên Du, Bắc Ninh 16409</li>	<li>Email: dongphutien@gmail.com</li></ul><p>Chúng tôi miễn phí vận chuyển trên toàn quốc.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong></span><br /><span style="font-size:16px;">Dịch vụ <strong><a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html#">đóng thùng gỗ tại Hà Nội</a></strong><br />Báo Giá <a href="/san-pham/thung-go-pallet.html"><strong>Pallet Gỗ</strong></a> Giá Rẻ<br /><strong><a href="/dich-vu-dong-goi-hang-hoa/dong_goi_hang_hoa">Dịch vụ đóng gói hàng hóa</a> </strong>xuất khẩu, hàng dễ vỡ tại Đông Phú Tiên<br />Dịch vụ đóng <strong><a href="/dong-thung-go-kien-go/dong_thung_go_gia_re">thùng gỗ pallet đóng hàng xuất khẩu</a></strong> - đóng kiện gỗ chất lượng CAO<br />Dịch vụ <a href="http://thunggopalletgo.com.vn/dich-vu-van-chuyen-may-moc-thiet-bi/#vận_chuyển_máy_móc_thiết_bị"><strong>vận chuyển máy móc thiết bị</strong></a></span></p></blockquote></div>
             </div>
             <div role="tabpanel" class="tab-pane fade " id="content_rate-2">
                 <div class="panel panel-default">
@@ -518,14 +495,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
         </div>
         <br />  
         <div class="info_pro">
         </div>
         <div class="caption text-center">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 51569</div>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
+            <div>Lượt xem : 51664</div>
             <div>Mã sp : S000043</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -547,7 +524,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 5005</div>
+            <div>Lượt xem : 5009</div>
             <div>Mã sp : PL4HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -569,7 +546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 2 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 3424</div>
+            <div>Lượt xem : 3428</div>
             <div>Mã sp : PL2HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -591,7 +568,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-dung-hoa-qua.html" title="Thùng Gỗ Đựng Trái Cây"><div class="den normal font-16 "><h3>Thùng Gỗ Đựng Trái Cây</h3> </div></a>
-            <div>Lượt xem : 4614</div>
+            <div>Lượt xem : 4620</div>
             <div>Mã sp : TGHH-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -613,7 +590,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-pallet.html" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"><div class="den normal font-16 "><h3>Thùng Gỗ Pallet Hở Mặt Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 7259</div>
+            <div>Lượt xem : 7269</div>
             <div>Mã sp : TGP-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -653,6 +630,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="products" class="clearfix">
 <div class="can-flex ">
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
+    <div class=" text-center mr-b-10 pd-10 ">
+        <div style="height: 250px ; padding-bottom:10px">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-4-huong-nang.jpg" alt="Pallet Gỗ 4 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
+        </div>
+        <br />  
+        <div class="info_pro">
+        </div>
+        <div class="caption text-center">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
+            <div>Lượt xem : </div>
+            <div>Mã sp : PL4HN</div>
+            <div>Khối lượng :  Kg</div>
+
+                            <p class="price">
+                                    <span class="money">120.000 đ</span>
+            </p>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-2-huong-nang.jpg" alt="Pallet Gỗ 2 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
@@ -959,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="openidResult" class="nv-alert" style="display:none"></div>
     <div id="openidBt" data-result="" data-redirect=""></div>
     <a class="btn-top" href="javascript:void(0);" title="Lên đầu trang" style="display: inline;"></a>
-<div id="run_cronjobs" style="visibility:hidden;display:none;"><img alt="" src="/index.php?second=cronjobs&amp;p=e182GbBt" width="1" height="1" /></div>
+<div id="run_cronjobs" style="visibility:hidden;display:none;"><img alt="" src="/index.php?second=cronjobs&amp;p=m31ubrY7" width="1" height="1" /></div>
 <script src="/assets/js/jquery/jquery.min.js?t=1638773501"></script>
 <script>var nv_base_siteurl="/",nv_lang_data="vi",nv_lang_interface="vi",nv_name_variable="nv",nv_fc_variable="op",nv_lang_variable="language",nv_module_name="shops",nv_func_name="detail",nv_is_user=0, nv_my_ofs=7,nv_my_abbr="+07",nv_cookie_prefix="nv4",nv_check_pass_mstime=28738000,nv_area_admin=0,nv_safemode=0,theme_responsive=1,nv_is_recaptcha=0;</script>
 <script src="/assets/js/language/vi.js?t=1638773501"></script>
@@ -986,6 +985,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
         });
     });
  </script>
+<script src="/themes/default/js/toggle-nav.js?t=1638773501" type="text/javascript"></script>
 <script type="text/javascript" data-show="after">
 ( function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -1194,9 +1194,9 @@ function check_quantity( _this ){
             "https://thunggopalletgo.com.vn/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg"
                                 ],
                     "name": "Pallet Gỗ Giá Rẻ",
-                    "url": "https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
-                    "@id": "/san-pham/bao-gia-pallet-go.htmlproduct",
-                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
+                    "url": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
+                    "@id": "/san-pham/thung-go-pallet.htmlproduct",
+                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
                     "description": "Đông Phú Tiên cung cấp bảng báo giá pallet gỗ giá sỉ, rẻ, chất lượng nhất giao động từ 120.000Đ với kích thước tiêu chuẩn 1200×800 mm / 1200×1000 mm / 1200×900 mm và những ưu đãi đặc biệt dành cho mọi khách hàng."
                     },
                      {

@@ -34,6 +34,7 @@
 <link rel="preload" as="script" href="/themes/default/js/custom.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/owl.carousel.js?t=1638773501">
 <link rel="preload" as="script" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<link rel="preload" as="script" href="/themes/default/js/toggle-nav.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/jquery.colorbox.js?t=1638773501">
 <link rel="preload" as="script" href="/themes/default/js/comment.js?t=1638773501">
 <link rel="preload" as="script" href="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
@@ -50,13 +51,12 @@
 <link rel="stylesheet" href="/themes/default/css/custom.css?t=1638773501">
 <link rel="stylesheet" href="/assets/css/default.vi.0.css?t=1638773501">
 <link rel="stylesheet" type="text/css" media="screen" href="/themes/default/css/navi.css?t=1638773501" />
-<link rel="stylesheet" href="/themes/default/css/meanmenu.css?t=1638773501" media="all" />
+<link href="/themes/default/css/toggle-nav.css?t=1638773501" rel="stylesheet"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/themes/default/css/colorbox.css?t=1638773501" />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css' />
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css' />
 <link rel="StyleSheet" href="/themes/default/css/comment.css?t=1638773501" type="text/css" />
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <style>
     .f-nav{  
         /* To fix main menu container */
@@ -143,49 +143,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <noscript>
     <div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a>vào đây</a>!</div>
 </noscript>
-<header>
-    <div class="site-banner" style="background-image: url('/themes/default/images/none.png');"></div>
-    <div class="section-header an-mobi">
-        <div class="container pd-tb-10">
-            <div id="header">
-                <div class="logo col-md-3 text-center">
-                    <a title="Đông Phú Tiên" href="/"><img src="/uploads/logo.png" alt="Đông Phú Tiên" /></a>
-                </div>
-                <div class="col-md-8 an-mobi">
-                    <div class="headerSearch ">
-                        <div class="input-group">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-9 an-mobi">
-<div class="clear">
-    <div class="hotline"><span style="color:rgb(236, 31, 37);"><strong><a href="http://tel:0968.428.883">0968.428.883</a> – <a href="http://tel:0977.148.885">0977.148.885</a></strong></span><br />Hotline tư vấn miễn phí 24/7</div>
-</div>
-                    </div>
-                <div class="col-md-4 an-mobi">
-                     <div id="google_translate_element"></div>
-            <div id="google_translate_element"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div class="bg-menu" id="menutop">   
     <div class="container no-bg">
                     <div >  
 <a href="#menu" class="menu-link active"><span></span> </a> 
-<div class="logo-mb text-center  show_mobi"> <a href="/"><img src="/uploads/logo.png" title="" alt="" style="max-height:60px" /> </a></div>
-<nav id="cssmenu">
+<div class="logo-mb text-center  show_mobi"></div>
+<nav id="menu" class="menu">
 <ul >
-    <li>
-        <a title="Trang chủ" href="/"> <span class="hidden-sm"> <i class="fa fa-home"></i> </span></a>
-    </li>
-            <li >
-        <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+  <li>
+    <a title="Trang chủ" href="/" class="logo"> <span class="hidden-sm"><img src="/uploads/logo.png" title="" alt="" style="max-height:40px" /> </span></a>
+  </li>
+        <li >
+    <a title="Dịch vụ đóng gói" href="/dich-vu-dong-goi/" >Dịch vụ đóng gói</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ đóng gói hàng hóa xuất khẩu" href="/dich-vu-dong-goi-hang-hoa/" >Dịch vụ đóng gói hàng hóa xuất khẩu</a>
 </li>
@@ -202,16 +175,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ đóng gói hút chân không giá rẻ" href="/dong-goi-hut-chan-khong/" >Dịch vụ đóng gói hút chân không giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
-    </li>
-    <li >
-        <a title="Pallet" href="/pallet/" >Pallet</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Dịch vụ đóng thùng gỗ" href="/dong-thung-go-kien-go/" >Dịch vụ đóng thùng gỗ</a>
+  </li>
+  <li >
+    <a title="Pallet" href="/pallet/" >Pallet</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Bán pallet gỗ hà nội" href="/dong-pallet-go-tai-ha-noi-theo-yeu-cau/" >Bán pallet gỗ hà nội</a>
 </li>
@@ -220,13 +193,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Bán pallet nhựa chính hãng" href="/pallet-nhua/" >Bán pallet nhựa chính hãng</a>
 </li>
 
-            </ul>
-    </li>
-    <li  class="current">
-        <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Sản phẩm" href="/san-pham/" >Sản phẩm</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Pallet gỗ 4 hướng nâng" href="/san-pham/pallet-go-4-huong-nang.html" >Pallet gỗ 4 hướng nâng</a>
 </li>
@@ -234,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <a title="Pallet gỗ 2 hướng nâng" href="/san-pham/pallet-go-2-huong-nang.html" >Pallet gỗ 2 hướng nâng</a>
 </li>
-<li  class="current">
+<li >
 
 <a title="Thùng đựng hoa quả, trái cây" href="/san-pham/thung-go-dung-hoa-qua.html" >Thùng đựng hoa quả, trái cây</a>
 </li>
@@ -248,16 +221,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li >
 
-<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/bao-gia-pallet-go.html" >Pallet Gỗ Giá Rẻ</a>
+<a title="Pallet Gỗ Giá Rẻ" href="/san-pham/thung-go-pallet.html" >Pallet Gỗ Giá Rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
-                      <span class="has-subnav an-des show-mobi">▼</span>
-            <ul class="has-sub">
-                <li >
+      </ul>
+  </li>
+  <li >
+    <a title="Nâng hạ, vận chuyển" href="/dich-vu-nang-ha-van-chuyen/" >Nâng hạ, vận chuyển</a>
+                  <span class="has-subnav an-des show-mobi">▼</span>
+      <ul class="has-sub">
+        <li >
 
 <a title="Dịch vụ vận chuyển hàng hóa" href="/dich-vu-van-chuyen-hang-hoa/" >Dịch vụ vận chuyển hàng hóa</a>
 </li>
@@ -278,14 +251,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a title="Dịch vụ bốc xếp hàng hóa giá rẻ" href="/boc-xep-hang-hoa/" >Dịch vụ bốc xếp hàng hóa giá rẻ</a>
 </li>
 
-            </ul>
-    </li>
-    <li >
-        <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
-    </li>
-    <li >
-        <a title="Liên hệ" href="/contact/" >Liên hệ</a>
-    </li>
+      </ul>
+  </li>
+  <li >
+    <a title="Gia cố Container" href="/dich-vu-dong-may-moc-tren-container-tron-goi-gia-re/" >Gia cố Container</a>
+  </li>
+  <li >
+    <a title="Liên hệ" href="/contact/" >Liên hệ</a>
+  </li>
+  <li >
+    <img src="../338395163_765981688264731_7742076387611735740_n.png" style="width: 200px;" alt="">
+
+  </li>
     <div class="clear"> </div>
 </ul>
 </nav>
@@ -343,10 +320,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-10 text-center">
         <div id="sync1" class="owl-carousel owl-theme">
                     <div class="item ">	
-                                 <a class="group3" href="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" > <img  src="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" alt="Thùng Gỗ Đựng Trái Cây" class=" max-width:100%"/> </a> 
+                                 <a class="group2" href="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" > <img  src="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" alt="Thùng Gỗ Đựng Trái Cây" class=" max-width:100%"/> </a> 
                     </div>
                                           <div class="item ">
-                        <a class="group3" href="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" ><img title="Thùng Gỗ Đựng Trái Cây"  src="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" /></a>
+                        <a class="group2" href="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" title="Thùng Gỗ Đựng Trái Cây" ><img title="Thùng Gỗ Đựng Trái Cây"  src="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" /></a>
                     </div>
                 </div>
                 <div id="sync2" class="owl-carousel owl-theme">
@@ -360,7 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-xs-24 col-sm-14">
                 <ul class="product_info">
                         <h1><span class="title">Thùng Gỗ Đựng Trái Cây</span></h1>
-                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  4613  </div>
+                      <div><b>Lượt xem <i class="fa fa-eye"></i> </b> :  4619  </div>
                       <div>
                         Mã sản phẩm: <strong>TGHH-DPT</strong>
                       </div>
@@ -426,7 +403,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="content_detail-1">
-                <p><i>Hoa quả là mặt hàng nhiều người tiêu dùng ưa chuộng, đặc biệt trong những ngày hè nóng bức. Nhưng khó khăn nhất cho các tiểu thương đi buôn mặt hàng này trong quá trình vận chuyển, đó là làm sao để sản phẩm không bị dập, hỏng. Từ đó&nbsp;<strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua.html#">thùng gỗ đựng trái cây</a></strong>&nbsp;</i><em>ra đời. Hãy cùng chúng tôi tìm hiểu công năng cũng như nơi cung cấp loại thùng gỗ này uy tín nhé.</em></p><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả tại hà nội" height="508" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-hoa-qua-tai-ha-noi.jpg" width="600" /></div><h2>&nbsp;</h2><ul></ul><h2><strong>1. Thông tin của Thùng Gỗ Đựng Trái Cây:</strong></h2><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">	<tbody>		<tr>			<td><b>Tên sản phẩm</b></td>			<td>Thùng gỗ xuất khẩu Trái Cây</td>		</tr>		<tr>			<td><b>Mã sản phẩm</b></td>			<td>TGXKTC-01</td>		</tr>		<tr>			<td><b>Quy cách đóng gói</b></td>			<td>Đóng theo yêu cầu phía Khách hàng hoặc các mẫu có sẵn</td>		</tr>		<tr>			<td><b>Chất Liệu</b></td>			<td>Thùng gỗ thông xẻ mới 100%</td>		</tr>		<tr>			<td><b>Công nghệ xử lý</b></td>			<td>Khử trùng và sấy theo tiêu chuẩn thùng gỗ xuất khẩu (IPSM 15), vận chuyển trong nước với công nghệ sấy nhập khẩu Nhật Bản.</td>		</tr>	</tbody></table> </div><p><br /><strong>Thùng gỗ đựng hoa quả</strong>&nbsp;là thùng gỗ đóng từ các thanh gỗ. Được ghép thưa, có lỗ hổng lớn để trái cây không bị bí, hấp hơi.</p><p>Gỗ thông được sử dụng tại Đông Phú Tiên để sản xuất thùng đựng trái cây là loại gỗ đảm bảo cho thùng gỗ thông chất lượng về độ an toàn, quy định xuất khẩu.</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng trái cây" height="450" src="/uploads/shops/2021_10/thung-go-dung-hoa-qua.jpg" width="600" /><figcaption>Thùng được đóng với thiết kế đẹp.</figcaption></figure></div>&nbsp;<p><b>Thùng gỗ đựng trái cây</b>&nbsp;được làm từ các thanh gỗ có kích thước mỏng, dẹt, xếp cách nhau tạo ra các khe hở, giúp thoát khí để trái cây không bị hấp hơi, úng hỏng. So với thùng xốp thì thùng gỗ có nhiều ưu điểm hơn, thiết kế đẹp mắt, vừa làm thùng gỗ trang trí và thuận tiện hơn trong việc vận chuyển.</p><p>Thùng gỗ cũng có thể dùng để đựng nông sản, rau củ,… Nhờ có những chiếc <a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-trong-cay-81.html"><strong>thùng gỗ trồng cây</strong></a>, các sạp trái cây trưng bày đẹp mắt hơn, sạch sẽ hơn. Vì thế cũng thu hút người mua hơn</p><p>Ngoài việc cung cấp thùng gỗ đựng hoa quả ra thì Đông Phú tiên còn hướng dẫn đóng <a href="/san-pham/bao-gia-pallet-go.htmlmua_pallet_gỗ"><strong>pallet gỗ</strong></a> ở hà nội đạt chuẩn chất lượng nhất trên thị trường hiện nay. Bạn có thể tham khảo <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#gỗ_pallet_hà_nội">pallet gỗ hà nội</a></strong>&nbsp;tại đây.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Dịch vụ <a href="/dong-thung-go-kien-go/dong_thung_go"><strong>dong kien go</strong></a> xuất khẩu quốc tế<br /><strong>Sản phẩm <a href="https://thunggopalletgo.com.vn/san-pham/thung-go-soi.html">thùng gỗ sồi đựng rượu</a></strong><br /><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ_pallet"><strong>Bán thùng gỗ pallet</strong></a> chất lượng tại miền bắc<br />Dịch vụ<strong>&nbsp;<a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html">đóng thùng gỗ tại Hà nội</a></strong></span></p></blockquote><h2 id="bán"><strong>2. Chất lượng của thùng gỗ đựng trái cây cần lưu ý</strong></h2><p>Tuy có nhiều ưu điểm là thế. Tuy nhiên, khi mua nếu không biết cách chọn, chúng ta rất dễ mua phải những chiếc thùng không đạt tiêu chuẩn, kém chất lượng. Dẫn đến sản phẩm không được bảo quản tốt. Hoặc độ bền của kiện kém, dùng một thời gian ngắn là hỏng. Vì vậy khi chọn mua các loại&nbsp;<strong>thùng gỗ đựng trái cây</strong>, chúng ta cần lưu ý những vấn đề sau</p><ul>	<li><strong>Các mẫu khớp phải chắc chắn 100%</strong></li></ul><p>Do&nbsp;<strong>thùng gỗ đựng trái cây</strong>&nbsp;được đóng bằng các thanh gỗ có kích thước mỏng, dẹt. Nên khi chọn, chúng ta phải để ý các vết đóng, các mắt đinh xem có chắc chắn không. Thùng gỗ chắc chắn là kiện có các thanh gỗ được gắn khít vào nhau, không tạo ra khe hở giữa các chỗ tiếp xúc. Khi nâng kiện gỗ trên tay cảm nhận được sự chắc chắn, không bị ọp ẹp.</p><blockquote cite="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua/#t%E1%BA%A1i_h%C3%A0_n%E1%BB%99i"><p>Nhiều thùng gỗ không sử dụng đinh để gắn, mà sử dụng các khớp gỗ. Khi kiểm tra các khớp gỗ phải ăn khớp với nhau 100%. Đồng thời độ dài các khớp phải đủ lớn để đảm bảo cho 2 điểm tiếp xúc gắn kết chặt chẽ với nhau.</p></blockquote><ul>	<li><strong>Thông thoáng, đảm bảo trái cây không bị kín hơi, giập nát</strong></li></ul><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="bán thùng gỗ đựng trái cây" height="450" src="/uploads/shops/2021_10/thung-go-pallet-dung-hoa-qua.jpg" width="600" /><figcaption>Thùng gỗ thông thoáng.</figcaption></figure></div>&nbsp;<p>Nếu&nbsp;<strong>thùng gỗ đựng trái cây</strong>&nbsp;quá kín, sẽ khiến trái cây bị hấp hơi dẫn đến úng, dập.</p><p>Vì thế khi chọn mua chúng ta phải chọn những kiện có các kẽ hở đủ lớn, đảm bảo trái cây bên trong được thông thoáng, thoát khí.</p><ul>	<li><strong>Chọn chất liệu gỗ chịu va chạm tốt</strong></li></ul><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng trái cây giá rẻ" height="450" src="/uploads/shops/2021_10/thung-pallet-dung-hoa-qua.jpg" width="600" /><figcaption>Chất liệu tốt, chống mối mọt</figcaption></figure></div>&nbsp;<p>Chất liệu gỗ cũng là điều rất quan trọng khi lựa chọn thùng gỗ. Chất liệu gỗ không tốt, giòn sẽ dễ bị gãy, thậm chí mục nát. Như vậy lúc vận chuyển chỉ cần hơi mạnh tay có thể làm sập, đổ cả kiện bất cứ lúc nào.</p>LIÊN HỆ VỚI CHÚNG TÔI<p><em>Mời bạn tham khảo video dưới đây để hiểu thêm về quy trình đóng thùng gỗ tại Đông Phú Tiên:</em></p><div class="youtube-embed-wrapper" style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden"><iframe allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/qX39lrmGACE?rel=0" style="position:absolute;top:0;left:0;width:100%;height:100%" width="640"></iframe></div><h2><strong>3. Các mẫu thùng gỗ xuất khẩu hoa quả</strong></h2>Trên thị trường hiện có rất nhiều loại thùng gỗ đa dạng, chất lượng và đẹp mắt phù hợp cho cả việc trưng bày để khách hàng lựa chọn. Chúng ta cùng tham khảo nhé.<figure aria-describedby="caption-attachment-8099" id="attachment_8099"><div style="text-align:center"><img alt="thùng gỗ đựng trái cây đa năng" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay-gia-re.jpg" width="600" /></div><figcaption id="caption-attachment-8099">Mẫu số 1</figcaption></figure><figure aria-describedby="caption-attachment-8098" id="attachment_8098"><div style="text-align:center"><img alt="thanh lý thùng gỗ đựng trái cây" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay-da-nang.jpg" width="600" /></div><figcaption id="caption-attachment-8098">Mẫu số 2</figcaption></figure><figure aria-describedby="caption-attachment-8093" id="attachment_8093"><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả giá bình dân" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" /></div><figcaption id="caption-attachment-8093">Mẫu số 3</figcaption></figure><figure aria-describedby="caption-attachment-8096" id="attachment_8096"><div style="text-align:center"><img alt="bán thùng gỗ đựng hoa quả" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" width="600" /></div><figcaption id="caption-attachment-8096">Mẫu số 4</figcaption></figure><figure aria-describedby="caption-attachment-8092" id="attachment_8092"><div style="text-align:center"><img alt="thùng gỗ đựng trái cây tphcm" height="450" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-dung-trai-cay.jpg" width="600" /></div><figcaption id="caption-attachment-8092">Mẫu số 5</figcaption></figure><figure aria-describedby="caption-attachment-8091" id="attachment_8091"><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả giá rẻ" height="545" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-dung-hoa-qua.jpg" width="600" /></div><figcaption id="caption-attachment-8091">Mẫu số 6</figcaption></figure><h2 id="uy_tín"><strong>4. Những cam kết khi mua thùng đựng hoa quả của chúng tôi</strong></h2><ul>	<li>Đa dạng về kích thước thiết kế, kiểu dáng: Công ty TNHH Đông Phú Tiên cam kết mang đến cho khách hàng các sản phẩm đa dạng về kích thước thiết kế, kiểu dáng, đáp ứng tốt nhu cầu đựng trái cây với chủng loại và số lượng khác nhau.</li>	<li>Chất lượng thùng gỗ: thùng gỗ của Đông Phú Tiên được sản xuất từ những loại gỗ tốt, chịu lực và va chạm tốt, được tuyển chọn kỹ càng và gắt gao. Bên cạnh đó, quá trình thi công diễn ra tỉ mỉ, chính xác theo các tiêu chuẩn đề ra. Nhờ đó mà khách hàng hoàn toàn có thể yên tâm về độ chắc chắn, độ bền khi sử dụng.</li>	<li>Giá cả hợp lý, phải chăng: Dù có sự đa dạng về mẫu mã và kích thước<strong>,</strong>&nbsp;tuy nhiên giá cả luôn được duy trì ở mức hợp lý và phải chăng nhất trên thị trường. Đến với dịch vụ của Đông Phú Tiên, khách hàng sẽ có cơ hội sở hữu những chiếc&nbsp;<a href="/san-pham/thung-go-pallet.htmlthung_go_gia_re"><strong>thùng gỗ giá rẻ</strong></a>&nbsp;đựng trái cây chất lượng với mức giá chỉ từ 150 ngàn đồng.</li></ul><p>Công ty TNHH Đông Phú Tiên chuyên sản xuất và cung cấp&nbsp;<strong>thùng gỗ đựng hoa quả</strong>&nbsp;uy tín, chất lượng. Với nhiều năm kinh nghiệm trong lĩnh vực cung cấp thùng gỗ, Đông Phú Tiên là người bạn đồng hành cùng nhiều công ty xuất nhập khẩu, các vựa lớn và các thương lái nhiều năm trong nghề.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong></span><br /><span style="font-size:16px;">Dịch vụ<strong> <a href="/dich-vu-dong-goi-hang-hoa/đóng_gói_hàng_hóa">đóng gói hàng hóa</a> </strong>xuất khẩu, hàng dễ vỡ tại Đông Phú Tiên<br /><strong><a href="/dich-vu-van-chuyen-may-moc-thiet-bi/">Dịch vụ vận chuyển máy móc</a> </strong>tại Đông Phú Tiên<br />Dịch vụ đóng <strong><a href="/dong-thung-go-kien-go/dong_thung_go_gia_re">thùng gỗ pallet đóng hàng xuất khẩu</a></strong> - đóng kiện gỗ chất lượng CAO</span></p></blockquote>
+                <p><i>Hoa quả là mặt hàng nhiều người tiêu dùng ưa chuộng, đặc biệt trong những ngày hè nóng bức. Nhưng khó khăn nhất cho các tiểu thương đi buôn mặt hàng này trong quá trình vận chuyển, đó là làm sao để sản phẩm không bị dập, hỏng. Từ đó&nbsp;<strong><a href="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua.html#">thùng gỗ đựng trái cây</a></strong>&nbsp;</i><em>ra đời. Hãy cùng chúng tôi tìm hiểu công năng cũng như nơi cung cấp loại thùng gỗ này uy tín nhé.</em></p><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả tại hà nội" height="508" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-hoa-qua-tai-ha-noi.jpg" width="600" /></div><h2>&nbsp;</h2><ul></ul><h2><strong>1. Thông tin của Thùng Gỗ Đựng Trái Cây:</strong></h2><div class="table-responsive"><table class="table table-striped table-bordered table-hover"  border="1" cellpadding="1" cellspacing="1" style="width:500px;">	<tbody>		<tr>			<td><b>Tên sản phẩm</b></td>			<td>Thùng gỗ xuất khẩu Trái Cây</td>		</tr>		<tr>			<td><b>Mã sản phẩm</b></td>			<td>TGXKTC-01</td>		</tr>		<tr>			<td><b>Quy cách đóng gói</b></td>			<td>Đóng theo yêu cầu phía Khách hàng hoặc các mẫu có sẵn</td>		</tr>		<tr>			<td><b>Chất Liệu</b></td>			<td>Thùng gỗ thông xẻ mới 100%</td>		</tr>		<tr>			<td><b>Công nghệ xử lý</b></td>			<td>Khử trùng và sấy theo tiêu chuẩn thùng gỗ xuất khẩu (IPSM 15), vận chuyển trong nước với công nghệ sấy nhập khẩu Nhật Bản.</td>		</tr>	</tbody></table> </div><p><br /><strong>Thùng gỗ đựng hoa quả</strong>&nbsp;là thùng gỗ đóng từ các thanh gỗ. Được ghép thưa, có lỗ hổng lớn để trái cây không bị bí, hấp hơi.</p><p>Gỗ thông được sử dụng tại Đông Phú Tiên để sản xuất thùng đựng trái cây là loại gỗ đảm bảo cho thùng gỗ thông chất lượng về độ an toàn, quy định xuất khẩu.</p><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng trái cây" height="450" src="/uploads/shops/2021_10/thung-go-dung-hoa-qua.jpg" width="600" /><figcaption>Thùng được đóng với thiết kế đẹp.</figcaption></figure></div>&nbsp;<p><b>Thùng gỗ đựng trái cây</b>&nbsp;được làm từ các thanh gỗ có kích thước mỏng, dẹt, xếp cách nhau tạo ra các khe hở, giúp thoát khí để trái cây không bị hấp hơi, úng hỏng. So với thùng xốp thì thùng gỗ có nhiều ưu điểm hơn, thiết kế đẹp mắt, vừa làm thùng gỗ trang trí và thuận tiện hơn trong việc vận chuyển.</p><p>Thùng gỗ cũng có thể dùng để đựng nông sản, rau củ,… Nhờ có những chiếc <a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-trong-cay-81.html"><strong>thùng gỗ trồng cây</strong></a>, các sạp trái cây trưng bày đẹp mắt hơn, sạch sẽ hơn. Vì thế cũng thu hút người mua hơn</p><p>Ngoài việc cung cấp thùng gỗ đựng hoa quả ra thì Đông Phú tiên còn hướng dẫn đóng <a href="/san-pham/thung-go-pallet.htmlmua_pallet_gỗ"><strong>pallet gỗ</strong></a> ở hà nội đạt chuẩn chất lượng nhất trên thị trường hiện nay. Bạn có thể tham khảo <strong><a href="https://thunggopalletgo.com.vn/dong-pallet-go-tai-ha-noi-theo-yeu-cau/#gỗ_pallet_hà_nội">pallet gỗ hà nội</a></strong>&nbsp;tại đây.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong><br />Dịch vụ <a href="/dong-thung-go-kien-go/dong_thung_go"><strong>dong kien go</strong></a> xuất khẩu quốc tế<br /><strong>Sản phẩm <a href="https://thunggopalletgo.com.vn/san-pham/thung-go-soi.html">thùng gỗ sồi đựng rượu</a></strong><br /><a href="/san-pham/thung-go-pallet.htmlthùng_gỗ_pallet"><strong>Bán thùng gỗ pallet</strong></a> chất lượng tại miền bắc<br />Dịch vụ<strong>&nbsp;<a href="https://thunggopalletgo.com.vn/tin-tuc/dong-thung-go-chuyen-hang-tai-ha-noi-12.html">đóng thùng gỗ tại Hà nội</a></strong></span></p></blockquote><h2 id="bán"><strong>2. Chất lượng của thùng gỗ đựng trái cây cần lưu ý</strong></h2><p>Tuy có nhiều ưu điểm là thế. Tuy nhiên, khi mua nếu không biết cách chọn, chúng ta rất dễ mua phải những chiếc thùng không đạt tiêu chuẩn, kém chất lượng. Dẫn đến sản phẩm không được bảo quản tốt. Hoặc độ bền của kiện kém, dùng một thời gian ngắn là hỏng. Vì vậy khi chọn mua các loại&nbsp;<strong>thùng gỗ đựng trái cây</strong>, chúng ta cần lưu ý những vấn đề sau</p><ul>	<li><strong>Các mẫu khớp phải chắc chắn 100%</strong></li></ul><p>Do&nbsp;<strong>thùng gỗ đựng trái cây</strong>&nbsp;được đóng bằng các thanh gỗ có kích thước mỏng, dẹt. Nên khi chọn, chúng ta phải để ý các vết đóng, các mắt đinh xem có chắc chắn không. Thùng gỗ chắc chắn là kiện có các thanh gỗ được gắn khít vào nhau, không tạo ra khe hở giữa các chỗ tiếp xúc. Khi nâng kiện gỗ trên tay cảm nhận được sự chắc chắn, không bị ọp ẹp.</p><blockquote cite="https://thunggopalletgo.com.vn/san-pham/thung-go-dung-hoa-qua/#t%E1%BA%A1i_h%C3%A0_n%E1%BB%99i"><p>Nhiều thùng gỗ không sử dụng đinh để gắn, mà sử dụng các khớp gỗ. Khi kiểm tra các khớp gỗ phải ăn khớp với nhau 100%. Đồng thời độ dài các khớp phải đủ lớn để đảm bảo cho 2 điểm tiếp xúc gắn kết chặt chẽ với nhau.</p></blockquote><ul>	<li><strong>Thông thoáng, đảm bảo trái cây không bị kín hơi, giập nát</strong></li></ul><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="bán thùng gỗ đựng trái cây" height="450" src="/uploads/shops/2021_10/thung-go-pallet-dung-hoa-qua.jpg" width="600" /><figcaption>Thùng gỗ thông thoáng.</figcaption></figure></div>&nbsp;<p>Nếu&nbsp;<strong>thùng gỗ đựng trái cây</strong>&nbsp;quá kín, sẽ khiến trái cây bị hấp hơi dẫn đến úng, dập.</p><p>Vì thế khi chọn mua chúng ta phải chọn những kiện có các kẽ hở đủ lớn, đảm bảo trái cây bên trong được thông thoáng, thoát khí.</p><ul>	<li><strong>Chọn chất liệu gỗ chịu va chạm tốt</strong></li></ul><div style="text-align:center"><figure class="image" style="display:inline-block"><img alt="thùng gỗ đựng trái cây giá rẻ" height="450" src="/uploads/shops/2021_10/thung-pallet-dung-hoa-qua.jpg" width="600" /><figcaption>Chất liệu tốt, chống mối mọt</figcaption></figure></div>&nbsp;<p>Chất liệu gỗ cũng là điều rất quan trọng khi lựa chọn thùng gỗ. Chất liệu gỗ không tốt, giòn sẽ dễ bị gãy, thậm chí mục nát. Như vậy lúc vận chuyển chỉ cần hơi mạnh tay có thể làm sập, đổ cả kiện bất cứ lúc nào.</p>LIÊN HỆ VỚI CHÚNG TÔI<p><em>Mời bạn tham khảo video dưới đây để hiểu thêm về quy trình đóng thùng gỗ tại Đông Phú Tiên:</em></p><div class="youtube-embed-wrapper" style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden"><iframe allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/qX39lrmGACE?rel=0" style="position:absolute;top:0;left:0;width:100%;height:100%" width="640"></iframe></div><h2><strong>3. Các mẫu thùng gỗ xuất khẩu hoa quả</strong></h2>Trên thị trường hiện có rất nhiều loại thùng gỗ đa dạng, chất lượng và đẹp mắt phù hợp cho cả việc trưng bày để khách hàng lựa chọn. Chúng ta cùng tham khảo nhé.<figure aria-describedby="caption-attachment-8099" id="attachment_8099"><div style="text-align:center"><img alt="thùng gỗ đựng trái cây đa năng" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay-gia-re.jpg" width="600" /></div><figcaption id="caption-attachment-8099">Mẫu số 1</figcaption></figure><figure aria-describedby="caption-attachment-8098" id="attachment_8098"><div style="text-align:center"><img alt="thanh lý thùng gỗ đựng trái cây" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay-da-nang.jpg" width="600" /></div><figcaption id="caption-attachment-8098">Mẫu số 2</figcaption></figure><figure aria-describedby="caption-attachment-8093" id="attachment_8093"><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả giá bình dân" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thanh-ly-thung-go-dung-trai-cay.jpg" /></div><figcaption id="caption-attachment-8093">Mẫu số 3</figcaption></figure><figure aria-describedby="caption-attachment-8096" id="attachment_8096"><div style="text-align:center"><img alt="bán thùng gỗ đựng hoa quả" height="600" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/thung-go-dung-trai-cay.jpg" width="600" /></div><figcaption id="caption-attachment-8096">Mẫu số 4</figcaption></figure><figure aria-describedby="caption-attachment-8092" id="attachment_8092"><div style="text-align:center"><img alt="thùng gỗ đựng trái cây tphcm" height="450" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-dung-trai-cay.jpg" width="600" /></div><figcaption id="caption-attachment-8092">Mẫu số 5</figcaption></figure><figure aria-describedby="caption-attachment-8091" id="attachment_8091"><div style="text-align:center"><img alt="thùng gỗ đựng hoa quả giá rẻ" height="545" sizes="(max-width: 600px) 100vw, 600px" src="/uploads/shops/2021_05/ban-thung-go-dung-hoa-qua.jpg" width="600" /></div><figcaption id="caption-attachment-8091">Mẫu số 6</figcaption></figure><h2 id="uy_tín"><strong>4. Những cam kết khi mua thùng đựng hoa quả của chúng tôi</strong></h2><ul>	<li>Đa dạng về kích thước thiết kế, kiểu dáng: Công ty TNHH Đông Phú Tiên cam kết mang đến cho khách hàng các sản phẩm đa dạng về kích thước thiết kế, kiểu dáng, đáp ứng tốt nhu cầu đựng trái cây với chủng loại và số lượng khác nhau.</li>	<li>Chất lượng thùng gỗ: thùng gỗ của Đông Phú Tiên được sản xuất từ những loại gỗ tốt, chịu lực và va chạm tốt, được tuyển chọn kỹ càng và gắt gao. Bên cạnh đó, quá trình thi công diễn ra tỉ mỉ, chính xác theo các tiêu chuẩn đề ra. Nhờ đó mà khách hàng hoàn toàn có thể yên tâm về độ chắc chắn, độ bền khi sử dụng.</li>	<li>Giá cả hợp lý, phải chăng: Dù có sự đa dạng về mẫu mã và kích thước<strong>,</strong>&nbsp;tuy nhiên giá cả luôn được duy trì ở mức hợp lý và phải chăng nhất trên thị trường. Đến với dịch vụ của Đông Phú Tiên, khách hàng sẽ có cơ hội sở hữu những chiếc&nbsp;<a href="/san-pham/thung-go-pallet.htmlthung_go_gia_re"><strong>thùng gỗ giá rẻ</strong></a>&nbsp;đựng trái cây chất lượng với mức giá chỉ từ 150 ngàn đồng.</li></ul><p>Công ty TNHH Đông Phú Tiên chuyên sản xuất và cung cấp&nbsp;<strong>thùng gỗ đựng hoa quả</strong>&nbsp;uy tín, chất lượng. Với nhiều năm kinh nghiệm trong lĩnh vực cung cấp thùng gỗ, Đông Phú Tiên là người bạn đồng hành cùng nhiều công ty xuất nhập khẩu, các vựa lớn và các thương lái nhiều năm trong nghề.</p><blockquote><p><span style="font-size:16px;"><strong>Bài viết liên quan:</strong></span><br /><span style="font-size:16px;">Dịch vụ<strong> <a href="/dich-vu-dong-goi-hang-hoa/đóng_gói_hàng_hóa">đóng gói hàng hóa</a> </strong>xuất khẩu, hàng dễ vỡ tại Đông Phú Tiên<br /><strong><a href="/dich-vu-van-chuyen-may-moc-thiet-bi/">Dịch vụ vận chuyển máy móc</a> </strong>tại Đông Phú Tiên<br />Dịch vụ đóng <strong><a href="/dong-thung-go-kien-go/dong_thung_go_gia_re">thùng gỗ pallet đóng hàng xuất khẩu</a></strong> - đóng kiện gỗ chất lượng CAO</span></p></blockquote>
             </div>
             <div role="tabpanel" class="tab-pane fade " id="content_rate-2">
                 <div class="panel panel-default">
@@ -506,14 +483,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><img src="/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg" alt="Pallet Gỗ Giá Rẻ"  style="max-width:250px; max-height: 250px;"></a>
         </div>
         <br />  
         <div class="info_pro">
         </div>
         <div class="caption text-center">
-            <a href="/san-pham/bao-gia-pallet-go.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 51569</div>
+            <a href="/san-pham/thung-go-pallet.html" title="Pallet Gỗ Giá Rẻ"><div class="den normal font-16 "><h3>Pallet Gỗ Giá Rẻ</h3> </div></a>
+            <div>Lượt xem : 51664</div>
             <div>Mã sp : S000043</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -535,7 +512,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 5005</div>
+            <div>Lượt xem : 5009</div>
             <div>Mã sp : PL4HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -557,7 +534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 2 Hướng Nâng</h3> </div></a>
-            <div>Lượt xem : 3424</div>
+            <div>Lượt xem : 3428</div>
             <div>Mã sp : PL2HN</div>
             <div>Khối lượng : 50 Kg</div>
 
@@ -579,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-soi.html" title="Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L"><div class="den normal font-16 "><h3>Thùng Rượu Gỗ Sồi 20L ,30L ,50L ,100L , 200L</h3> </div></a>
-            <div>Lượt xem : 3771</div>
+            <div>Lượt xem : 3778</div>
             <div>Mã sp : TGS – ĐPT</div>
             <div>Khối lượng : 30 Kg</div>
 
@@ -601,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="caption text-center">
             <a href="/san-pham/thung-go-pallet.html" title="Thùng Gỗ Pallet Hở Mặt Giá Rẻ"><div class="den normal font-16 "><h3>Thùng Gỗ Pallet Hở Mặt Giá Rẻ</h3> </div></a>
-            <div>Lượt xem : 7259</div>
+            <div>Lượt xem : 7269</div>
             <div>Mã sp : TGP-DPT</div>
             <div>Khối lượng : 20 Kg</div>
 
@@ -641,6 +618,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="products" class="clearfix">
 <div class="can-flex ">
     <div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
+    <div class=" text-center mr-b-10 pd-10 ">
+        <div style="height: 250px ; padding-bottom:10px">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-4-huong-nang.jpg" alt="Pallet Gỗ 4 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
+        </div>
+        <br />  
+        <div class="info_pro">
+        </div>
+        <div class="caption text-center">
+            <a href="/san-pham/pallet-go-4-huong-nang.html" title="Pallet Gỗ 4 Hướng Nâng"><div class="den normal font-16 "><h3>Pallet Gỗ 4 Hướng Nâng</h3> </div></a>
+            <div>Lượt xem : </div>
+            <div>Mã sp : PL4HN</div>
+            <div>Khối lượng :  Kg</div>
+
+                            <p class="price">
+                                    <span class="money">120.000 đ</span>
+            </p>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-1200-4 col-768-3 col-480-2 text-center bor-1 ">
     <div class=" text-center mr-b-10 pd-10 ">
         <div style="height: 250px ; padding-bottom:10px">
             <a href="/san-pham/pallet-go-2-huong-nang.html" title="Pallet Gỗ 2 Hướng Nâng"><img src="/assets/shops/2021_05/pallet-2-huong-nang.jpg" alt="Pallet Gỗ 2 Hướng Nâng"  style="max-width:250px; max-height: 250px;"></a>
@@ -925,7 +924,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="openidResult" class="nv-alert" style="display:none"></div>
     <div id="openidBt" data-result="" data-redirect=""></div>
     <a class="btn-top" href="javascript:void(0);" title="Lên đầu trang" style="display: inline;"></a>
-<div id="run_cronjobs" style="visibility:hidden;display:none;"><img alt="" src="/index.php?second=cronjobs&amp;p=v4GfOE3v" width="1" height="1" /></div>
 <script src="/assets/js/jquery/jquery.min.js?t=1638773501"></script>
 <script>var nv_base_siteurl="/",nv_lang_data="vi",nv_lang_interface="vi",nv_name_variable="nv",nv_fc_variable="op",nv_lang_variable="language",nv_module_name="shops",nv_func_name="detail",nv_is_user=0, nv_my_ofs=7,nv_my_abbr="+07",nv_cookie_prefix="nv4",nv_check_pass_mstime=28738000,nv_area_admin=0,nv_safemode=0,theme_responsive=1,nv_is_recaptcha=0;</script>
 <script src="/assets/js/language/vi.js?t=1638773501"></script>
@@ -952,6 +950,7 @@ new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'e
         });
     });
  </script>
+<script src="/themes/default/js/toggle-nav.js?t=1638773501" type="text/javascript"></script>
 <script type="text/javascript" data-show="after">
 ( function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -1162,9 +1161,9 @@ function check_quantity( _this ){
             "https://thunggopalletgo.com.vn/assets/shops/2021_07/pallet-go-gia-re-dong-phu-tien.jpg"
                                 ],
                     "name": "Pallet Gỗ Giá Rẻ",
-                    "url": "https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
-                    "@id": "/san-pham/bao-gia-pallet-go.htmlproduct",
-                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/bao-gia-pallet-go.html",
+                    "url": "https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
+                    "@id": "/san-pham/thung-go-pallet.htmlproduct",
+                     "mainEntityOfPage":"https://thunggopalletgo.com.vn/san-pham/thung-go-pallet.html",
                     "description": "Đông Phú Tiên cung cấp bảng báo giá pallet gỗ giá sỉ, rẻ, chất lượng nhất giao động từ 120.000Đ với kích thước tiêu chuẩn 1200×800 mm / 1200×1000 mm / 1200×900 mm và những ưu đãi đặc biệt dành cho mọi khách hàng."
                     },
                      {
